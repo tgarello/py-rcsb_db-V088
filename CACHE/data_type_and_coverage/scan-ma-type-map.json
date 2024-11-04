@@ -1,0 +1,2959 @@
+{
+"entry": {
+"id": {
+"minWidth": 12,
+"maxWidth": 27,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"ma_collection_id": {
+"minWidth": 7,
+"maxWidth": 14,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"struct": {
+"entry_id": {
+"minWidth": 12,
+"maxWidth": 27,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_model_details": {
+"minWidth": 92,
+"maxWidth": 1229,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_structure_determination_methodology": {
+"minWidth": 13,
+"maxWidth": 13,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"title": {
+"minWidth": 18,
+"maxWidth": 109,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"audit_conform": {
+"dict_location": {
+"minWidth": 79,
+"maxWidth": 84,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"dict_name": {
+"minWidth": 12,
+"maxWidth": 12,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"dict_version": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"citation": {
+"id": {
+"minWidth": 1,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"title": {
+"minWidth": 38,
+"maxWidth": 113,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"journal_abbrev": {
+"minWidth": 6,
+"maxWidth": 91,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"journal_volume": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 17
+},
+"page_first": {
+"minWidth": 2,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 17
+},
+"page_last": {
+"minWidth": 2,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 17
+},
+"year": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_database_id_PubMed": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 17
+},
+"pdbx_database_id_DOI": {
+"minWidth": 16,
+"maxWidth": 30,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"journal_full": {
+"minWidth": 6,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"journal_id_ISSN": {
+"minWidth": 9,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"country": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"citation_author": {
+"citation_id": {
+"minWidth": 1,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"name": {
+"minWidth": 5,
+"maxWidth": 28,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"software": {
+"pdbx_ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"name": {
+"minWidth": 6,
+"maxWidth": 18,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"classification": {
+"minWidth": 10,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"description": {
+"minWidth": 16,
+"maxWidth": 183,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"version": {
+"minWidth": 5,
+"maxWidth": 40,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"type": {
+"minWidth": 7,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"location": {
+"minWidth": 23,
+"maxWidth": 43,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"citation_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"ma_software_parameter": {
+"parameter_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"data_type": {
+"minWidth": 5,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"name": {
+"minWidth": 2,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"value": {
+"minWidth": 1,
+"maxWidth": 40,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"description": {
+"minWidth": 35,
+"maxWidth": 35,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_software_group": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"software_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"parameter_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+}
+},
+"audit_author": {
+"name": {
+"minWidth": 5,
+"maxWidth": 44,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_ordinal": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"chem_comp": {
+"id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"type": {
+"minWidth": 11,
+"maxWidth": 17,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"name": {
+"minWidth": 6,
+"maxWidth": 25,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"formula": {
+"minWidth": 2,
+"maxWidth": 17,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"formula_weight": {
+"minWidth": 6,
+"maxWidth": 7,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 21
+},
+"ma_provenance": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"mon_nstd_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"entity": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"type": {
+"minWidth": 7,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"src_method": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_description": {
+"minWidth": 4,
+"maxWidth": 94,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"formula_weight": {
+"minWidth": 6,
+"maxWidth": 10,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 21
+},
+"pdbx_number_of_molecules": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"entity_src_nat": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"pdbx_src_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"pdbx_ncbi_taxonomy_id": {
+"minWidth": 4,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"pdbx_organism_scientific": {
+"minWidth": 15,
+"maxWidth": 54,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+}
+},
+"ma_target_ref_db_details": {
+"target_entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"db_name": {
+"minWidth": 3,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"db_code": {
+"minWidth": 6,
+"maxWidth": 25,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+},
+"db_accession": {
+"minWidth": 3,
+"maxWidth": 16,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"seq_db_align_begin": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"seq_db_align_end": {
+"minWidth": 2,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"ncbi_taxonomy_id": {
+"minWidth": 4,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 15
+},
+"organism_scientific": {
+"minWidth": 15,
+"maxWidth": 80,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 15
+},
+"seq_db_sequence_version_date": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"seq_db_sequence_checksum": {
+"minWidth": 16,
+"maxWidth": 16,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 12
+},
+"db_name_other_details": {
+"minWidth": 5,
+"maxWidth": 14,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+}
+},
+"entity_poly": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"type": {
+"minWidth": 14,
+"maxWidth": 14,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"nstd_linkage": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"nstd_monomer": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_strand_id": {
+"minWidth": 1,
+"maxWidth": 17,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_seq_one_letter_code": {
+"minWidth": 53,
+"maxWidth": 2011,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_seq_one_letter_code_can": {
+"minWidth": 45,
+"maxWidth": 2011,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"entity_poly_seq": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"mon_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"hetero": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"struct_asym": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_PDB_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_alt_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_blank_PDB_chainid_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_type": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_order": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_modified": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"details": {
+"minWidth": 23,
+"maxWidth": 43,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"pdbx_poly_seq_scheme": {
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"seq_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"mon_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdb_seq_num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"auth_seq_num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdb_mon_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"auth_mon_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdb_strand_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"ndb_seq_num": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"hetero": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_data": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"name": {
+"minWidth": 3,
+"maxWidth": 94,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"content_type": {
+"minWidth": 5,
+"maxWidth": 25,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"content_type_other_details": {
+"minWidth": 43,
+"maxWidth": 43,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_data_group": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"data_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"ma_data_ref_db": {
+"data_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"name": {
+"minWidth": 3,
+"maxWidth": 29,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"location_url": {
+"minWidth": 50,
+"maxWidth": 130,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"version": {
+"minWidth": 7,
+"maxWidth": 32,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 15
+},
+"release_date": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 11
+}
+},
+"ma_target_entity": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"data_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"origin": {
+"minWidth": 8,
+"maxWidth": 18,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"ma_target_entity_instance": {
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"details": {
+"minWidth": 23,
+"maxWidth": 43,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"ma_protocol_step": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"protocol_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"step_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"method_type": {
+"minWidth": 5,
+"maxWidth": 16,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"details": {
+"minWidth": 32,
+"maxWidth": 280,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"software_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"input_data_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 19
+},
+"output_data_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 19
+},
+"step_name": {
+"minWidth": 9,
+"maxWidth": 18,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+}
+},
+"ma_model_list": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"model_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"model_name": {
+"minWidth": 7,
+"maxWidth": 89,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"data_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"model_type": {
+"minWidth": 14,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"model_group_name": {
+"minWidth": 15,
+"maxWidth": 101,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"atom_site": {
+"group_PDB": {
+"minWidth": 4,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"id": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"type_symbol": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"label_atom_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"label_comp_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"label_seq_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"auth_seq_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"label_asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"Cartn_x": {
+"minWidth": 1,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 21
+},
+"Cartn_y": {
+"minWidth": 2,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 21
+},
+"Cartn_z": {
+"minWidth": 1,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 21
+},
+"occupancy": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 2,
+"maxPrec": 3,
+"count": 21
+},
+"label_entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"B_iso_or_equiv": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 2,
+"maxPrec": 3,
+"count": 21
+},
+"pdbx_PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"auth_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"auth_atom_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_auth_seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_auth_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_auth_atom_name": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"atom_type": {
+"symbol": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"ma_qa_metric": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"name": {
+"minWidth": 3,
+"maxWidth": 37,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"description": {
+"minWidth": 38,
+"maxWidth": 69,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 19
+},
+"type": {
+"minWidth": 3,
+"maxWidth": 23,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"mode": {
+"minWidth": 5,
+"maxWidth": 14,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"software_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"ma_qa_metric_global": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"metric_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"metric_value": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 2,
+"maxPrec": 3,
+"count": 21
+}
+},
+"ma_qa_metric_local": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"label_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"label_seq_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"label_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"metric_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"metric_value": {
+"minWidth": 4,
+"maxWidth": 6,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 21
+}
+},
+"database_2": {
+"database_id": {
+"minWidth": 12,
+"maxWidth": 12,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"database_code": {
+"minWidth": 12,
+"maxWidth": 27,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_DOI": {
+"minWidth": 20,
+"maxWidth": 35,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+}
+},
+"pdbx_database_status": {
+"entry_id": {
+"minWidth": 12,
+"maxWidth": 27,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"date_coordinates": {
+"minWidth": 16,
+"maxWidth": 16,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"status_code": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"pdbx_contact_author": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"name_salutation": {
+"minWidth": 3,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"name_first": {
+"minWidth": 2,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"name_last": {
+"minWidth": 3,
+"maxWidth": 14,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"email": {
+"minWidth": 14,
+"maxWidth": 28,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"address_1": {
+"minWidth": 15,
+"maxWidth": 152,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"name_mi": {
+"minWidth": 1,
+"maxWidth": 12,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"address_2": {
+"minWidth": 57,
+"maxWidth": 113,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"address_3": {
+"minWidth": 168,
+"maxWidth": 168,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_audit_revision_history": {
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"data_content_type": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"major_revision": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"minor_revision": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"revision_date": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+}
+},
+"pdbx_audit_revision_details": {
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"revision_ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"data_content_type": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"provider": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"type": {
+"minWidth": 11,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"description": {
+"minWidth": 24,
+"maxWidth": 30,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+}
+},
+"pdbx_audit_revision_group": {
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"revision_ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"data_content_type": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"group": {
+"minWidth": 5,
+"maxWidth": 25,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+}
+},
+"pdbx_audit_revision_category": {
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"revision_ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"data_content_type": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"category": {
+"minWidth": 5,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+}
+},
+"pdbx_audit_revision_item": {
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"revision_ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"data_content_type": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"item": {
+"minWidth": 11,
+"maxWidth": 48,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+}
+},
+"ma_entry_associated_files": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"entry_id": {
+"minWidth": 12,
+"maxWidth": 27,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"file_url": {
+"minWidth": 105,
+"maxWidth": 120,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"file_type": {
+"minWidth": 7,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"file_format": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"file_content": {
+"minWidth": 27,
+"maxWidth": 27,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+}
+},
+"ma_associated_archive_file_details": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"archive_file_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"file_path": {
+"minWidth": 10,
+"maxWidth": 58,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"file_format": {
+"minWidth": 2,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"file_content": {
+"minWidth": 5,
+"maxWidth": 28,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 14
+},
+"data_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"description": {
+"minWidth": 11,
+"maxWidth": 158,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+}
+},
+"atom_sites": {
+"entry_id": {
+"minWidth": 16,
+"maxWidth": 16,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"fract_transf_matrix[1][1]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"fract_transf_matrix[1][2]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"fract_transf_matrix[1][3]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"fract_transf_matrix[2][1]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"fract_transf_matrix[2][2]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"fract_transf_matrix[2][3]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"fract_transf_matrix[3][1]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"fract_transf_matrix[3][2]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"fract_transf_matrix[3][3]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"fract_transf_vector[1]": {
+"minWidth": 7,
+"maxWidth": 7,
+"minPrec": 5,
+"maxPrec": 5,
+"count": 1
+},
+"fract_transf_vector[2]": {
+"minWidth": 7,
+"maxWidth": 7,
+"minPrec": 5,
+"maxPrec": 5,
+"count": 1
+},
+"fract_transf_vector[3]": {
+"minWidth": 7,
+"maxWidth": 7,
+"minPrec": 5,
+"maxPrec": 5,
+"count": 1
+}
+},
+"pdbx_validate_close_contact": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id_1": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_1": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_1": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_1": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id_2": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_2": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_2": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"dist": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+}
+},
+"pdbx_validate_rmsd_bond": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id_1": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_1": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_1": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_1": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_2": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_2": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"bond_value": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"bond_target_value": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"bond_deviation": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"bond_standard_deviation": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"linker_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_validate_rmsd_angle": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id_1": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_1": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_1": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_1": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_2": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_2": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id_3": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_3": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_3": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_3": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"angle_value": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+},
+"angle_target_value": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+},
+"angle_deviation": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+},
+"angle_standard_deviation": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+},
+"linker_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_validate_torsion": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"phi": {
+"minWidth": 4,
+"maxWidth": 7,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+},
+"psi": {
+"minWidth": 5,
+"maxWidth": 7,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+}
+},
+"pdbx_validate_peptide_omega": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_1": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_1": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_1": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_2": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_2": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"omega": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+}
+},
+"pdbx_validate_main_chain_plane": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"improper_torsion_angle": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+}
+},
+"pdbx_validate_polymer_linkage": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id_1": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_1": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_1": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_1": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id_2": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id_2": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"dist": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+}
+},
+"struct_ref": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"db_name": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"db_code": {
+"minWidth": 9,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_db_accession": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_align_begin": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_seq_one_letter_code": {
+"minWidth": 77,
+"maxWidth": 165,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"struct_ref_seq": {
+"align_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ref_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"seq_align_beg": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"seq_align_end": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"db_align_beg": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"db_align_end": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_entity_nonpoly": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"name": {
+"minWidth": 11,
+"maxWidth": 25,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"comp_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ma_model_mode": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_nonpoly_scheme": {
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"mon_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ndb_seq_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdb_seq_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_mon_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdb_strand_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_template_trans_matrix": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"rot_matrix[1][1]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"rot_matrix[2][1]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"rot_matrix[3][1]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"rot_matrix[1][2]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"rot_matrix[2][2]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"rot_matrix[3][2]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"rot_matrix[1][3]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"rot_matrix[2][3]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"rot_matrix[3][3]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 1
+},
+"tr_vector[1]": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"tr_vector[2]": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"tr_vector[3]": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_template_details": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_origin": {
+"minWidth": 18,
+"maxWidth": 18,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_entity_type": {
+"minWidth": 7,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_trans_matrix_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_data_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"target_asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_label_asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_label_entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_template_poly": {
+"template_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"seq_one_letter_code": {
+"minWidth": 87,
+"maxWidth": 555,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"seq_one_letter_code_can": {
+"minWidth": 87,
+"maxWidth": 555,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_template_poly_segment": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"residue_number_begin": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"residue_number_end": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_template_non_poly": {
+"template_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"comp_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"details": {
+"minWidth": 11,
+"maxWidth": 25,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_template_ref_db_details": {
+"template_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"db_name": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"db_accession_code": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"db_version_date": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_target_template_poly_mapping": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_segment_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"target_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"target_seq_id_begin": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"target_seq_id_end": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_alignment_info": {
+"alignment_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"data_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"software_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"alignment_length": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"alignment_type": {
+"minWidth": 34,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"alignment_mode": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_alignment_details": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"alignment_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"template_segment_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"target_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"score_type": {
+"minWidth": 13,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"score_value": {
+"minWidth": 1,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 7,
+"count": 1
+},
+"percent_sequence_identity": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"sequence_identity_denominator": {
+"minWidth": 44,
+"maxWidth": 44,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_alignment": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"alignment_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"target_template_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"sequence": {
+"minWidth": 81,
+"maxWidth": 549,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+}
+}
