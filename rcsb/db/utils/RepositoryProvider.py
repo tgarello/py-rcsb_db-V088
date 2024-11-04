@@ -235,6 +235,8 @@ class RepositoryProvider(object):
                 outputPathList = inputPathList if inputPathList else self.mergeBirdAndChemCompRefData()
             elif contentType in ["ihm_dev", "ihm_dev_core", "ihm_dev_full"]:
                 outputPathList = inputPathList if inputPathList else self.getIhmDevPathList()
+            elif contentType in ["ma"]:
+                outputPathList = inputPathList if inputPathList else self.getMaDevPathList()
             elif contentType in ["pdb_distro", "da_internal", "status_history"]:
                 outputPathList = inputPathList if inputPathList else []
             else:
@@ -267,6 +269,8 @@ class RepositoryProvider(object):
                 pth = os.path.join(self.__getRepoTopPath(contentType), idCode + ".cif")
             elif contentType in ["ihm_dev", "ihm_dev_core", "ihm_dev_full"]:
                 pth = os.path.join(self.__getRepoTopPath(contentType), idCode, idCode + "_model_%s.cif.gz" % version)
+            elif contentType in ["ma"]:
+                pass
             elif contentType in ["pdb_distro", "da_internal", "status_history"]:
                 pass
             elif contentType in ["vrpt"]:
@@ -299,6 +303,8 @@ class RepositoryProvider(object):
                 pth = self.__cachePath
             elif contentType in ["ihm_dev", "ihm_dev_core", "ihm_dev_full"]:
                 pth = self.__cfgOb.getPath("IHM_DEV_REPO_PATH", sectionName=self.__configName)
+            elif contentType in ["ma"]:
+                pass
             elif contentType in ["pdb_distro", "da_internal", "status_history"]:
                 pass
             elif contentType in ["vrpt"]:
@@ -751,6 +757,8 @@ class RepositoryProvider(object):
 
     def getIhmDevPathList(self):
         return self.__getIhmDevPathList(self.__getRepoTopPath("ihm_dev"))
+    def getMaDevPathList(self):
+        return self.__getMaDevPathList(self.__getRepoTopPath("ma"))
 
     def __getIhmDevPathList(self, topRepoPath):
         """ Return the list of I/HM entries in the current repository.
@@ -768,6 +776,30 @@ class RepositoryProvider(object):
                     continue
                 for name in files:
                     if name.startswith("PDBDEV_") and name.endswith(".cif.gz") and len(name) <= 50:
+                        pth = os.path.join(root, name)
+                        sd[int(name[7:15])] = pth
+            #
+            for k in sorted(sd.keys()):
+                pathList.append(sd[k])
+        except Exception as e:
+            logger.exception("Failing search in %r with %s", topRepoPath, str(e))
+        #
+        return self.__applyFileLimit(pathList)
+    
+    def __getMaDevPathList(self, topRepoPath):
+        """ Return the list of MA in the current repository.
+
+            File name template is: ? unkown
+        """
+        pathList = []
+        logger.debug("Searching path %r", topRepoPath)
+        try:
+            sd = {}
+            for root, _, files in os.walk(topRepoPath, topdown=False):
+                if "REMOVE" in root:
+                    continue
+                for name in files:
+                    if name.startswith("ma_") and name.endswith(".cif.gz") and len(name) <= 50:
                         pth = os.path.join(root, name)
                         sd[int(name[7:15])] = pth
             #

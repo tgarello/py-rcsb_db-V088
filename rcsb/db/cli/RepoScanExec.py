@@ -94,6 +94,8 @@ def main():
     group.add_argument("--scan_bird_family_ref", default=False, action="store_true", help="Scan Bird Family reference definitions (public subset)")
     group.add_argument("--scan_entry_data", default=False, action="store_true", help="Scan PDB entry data (current released subset)")
     group.add_argument("--scan_ihm_dev", default=False, action="store_true", help="Scan PDBDEV I/HM entry data (current released subset)")
+    group.add_argument("--scan_ma", default=False, action="store_true", help="Scan MA entry data (current released subset)")
+
     #
     parser.add_argument("--config_path", default=None, help="Path to configuration options file")
     parser.add_argument("--config_name", default=defaultConfigName, help="Configuration section name")
@@ -191,6 +193,9 @@ def main():
 
     elif args.scan_ihm_dev:
         contentType = "ihm_dev"
+
+    elif args.scan_ma:
+        contentType = "ma"
 
     ok = scanRepo(
         cfgOb,
