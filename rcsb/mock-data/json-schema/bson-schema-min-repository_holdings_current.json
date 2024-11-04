@@ -1,0 +1,53 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "assembly_ids": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "string"
+         },
+         "uniqueItems": false
+      },
+      "entry_id": {
+         "bsonType": "string"
+      },
+      "repository_content_types": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "string",
+            "enum": [
+               "NMR restraints V1",
+               "assembly mmCIF",
+               "2fo-fc Map",
+               "NMR chemical shifts",
+               "structure factors",
+               "entry mmCIF",
+               "NMR restraints V2",
+               "validation report",
+               "assembly PDB",
+               "entry PDB bundle",
+               "fo-fc Map",
+               "Map Coefficients",
+               "FASTA sequence",
+               "entry PDB",
+               "entry PDBML"
+            ]
+         },
+         "uniqueItems": false
+      },
+      "update_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "required": [
+      "entry_id",
+      "update_id"
+   ],
+   "additionalProperties": false
+}

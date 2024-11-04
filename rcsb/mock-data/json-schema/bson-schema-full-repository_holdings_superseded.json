@@ -1,0 +1,30 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "entry_id": {
+         "bsonType": "string"
+      },
+      "id_codes_superseded": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "string"
+         },
+         "uniqueItems": false
+      },
+      "update_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "required": [
+      "entry_id",
+      "id_codes_superseded",
+      "update_id"
+   ],
+   "additionalProperties": false
+}

@@ -1,0 +1,64 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "audit_authors": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "string"
+         },
+         "uniqueItems": false
+      },
+      "deposit_date": {
+         "bsonType": "date"
+      },
+      "entry_id": {
+         "bsonType": "string"
+      },
+      "release_date": {
+         "bsonType": "date"
+      },
+      "remote_accession_code": {
+         "bsonType": "string"
+      },
+      "remote_repository_name": {
+         "bsonType": "string"
+      },
+      "repository_content_types": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "string",
+            "enum": [
+               "NMR chemical shifts",
+               "coordinates",
+               "structure factors",
+               "NMR restraints"
+            ]
+         },
+         "uniqueItems": false
+      },
+      "status_code": {
+         "bsonType": "string",
+         "enum": [
+            "TRSF"
+         ]
+      },
+      "title": {
+         "bsonType": "string"
+      },
+      "update_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "required": [
+      "entry_id",
+      "status_code",
+      "update_id"
+   ],
+   "additionalProperties": false
+}

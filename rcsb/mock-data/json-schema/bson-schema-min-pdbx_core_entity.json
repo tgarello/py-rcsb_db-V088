@@ -1,0 +1,1034 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "entity": {
+         "bsonType": "object",
+         "properties": {
+            "details": {
+               "bsonType": "string"
+            },
+            "formula_weight": {
+               "bsonType": "double"
+            },
+            "id": {
+               "bsonType": "string"
+            },
+            "pdbx_description": {
+               "bsonType": "string"
+            },
+            "pdbx_ec": {
+               "bsonType": "string"
+            },
+            "pdbx_fragment": {
+               "bsonType": "string"
+            },
+            "pdbx_mutation": {
+               "bsonType": "string"
+            },
+            "pdbx_number_of_molecules": {
+               "bsonType": "double"
+            },
+            "rcsb_multiple_source_flag": {
+               "bsonType": "string",
+               "enum": [
+                  "Y",
+                  "N"
+               ]
+            },
+            "rcsb_source_part_count": {
+               "bsonType": "int"
+            },
+            "src_method": {
+               "bsonType": "string",
+               "enum": [
+                  "syn",
+                  "nat",
+                  "man"
+               ]
+            },
+            "type": {
+               "bsonType": "string",
+               "enum": [
+                  "non-polymer",
+                  "polymer",
+                  "macrolide",
+                  "branched",
+                  "water"
+               ]
+            },
+            "rcsb_ec_lineage": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "object",
+                  "properties": {
+                     "depth": {
+                        "bsonType": "int"
+                     },
+                     "id": {
+                        "bsonType": "string"
+                     },
+                     "name": {
+                        "bsonType": "string"
+                     }
+                  },
+                  "additionalProperties": false
+               },
+               "uniqueItems": false
+            },
+            "rcsb_macromolecular_names_combined": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "object",
+                  "properties": {
+                     "name": {
+                        "bsonType": "string"
+                     },
+                     "provenance_code": {
+                        "bsonType": "string"
+                     },
+                     "provenance_source": {
+                        "bsonType": "string",
+                        "enum": [
+                           "PDB Preferred Name",
+                           "PDB Synonym"
+                        ]
+                     }
+                  },
+                  "additionalProperties": false
+               },
+               "uniqueItems": false
+            },
+            "rcsb_enzyme_class_combined": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "object",
+                  "properties": {
+                     "ec": {
+                        "bsonType": "string"
+                     },
+                     "provenance_code": {
+                        "bsonType": "string"
+                     },
+                     "provenance_source": {
+                        "bsonType": "string"
+                     }
+                  },
+                  "additionalProperties": false
+               },
+               "uniqueItems": false
+            }
+         },
+         "required": [
+            "id"
+         ],
+         "additionalProperties": false
+      },
+      "entity_keywords": {
+         "bsonType": "object",
+         "properties": {
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "text": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entity_id"
+         ],
+         "additionalProperties": false
+      },
+      "entity_name_com": {
+         "bsonType": "object",
+         "properties": {
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "name": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entity_id"
+         ],
+         "additionalProperties": false
+      },
+      "entity_name_sys": {
+         "bsonType": "object",
+         "properties": {
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "name": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entity_id"
+         ],
+         "additionalProperties": false
+      },
+      "entity_poly": {
+         "bsonType": "object",
+         "properties": {
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "nstd_linkage": {
+               "bsonType": "string",
+               "enum": [
+                  "n",
+                  "yes",
+                  "y",
+                  "no"
+               ]
+            },
+            "nstd_monomer": {
+               "bsonType": "string",
+               "enum": [
+                  "n",
+                  "yes",
+                  "y",
+                  "no"
+               ]
+            },
+            "pdbx_seq_one_letter_code": {
+               "bsonType": "string"
+            },
+            "pdbx_seq_one_letter_code_can": {
+               "bsonType": "string"
+            },
+            "pdbx_strand_id": {
+               "bsonType": "string"
+            },
+            "pdbx_target_identifier": {
+               "bsonType": "string"
+            },
+            "rcsb_conflict_count": {
+               "bsonType": "int"
+            },
+            "rcsb_deletion_count": {
+               "bsonType": "int"
+            },
+            "rcsb_entity_polymer_type": {
+               "bsonType": "string",
+               "enum": [
+                  "RNA",
+                  "NA-hybrid",
+                  "Other",
+                  "Protein",
+                  "DNA"
+               ]
+            },
+            "rcsb_insertion_count": {
+               "bsonType": "int"
+            },
+            "rcsb_mutation_count": {
+               "bsonType": "int"
+            },
+            "rcsb_prd_id": {
+               "bsonType": "string"
+            },
+            "rcsb_sample_sequence_length": {
+               "bsonType": "int"
+            },
+            "type": {
+               "bsonType": "string",
+               "enum": [
+                  "polydeoxyribonucleotide",
+                  "cyclic-pseudo-peptide",
+                  "polyribonucleotide",
+                  "peptide nucleic acid",
+                  "polysaccharide(D)",
+                  "polypeptide(L)",
+                  "polysaccharide(L)",
+                  "polydeoxyribonucleotide/polyribonucleotide hybrid",
+                  "polypeptide(D)",
+                  "other"
+               ]
+            }
+         },
+         "required": [
+            "entity_id"
+         ],
+         "additionalProperties": false
+      },
+      "entity_src_gen": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "expression_system_id": {
+                  "bsonType": "string"
+               },
+               "gene_src_common_name": {
+                  "bsonType": "string"
+               },
+               "gene_src_details": {
+                  "bsonType": "string"
+               },
+               "gene_src_genus": {
+                  "bsonType": "string"
+               },
+               "gene_src_species": {
+                  "bsonType": "string"
+               },
+               "gene_src_strain": {
+                  "bsonType": "string"
+               },
+               "gene_src_tissue": {
+                  "bsonType": "string"
+               },
+               "gene_src_tissue_fraction": {
+                  "bsonType": "string"
+               },
+               "host_org_common_name": {
+                  "bsonType": "string"
+               },
+               "host_org_details": {
+                  "bsonType": "string"
+               },
+               "host_org_genus": {
+                  "bsonType": "string"
+               },
+               "host_org_species": {
+                  "bsonType": "string"
+               },
+               "pdbx_alt_source_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "model",
+                     "sample"
+                  ]
+               },
+               "pdbx_beg_seq_num": {
+                  "bsonType": "int"
+               },
+               "pdbx_description": {
+                  "bsonType": "string"
+               },
+               "pdbx_end_seq_num": {
+                  "bsonType": "int"
+               },
+               "pdbx_gene_src_atcc": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_cell": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_cell_line": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_cellular_location": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_fragment": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_gene": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_ncbi_taxonomy_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_organ": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_organelle": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_scientific_name": {
+                  "bsonType": "string"
+               },
+               "pdbx_gene_src_variant": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_atcc": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_cell": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_cell_line": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_cellular_location": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_culture_collection": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_gene": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_ncbi_taxonomy_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_organ": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_organelle": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_scientific_name": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_strain": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_tissue": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_tissue_fraction": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_variant": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_vector": {
+                  "bsonType": "string"
+               },
+               "pdbx_host_org_vector_type": {
+                  "bsonType": "string"
+               },
+               "pdbx_seq_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "C-terminal tag",
+                     "Linker",
+                     "N-terminal tag",
+                     "Biological sequence"
+                  ]
+               },
+               "pdbx_src_id": {
+                  "bsonType": "int"
+               },
+               "plasmid_details": {
+                  "bsonType": "string"
+               },
+               "plasmid_name": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "entity_id",
+               "pdbx_src_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "entity_src_nat": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "common_name": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "genus": {
+                  "bsonType": "string"
+               },
+               "pdbx_alt_source_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "model",
+                     "sample"
+                  ]
+               },
+               "pdbx_atcc": {
+                  "bsonType": "string"
+               },
+               "pdbx_beg_seq_num": {
+                  "bsonType": "int"
+               },
+               "pdbx_cell": {
+                  "bsonType": "string"
+               },
+               "pdbx_cell_line": {
+                  "bsonType": "string"
+               },
+               "pdbx_cellular_location": {
+                  "bsonType": "string"
+               },
+               "pdbx_end_seq_num": {
+                  "bsonType": "int"
+               },
+               "pdbx_fragment": {
+                  "bsonType": "string"
+               },
+               "pdbx_ncbi_taxonomy_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_organ": {
+                  "bsonType": "string"
+               },
+               "pdbx_organelle": {
+                  "bsonType": "string"
+               },
+               "pdbx_organism_scientific": {
+                  "bsonType": "string"
+               },
+               "pdbx_plasmid_details": {
+                  "bsonType": "string"
+               },
+               "pdbx_plasmid_name": {
+                  "bsonType": "string"
+               },
+               "pdbx_secretion": {
+                  "bsonType": "string"
+               },
+               "pdbx_src_id": {
+                  "bsonType": "int"
+               },
+               "pdbx_variant": {
+                  "bsonType": "string"
+               },
+               "species": {
+                  "bsonType": "string"
+               },
+               "strain": {
+                  "bsonType": "string"
+               },
+               "tissue": {
+                  "bsonType": "string"
+               },
+               "tissue_fraction": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "entity_id",
+               "pdbx_src_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_entity_nonpoly": {
+         "bsonType": "object",
+         "properties": {
+            "comp_id": {
+               "bsonType": "string"
+            },
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "name": {
+               "bsonType": "string"
+            },
+            "rcsb_prd_id": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entity_id"
+         ],
+         "additionalProperties": false
+      },
+      "pdbx_entity_src_syn": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "ncbi_taxonomy_id": {
+                  "bsonType": "string"
+               },
+               "organism_common_name": {
+                  "bsonType": "string"
+               },
+               "organism_scientific": {
+                  "bsonType": "string"
+               },
+               "pdbx_alt_source_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "model",
+                     "sample"
+                  ]
+               },
+               "pdbx_beg_seq_num": {
+                  "bsonType": "int"
+               },
+               "pdbx_end_seq_num": {
+                  "bsonType": "int"
+               },
+               "pdbx_src_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "entity_id",
+               "pdbx_src_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_molecule": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "asym_id": {
+                  "bsonType": "string"
+               },
+               "instance_id": {
+                  "bsonType": "int"
+               },
+               "prd_id": {
+                  "bsonType": "string"
+               },
+               "rcsb_comp_id": {
+                  "bsonType": "string"
+               },
+               "rcsb_entity_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "asym_id",
+               "instance_id",
+               "prd_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_struct_entity_inst": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "rcsb_entity_container_identifiers": {
+         "bsonType": "object",
+         "properties": {
+            "asym_ids": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            },
+            "auth_asym_ids": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            },
+            "chem_comp_monomers": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            },
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "nonpolymer_comp_id": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entity_id",
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "rcsb_entity_host_organism": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "beg_seq_num": {
+                  "bsonType": "int"
+               },
+               "common_name": {
+                  "bsonType": "string"
+               },
+               "common_names_ncbi": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "string"
+                  },
+                  "uniqueItems": false
+               },
+               "end_seq_num": {
+                  "bsonType": "int"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "ncbi_parent_scientific_name": {
+                  "bsonType": "string"
+               },
+               "ncbi_scientific_name": {
+                  "bsonType": "string"
+               },
+               "ncbi_taxonomy_id": {
+                  "bsonType": "int"
+               },
+               "pdbx_src_id": {
+                  "bsonType": "string"
+               },
+               "provenance_source": {
+                  "bsonType": "string",
+                  "enum": [
+                     "PDB Primary Data"
+                  ]
+               },
+               "scientific_name": {
+                  "bsonType": "string"
+               },
+               "taxonomy_lineage": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "object",
+                     "properties": {
+                        "depth": {
+                           "bsonType": "int"
+                        },
+                        "id": {
+                           "bsonType": "string"
+                        },
+                        "name": {
+                           "bsonType": "string"
+                        }
+                     },
+                     "additionalProperties": false
+                  },
+                  "uniqueItems": false
+               }
+            },
+            "required": [
+               "entity_id",
+               "pdbx_src_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "rcsb_entity_source_organism": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "beg_seq_num": {
+                  "bsonType": "int"
+               },
+               "common_name": {
+                  "bsonType": "string"
+               },
+               "end_seq_num": {
+                  "bsonType": "int"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "ncbi_common_names": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "string"
+                  },
+                  "uniqueItems": false
+               },
+               "ncbi_parent_scientific_name": {
+                  "bsonType": "string"
+               },
+               "ncbi_scientific_name": {
+                  "bsonType": "string"
+               },
+               "ncbi_taxonomy_id": {
+                  "bsonType": "int"
+               },
+               "pdbx_src_id": {
+                  "bsonType": "string"
+               },
+               "provenance_source": {
+                  "bsonType": "string",
+                  "enum": [
+                     "PDB Primary Data"
+                  ]
+               },
+               "scientific_name": {
+                  "bsonType": "string"
+               },
+               "source_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "natural",
+                     "synthetic",
+                     "genetically engineered"
+                  ]
+               },
+               "taxonomy_lineage": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "object",
+                     "properties": {
+                        "depth": {
+                           "bsonType": "int"
+                        },
+                        "id": {
+                           "bsonType": "string"
+                        },
+                        "name": {
+                           "bsonType": "string"
+                        }
+                     },
+                     "additionalProperties": false
+                  },
+                  "uniqueItems": false
+               }
+            },
+            "required": [
+               "entity_id",
+               "pdbx_src_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "rcsb_load_status": {
+         "bsonType": "object",
+         "properties": {
+            "datablock_name": {
+               "bsonType": "string"
+            },
+            "load_date": {
+               "bsonType": "date"
+            },
+            "locator": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "datablock_name"
+         ],
+         "additionalProperties": false
+      },
+      "struct_ref": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "db_code": {
+                  "bsonType": "string"
+               },
+               "db_name": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "pdbx_align_begin": {
+                  "bsonType": "string"
+               },
+               "pdbx_db_accession": {
+                  "bsonType": "string"
+               },
+               "pdbx_db_isoform": {
+                  "bsonType": "string"
+               },
+               "pdbx_seq_one_letter_code": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "struct_ref_seq": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "align_id": {
+                  "bsonType": "string"
+               },
+               "db_align_beg": {
+                  "bsonType": "int"
+               },
+               "db_align_end": {
+                  "bsonType": "int"
+               },
+               "pdbx_PDB_id_code": {
+                  "bsonType": "string"
+               },
+               "pdbx_auth_seq_align_beg": {
+                  "bsonType": "string"
+               },
+               "pdbx_auth_seq_align_end": {
+                  "bsonType": "string"
+               },
+               "pdbx_db_accession": {
+                  "bsonType": "string"
+               },
+               "pdbx_db_align_beg_ins_code": {
+                  "bsonType": "string"
+               },
+               "pdbx_db_align_end_ins_code": {
+                  "bsonType": "string"
+               },
+               "pdbx_seq_align_beg_ins_code": {
+                  "bsonType": "string"
+               },
+               "pdbx_seq_align_end_ins_code": {
+                  "bsonType": "string"
+               },
+               "pdbx_strand_id": {
+                  "bsonType": "string"
+               },
+               "rcsb_entity_id": {
+                  "bsonType": "string"
+               },
+               "ref_id": {
+                  "bsonType": "string"
+               },
+               "seq_align_beg": {
+                  "bsonType": "int"
+               },
+               "seq_align_end": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "align_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "struct_ref_seq_dif": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "align_id": {
+                  "bsonType": "string"
+               },
+               "db_mon_id": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "mon_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_auth_seq_num": {
+                  "bsonType": "string"
+               },
+               "pdbx_ordinal": {
+                  "bsonType": "int"
+               },
+               "pdbx_pdb_id_code": {
+                  "bsonType": "string"
+               },
+               "pdbx_pdb_ins_code": {
+                  "bsonType": "string"
+               },
+               "pdbx_pdb_strand_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_seq_db_accession_code": {
+                  "bsonType": "string"
+               },
+               "pdbx_seq_db_name": {
+                  "bsonType": "string"
+               },
+               "pdbx_seq_db_seq_num": {
+                  "bsonType": "string"
+               },
+               "rcsb_entity_id": {
+                  "bsonType": "string"
+               },
+               "seq_num": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "pdbx_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "_entry_id": {
+         "bsonType": "string"
+      },
+      "_entity_id": {
+         "bsonType": "string"
+      },
+      "_comp_id": {
+         "bsonType": "string"
+      },
+      "_prd_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "additionalProperties": false,
+   "required": [
+      "_entry_id",
+      "_entity_id"
+   ]
+}

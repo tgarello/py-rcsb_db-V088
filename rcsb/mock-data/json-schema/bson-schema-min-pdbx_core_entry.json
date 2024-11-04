@@ -1,0 +1,4367 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "audit_author": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "identifier_ORCID": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "pdbx_ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "pdbx_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "cell": {
+         "bsonType": "object",
+         "properties": {
+            "Z_PDB": {
+               "bsonType": "int"
+            },
+            "angle_alpha": {
+               "bsonType": "double"
+            },
+            "angle_beta": {
+               "bsonType": "double"
+            },
+            "angle_gamma": {
+               "bsonType": "double"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "formula_units_Z": {
+               "bsonType": "int"
+            },
+            "length_a": {
+               "bsonType": "double"
+            },
+            "length_b": {
+               "bsonType": "double"
+            },
+            "length_c": {
+               "bsonType": "double"
+            },
+            "pdbx_unique_axis": {
+               "bsonType": "string"
+            },
+            "volume": {
+               "bsonType": "double"
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "citation": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "book_id_ISBN": {
+                  "bsonType": "string"
+               },
+               "book_publisher": {
+                  "bsonType": "string"
+               },
+               "book_publisher_city": {
+                  "bsonType": "string"
+               },
+               "book_title": {
+                  "bsonType": "string"
+               },
+               "coordinate_linkage": {
+                  "bsonType": "string",
+                  "enum": [
+                     "n",
+                     "yes",
+                     "y",
+                     "no"
+                  ]
+               },
+               "country": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "journal_abbrev": {
+                  "bsonType": "string"
+               },
+               "journal_id_ASTM": {
+                  "bsonType": "string"
+               },
+               "journal_id_CSD": {
+                  "bsonType": "string"
+               },
+               "journal_id_ISSN": {
+                  "bsonType": "string"
+               },
+               "journal_issue": {
+                  "bsonType": "string"
+               },
+               "journal_volume": {
+                  "bsonType": "string"
+               },
+               "language": {
+                  "bsonType": "string"
+               },
+               "page_first": {
+                  "bsonType": "string"
+               },
+               "page_last": {
+                  "bsonType": "string"
+               },
+               "pdbx_database_id_DOI": {
+                  "bsonType": "string"
+               },
+               "pdbx_database_id_PubMed": {
+                  "bsonType": "int"
+               },
+               "rcsb_authors": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "string"
+                  },
+                  "uniqueItems": false
+               },
+               "title": {
+                  "bsonType": "string"
+               },
+               "unpublished_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Y",
+                     "N"
+                  ]
+               },
+               "year": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "citation_author": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "citation_id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "citation_id",
+               "name",
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "diffrn": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "ambient_pressure": {
+                  "bsonType": "double"
+               },
+               "ambient_temp": {
+                  "bsonType": "double"
+               },
+               "ambient_temp_details": {
+                  "bsonType": "string"
+               },
+               "crystal_id": {
+                  "bsonType": "string"
+               },
+               "crystal_support": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "pdbx_serial_crystal_experiment": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "diffrn_detector": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "detector": {
+                  "bsonType": "string"
+               },
+               "diffrn_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_collection_date": {
+                  "bsonType": "date"
+               },
+               "pdbx_frequency": {
+                  "bsonType": "double"
+               },
+               "type": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "diffrn_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "diffrn_radiation": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "collimation": {
+                  "bsonType": "string"
+               },
+               "diffrn_id": {
+                  "bsonType": "string"
+               },
+               "monochromator": {
+                  "bsonType": "string"
+               },
+               "pdbx_diffrn_protocol": {
+                  "bsonType": "string"
+               },
+               "pdbx_monochromatic_or_laue_m_l": {
+                  "bsonType": "string",
+                  "enum": [
+                     "M",
+                     "L"
+                  ]
+               },
+               "pdbx_scattering_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "x-ray",
+                     "neutron",
+                     "electron"
+                  ]
+               },
+               "pdbx_wavelength": {
+                  "bsonType": "string"
+               },
+               "pdbx_wavelength_list": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string"
+               },
+               "wavelength_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "diffrn_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "diffrn_source": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "diffrn_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_synchrotron_beamline": {
+                  "bsonType": "string"
+               },
+               "pdbx_synchrotron_site": {
+                  "bsonType": "string"
+               },
+               "pdbx_wavelength": {
+                  "bsonType": "string"
+               },
+               "pdbx_wavelength_list": {
+                  "bsonType": "string"
+               },
+               "source": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "diffrn_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_2d_crystal_entity": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "angle_gamma": {
+                  "bsonType": "double"
+               },
+               "c_sampling_length": {
+                  "bsonType": "double"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "image_processing_id": {
+                  "bsonType": "string"
+               },
+               "length_a": {
+                  "bsonType": "double"
+               },
+               "length_b": {
+                  "bsonType": "double"
+               },
+               "length_c": {
+                  "bsonType": "double"
+               },
+               "space_group_name_H_M": {
+                  "bsonType": "string",
+                  "enum": [
+                     "P 2",
+                     "P 4",
+                     "P 3",
+                     "P 2 21 21",
+                     "P 4 21 2",
+                     "P 2 2 21",
+                     "P 2 2 2",
+                     "P 6",
+                     "P 1 2",
+                     "C 2 2 2",
+                     "C 1 2",
+                     "P 3 1 2",
+                     "P 6 2 2",
+                     "P 3 2 1",
+                     "P 4 2 2",
+                     "P 1",
+                     "P 1 21"
+                  ]
+               }
+            },
+            "required": [
+               "id",
+               "image_processing_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_3d_crystal_entity": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "angle_alpha": {
+                  "bsonType": "double"
+               },
+               "angle_beta": {
+                  "bsonType": "double"
+               },
+               "angle_gamma": {
+                  "bsonType": "double"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "image_processing_id": {
+                  "bsonType": "string"
+               },
+               "length_a": {
+                  "bsonType": "double"
+               },
+               "length_b": {
+                  "bsonType": "double"
+               },
+               "length_c": {
+                  "bsonType": "double"
+               },
+               "space_group_name": {
+                  "bsonType": "string"
+               },
+               "space_group_num": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "id",
+               "image_processing_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_3d_fitting": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "method": {
+                  "bsonType": "string"
+               },
+               "overall_b_value": {
+                  "bsonType": "double"
+               },
+               "ref_protocol": {
+                  "bsonType": "string",
+                  "enum": [
+                     "OTHER",
+                     "AB INITIO MODEL",
+                     "FLEXIBLE FIT",
+                     "RIGID BODY FIT",
+                     "BACKBONE TRACE"
+                  ]
+               },
+               "ref_space": {
+                  "bsonType": "string",
+                  "enum": [
+                     "RECIPROCAL",
+                     "REAL"
+                  ]
+               },
+               "target_criteria": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "entry_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_3d_fitting_list": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "3d_fitting_id": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "pdb_chain_id": {
+                  "bsonType": "string"
+               },
+               "pdb_chain_residue_range": {
+                  "bsonType": "string"
+               },
+               "pdb_entry_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "3d_fitting_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_3d_reconstruction": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "actual_pixel_size": {
+                  "bsonType": "double"
+               },
+               "algorithm": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "image_processing_id": {
+                  "bsonType": "string"
+               },
+               "magnification_calibration": {
+                  "bsonType": "string"
+               },
+               "method": {
+                  "bsonType": "string"
+               },
+               "nominal_pixel_size": {
+                  "bsonType": "double"
+               },
+               "num_class_averages": {
+                  "bsonType": "int"
+               },
+               "num_particles": {
+                  "bsonType": "int"
+               },
+               "refinement_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "HALF-MAPS REFINED WITH FREQUENCY RANGE OMITTED",
+                     "HALF-MAPS REFINED INDEPENDENTLY WITH FREQUENCY RANGE OMITTED",
+                     "OTHER",
+                     "HALF-MAPS REFINED INDEPENDENTLY",
+                     "HALF-MAPS REFINED AGAINST SAME DATA"
+                  ]
+               },
+               "resolution": {
+                  "bsonType": "double"
+               },
+               "resolution_method": {
+                  "bsonType": "string"
+               },
+               "symmetry_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "2D CRYSTAL",
+                     "POINT",
+                     "HELICAL",
+                     "3D CRYSTAL"
+                  ]
+               }
+            },
+            "required": [
+               "id",
+               "image_processing_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_ctf_correction": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "em_image_processing_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_embedding": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "material": {
+                  "bsonType": "string"
+               },
+               "specimen_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_entity_assembly": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "entity_id_list": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "string"
+                  },
+                  "uniqueItems": false
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "oligomeric_details": {
+                  "bsonType": "string"
+               },
+               "parent_id": {
+                  "bsonType": "int"
+               },
+               "source": {
+                  "bsonType": "string",
+                  "enum": [
+                     "MULTIPLE SOURCES",
+                     "NATURAL",
+                     "RECOMBINANT"
+                  ]
+               },
+               "synonym": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_experiment": {
+         "bsonType": "object",
+         "properties": {
+            "aggregation_state": {
+               "bsonType": "string",
+               "enum": [
+                  "2D ARRAY",
+                  "HELICAL ARRAY",
+                  "FILAMENT",
+                  "PARTICLE",
+                  "TISSUE",
+                  "CELL",
+                  "3D ARRAY"
+               ]
+            },
+            "entity_assembly_id": {
+               "bsonType": "string"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "id": {
+               "bsonType": "string"
+            },
+            "reconstruction_method": {
+               "bsonType": "string",
+               "enum": [
+                  "SUBTOMOGRAM AVERAGING",
+                  "HELICAL",
+                  "TOMOGRAPHY",
+                  "CRYSTALLOGRAPHY",
+                  "SINGLE PARTICLE"
+               ]
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "em_helical_entity": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "angular_rotation_per_subunit": {
+                  "bsonType": "double"
+               },
+               "axial_rise_per_subunit": {
+                  "bsonType": "double"
+               },
+               "axial_symmetry": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "image_processing_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id",
+               "image_processing_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_image_recording": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "average_exposure_time": {
+                  "bsonType": "double"
+               },
+               "avg_electron_dose_per_image": {
+                  "bsonType": "double"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "detector_mode": {
+                  "bsonType": "string",
+                  "enum": [
+                     "SUPER-RESOLUTION",
+                     "COUNTING",
+                     "OTHER",
+                     "INTEGRATING"
+                  ]
+               },
+               "film_or_detector_model": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "imaging_id": {
+                  "bsonType": "string"
+               },
+               "num_diffraction_images": {
+                  "bsonType": "int"
+               },
+               "num_grids_imaged": {
+                  "bsonType": "int"
+               },
+               "num_real_images": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "id",
+               "imaging_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_imaging": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "accelerating_voltage": {
+                  "bsonType": "int"
+               },
+               "alignment_procedure": {
+                  "bsonType": "string",
+                  "enum": [
+                     "COMA FREE",
+                     "NONE",
+                     "OTHER",
+                     "ZEMLIN TABLEAU",
+                     "BASIC"
+                  ]
+               },
+               "astigmatism": {
+                  "bsonType": "string"
+               },
+               "c2_aperture_diameter": {
+                  "bsonType": "double"
+               },
+               "calibrated_defocus_max": {
+                  "bsonType": "double"
+               },
+               "calibrated_defocus_min": {
+                  "bsonType": "double"
+               },
+               "calibrated_magnification": {
+                  "bsonType": "int"
+               },
+               "cryogen": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NITROGEN",
+                     "HELIUM"
+                  ]
+               },
+               "date": {
+                  "bsonType": "date"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "detector_distance": {
+                  "bsonType": "double"
+               },
+               "electron_beam_tilt_params": {
+                  "bsonType": "string"
+               },
+               "electron_source": {
+                  "bsonType": "string"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "illumination_mode": {
+                  "bsonType": "string",
+                  "enum": [
+                     "FLOOD BEAM",
+                     "OTHER",
+                     "SPOT SCAN"
+                  ]
+               },
+               "microscope_model": {
+                  "bsonType": "string",
+                  "enum": [
+                     "ZEISS LEO912",
+                     "JEOL 2200FS",
+                     "JEOL 2100F",
+                     "HITACHI EF2000",
+                     "HITACHI H-9500SD",
+                     "JEOL 2010UHR",
+                     "JEOL 2010F",
+                     "FEI/PHILIPS CM200FEG/SOPHIE",
+                     "JEOL 100B",
+                     "FEI TECNAI ARCTICA",
+                     "JEOL 1010",
+                     "JEOL 1230",
+                     "JEOL 3100FEF",
+                     "FEI TECNAI SPHERA",
+                     "FEI/PHILIPS EM420",
+                     "FEI TALOS ARCTICA",
+                     "FEI/PHILIPS CM12",
+                     "FEI/PHILIPS CM300FEG/HE",
+                     "HITACHI HF2000",
+                     "FEI TITAN KRIOS",
+                     "JEOL 1400",
+                     "JEOL 2010HT",
+                     "JEOL 3200FSC",
+                     "FEI TECNAI SPIRIT",
+                     "JEOL 4000",
+                     "JEOL CRYO ARM 200",
+                     "JEOL CRYO ARM 300",
+                     "FEI/PHILIPS CM200FEG/UT",
+                     "FEI/PHILIPS CM300FEG/T",
+                     "JEOL 2010",
+                     "FEI TECNAI 20",
+                     "FEI/PHILIPS CM200T",
+                     "JEOL 3000SFF",
+                     "FEI/PHILIPS CM10",
+                     "JEOL 4000EX",
+                     "SIEMENS SULEIKA",
+                     "HITACHI H7600",
+                     "HITACHI EF3000",
+                     "JEOL 1200EX",
+                     "FEI/PHILIPS CM200FEG/ST",
+                     "JEOL 3200FS",
+                     "FEI TECNAI 12",
+                     "JEOL 1200",
+                     "FEI TECNAI 10",
+                     "JEOL 2100",
+                     "FEI TITAN",
+                     "FEI/PHILIPS CM120T",
+                     "JEOL 100CX",
+                     "JEOL 2010HC",
+                     "JEOL 3100FFC",
+                     "FEI/PHILIPS CM300FEG/ST",
+                     "HITACHI HF3000",
+                     "JEOL 2000EXII",
+                     "JEOL 2000EX",
+                     "ZEISS LIBRA120PLUS",
+                     "FEI TECNAI F20",
+                     "FEI POLARA 300",
+                     "JEOL KYOTO-3000SFF",
+                     "JEOL 2011",
+                     "JEOL 2200FSC",
+                     "FEI MORGAGNI",
+                     "FEI/PHILIPS CM200FEG",
+                     "JEOL 1200EXII",
+                     "FEI/PHILIPS EM400",
+                     "FEI TECNAI F30"
+                  ]
+               },
+               "mode": {
+                  "bsonType": "string",
+                  "enum": [
+                     "BRIGHT FIELD",
+                     "DIFFRACTION",
+                     "DARK FIELD",
+                     "OTHER"
+                  ]
+               },
+               "nominal_cs": {
+                  "bsonType": "double"
+               },
+               "nominal_defocus_max": {
+                  "bsonType": "double"
+               },
+               "nominal_defocus_min": {
+                  "bsonType": "double"
+               },
+               "nominal_magnification": {
+                  "bsonType": "int"
+               },
+               "recording_temperature_maximum": {
+                  "bsonType": "double"
+               },
+               "recording_temperature_minimum": {
+                  "bsonType": "double"
+               },
+               "residual_tilt": {
+                  "bsonType": "double"
+               },
+               "specimen_holder_model": {
+                  "bsonType": "string",
+                  "enum": [
+                     "PHILIPS ROTATION HOLDER",
+                     "GATAN ULTDT ULTRA LOW TEMPERATURE DOUBLE TILT HELIUM COOLING HOLDER",
+                     "GATAN 914 HIGH TILT LIQUID NITROGEN CRYO TRANSFER TOMOGRAPHY HOLDER",
+                     "GATAN HCHDT 3010 DOUBLE TILT HIGH RESOLUTION HELIUM COOLING HOLDER",
+                     "OTHER",
+                     "SIDE ENTRY, EUCENTRIC",
+                     "GATAN 626 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER",
+                     "JEOL",
+                     "GATAN HELIUM",
+                     "GATAN HCHST 3008 SINGLE TILT HIGH RESOLUTION HELIUM COOLING HOLDER",
+                     "JEOL CRYOSPECPORTER",
+                     "GATAN LIQUID NITROGEN",
+                     "FEI TITAN KRIOS AUTOGRID HOLDER",
+                     "GATAN UHRST 3500 SINGLE TILT ULTRA HIGH RESOLUTION NITROGEN COOLING HOLDER",
+                     "GATAN 910 MULTI-SPECIMEN SINGLE TILT CRYO TRANSFER HOLDER",
+                     "GATAN 915 DOUBLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER",
+                     "FISCHIONE INSTRUMENTS DUAL AXIS TOMOGRAPHY HOLDER",
+                     "HOME BUILD",
+                     "GATAN HC 3500 SINGLE TILT HEATING/NITROGEN COOLING HOLDER",
+                     "GATAN CT3500 SINGLE TILT LIQUID NITROGEN CRYO TRANSFER HOLDER",
+                     "GATAN CHDT 3504 DOUBLE TILT HIGH RESOLUTION NITROGEN COOLING HOLDER",
+                     "GATAN ULTST ULTRA LOW TEMPERATURE SINGLE TILT HELIUM COOLING HOLDER",
+                     "JEOL 3200FSC CRYOHOLDER",
+                     "GATAN CT3500TR SINGLE TILT ROTATION LIQUID NITROGEN CRYO TRANSFER HOLDER"
+                  ]
+               },
+               "specimen_holder_type": {
+                  "bsonType": "string"
+               },
+               "specimen_id": {
+                  "bsonType": "string"
+               },
+               "temperature": {
+                  "bsonType": "double"
+               },
+               "tilt_angle_max": {
+                  "bsonType": "double"
+               },
+               "tilt_angle_min": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "entry_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_particle_selection": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "image_processing_id": {
+                  "bsonType": "string"
+               },
+               "num_particles_selected": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "id",
+               "image_processing_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_single_particle_entity": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "image_processing_id": {
+                  "bsonType": "string"
+               },
+               "point_symmetry": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id",
+               "image_processing_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_software": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "category": {
+                  "bsonType": "string",
+                  "enum": [
+                     "RECONSTRUCTION",
+                     "CLASSIFICATION",
+                     "INITIAL EULER ASSIGNMENT",
+                     "OTHER",
+                     "MASKING",
+                     "MOLECULAR REPLACEMENT",
+                     "MODEL FITTING",
+                     "LAYERLINE INDEXING",
+                     "SERIES ALIGNMENT",
+                     "CRYSTALLOGRAPHY MERGING",
+                     "FINAL EULER ASSIGNMENT",
+                     "CTF CORRECTION",
+                     "VOLUME SELECTION",
+                     "IMAGE ACQUISITION",
+                     "LATTICE DISTORTION CORRECTION",
+                     "PARTICLE SELECTION",
+                     "SYMMETRY DETERMINATION",
+                     "DIFFRACTION INDEXING",
+                     "MODEL REFINEMENT"
+                  ]
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "fitting_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "image_processing_id": {
+                  "bsonType": "string"
+               },
+               "imaging_id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "version": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_specimen": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "concentration": {
+                  "bsonType": "double"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "embedding_applied": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NO",
+                     "YES"
+                  ]
+               },
+               "experiment_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "shadowing_applied": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NO",
+                     "YES"
+                  ]
+               },
+               "staining_applied": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NO",
+                     "YES"
+                  ]
+               },
+               "vitrification_applied": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NO",
+                     "YES"
+                  ]
+               }
+            },
+            "required": [
+               "experiment_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_staining": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "material": {
+                  "bsonType": "string"
+               },
+               "specimen_id": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NONE",
+                     "NEGATIVE",
+                     "POSITIVE"
+                  ]
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "em_vitrification": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "chamber_temperature": {
+                  "bsonType": "double"
+               },
+               "cryogen_name": {
+                  "bsonType": "string",
+                  "enum": [
+                     "HELIUM",
+                     "FREON 12",
+                     "ETHANE-PROPANE",
+                     "METHANE",
+                     "OTHER",
+                     "NITROGEN",
+                     "PROPANE",
+                     "ETHANE",
+                     "FREON 22"
+                  ]
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "humidity": {
+                  "bsonType": "double"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "instrument": {
+                  "bsonType": "string",
+                  "enum": [
+                     "LEICA PLUNGER",
+                     "LEICA EM GP",
+                     "GATAN CRYOPLUNGE 3",
+                     "FEI VITROBOT MARK III",
+                     "FEI VITROBOT MARK IV",
+                     "ZEISS PLUNGE FREEZER CRYOBOX",
+                     "LEICA KF80",
+                     "HOMEMADE PLUNGER",
+                     "FEI VITROBOT MARK II",
+                     "SPOTITON",
+                     "EMS-002 RAPID IMMERSION FREEZER",
+                     "LEICA EM CPC",
+                     "REICHERT-JUNG PLUNGER",
+                     "FEI VITROBOT MARK I"
+                  ]
+               },
+               "method": {
+                  "bsonType": "string"
+               },
+               "specimen_id": {
+                  "bsonType": "string"
+               },
+               "temp": {
+                  "bsonType": "double"
+               },
+               "time_resolved_state": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id",
+               "specimen_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "entry": {
+         "bsonType": "object",
+         "properties": {
+            "id": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "id"
+         ],
+         "additionalProperties": false
+      },
+      "exptl": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "crystals_number": {
+                  "bsonType": "int"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "method": {
+                  "bsonType": "string",
+                  "enum": [
+                     "ELECTRON MICROSCOPY",
+                     "SOLUTION SCATTERING",
+                     "INFRARED SPECTROSCOPY",
+                     "THEORETICAL MODEL",
+                     "SOLUTION NMR",
+                     "X-RAY DIFFRACTION",
+                     "SOLID-STATE NMR",
+                     "POWDER DIFFRACTION",
+                     "FIBER DIFFRACTION",
+                     "EPR",
+                     "ELECTRON CRYSTALLOGRAPHY",
+                     "NEUTRON DIFFRACTION",
+                     "FLUORESCENCE TRANSFER"
+                  ]
+               },
+               "method_details": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "entry_id",
+               "method"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "exptl_crystal": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "colour": {
+                  "bsonType": "string"
+               },
+               "density_Matthews": {
+                  "bsonType": "double"
+               },
+               "density_meas": {
+                  "bsonType": "double"
+               },
+               "density_percent_sol": {
+                  "bsonType": "double"
+               },
+               "description": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "pdbx_mosaicity": {
+                  "bsonType": "double"
+               },
+               "pdbx_mosaicity_esd": {
+                  "bsonType": "double"
+               },
+               "preparation": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "exptl_crystal_grow": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "crystal_id": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "method": {
+                  "bsonType": "string"
+               },
+               "pH": {
+                  "bsonType": "double"
+               },
+               "pdbx_details": {
+                  "bsonType": "string"
+               },
+               "pdbx_pH_range": {
+                  "bsonType": "string"
+               },
+               "temp": {
+                  "bsonType": "double"
+               },
+               "temp_details": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "crystal_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_SG_project": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "full_name_of_center": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Mitochondrial Protein Partnership",
+                     "Berkeley Structural Genomics Center",
+                     "Israel Structural Proteomics Center",
+                     "TB Structural Genomics Consortium",
+                     "New York Structural GenomiX Research Consortium",
+                     "Enzyme Discovery for Natural Product Biosynthesis",
+                     "Structural Genomics of Pathogenic Protozoa Consortium",
+                     "Assembly, Dynamics and Evolution of Cell-Cell and Cell-Matrix Adhesions",
+                     "Center for Eukaryotic Structural Genomics",
+                     "Transcontinental EM Initiative for Membrane Protein Structure",
+                     "Structural Genomics Consortium for Research on Gene Expression",
+                     "Structural Proteomics in Europe",
+                     "Northeast Structural Genomics Consortium",
+                     "Center for High-Throughput Structural Biology",
+                     "Midwest Center for Macromolecular Research",
+                     "Membrane Protein Structures by Solution NMR",
+                     "Joint Center for Structural Genomics",
+                     "GPCR Network",
+                     "Program for the Characterization of Secreted Effector Proteins",
+                     "Atoms-to-Animals: The Immune Function Network",
+                     "Partnership for Stem Cell Biology",
+                     "Seattle Structural Genomics Center for Infectious Disease",
+                     "New York SGX Research Center for Structural Genomics",
+                     "Structural Proteomics in Europe 2",
+                     "Structure, Dynamics and Activation Mechanisms of Chemokine Receptors",
+                     "Partnership for Nuclear Receptor Signaling Code Biology",
+                     "Integrated Center for Structure and Function Innovation",
+                     "Center for the X-ray Structure Determination of Human Transporters",
+                     "Protein Structure Factory",
+                     "Structure-Function Analysis of Polymorphic CDI Toxin-Immunity Protein Complexes",
+                     "Transmembrane Protein Center",
+                     "RIKEN Structural Genomics/Proteomics Initiative",
+                     "Bacterial targets at IGS-CNRS, France",
+                     "Medical Structural Genomics of Pathogenic Protozoa",
+                     "Center for Structures of Membrane Proteins",
+                     "New York Consortium on Membrane Protein Structure",
+                     "Ontario Centre for Structural Proteomics",
+                     "Marseilles Structural Genomics Program @ AFMB",
+                     "Center for Membrane Proteins of Infectious Diseases",
+                     "Midwest Center for Structural Genomics",
+                     "Scottish Structural Proteomics Facility",
+                     "Membrane Protein Structural Biology Consortium",
+                     "Mycobacterium Tuberculosis Structural Proteomics Project",
+                     "Paris-Sud Yeast Structural Genomics",
+                     "Partnership for T-Cell Biology",
+                     "Center for Structural Genomics of Infectious Diseases",
+                     "South Africa Structural Targets Annotation Database",
+                     "Structure 2 Function Project",
+                     "Nucleocytoplasmic Transport: a Target for Cellular Control",
+                     "Southeast Collaboratory for Structural Genomics",
+                     "Structural Genomics Consortium",
+                     "Oxford Protein Production Facility",
+                     "Structures of Mtb Proteins Conferring Susceptibility to Known Mtb Inhibitors",
+                     "New York Structural Genomics Research Consortium",
+                     "Montreal-Kingston Bacterial Structural Genomics Initiative",
+                     "Accelerated Technologies Center for Gene to 3D Structure",
+                     "Chaperone-Enabled Studies of Epigenetic Regulation Enzymes",
+                     "Structure-Function Studies of Tight Junction Membrane Proteins"
+                  ]
+               },
+               "id": {
+                  "bsonType": "int",
+                  "enum": [
+                     10,
+                     2,
+                     4,
+                     9,
+                     7,
+                     8,
+                     5,
+                     3,
+                     6,
+                     1
+                  ]
+               },
+               "initial_of_center": {
+                  "bsonType": "string",
+                  "enum": [
+                     "TEMIMPS",
+                     "ATCG3D",
+                     "RSGI",
+                     "SGPP",
+                     "CEBS",
+                     "PCSEP",
+                     "SGC",
+                     "TransportPDB",
+                     "MPP",
+                     "MPID",
+                     "UC4CDI",
+                     "BIGS",
+                     "STEMCELL",
+                     "CELLMAT",
+                     "TJMP",
+                     "MPSbyNMR",
+                     "NHRs",
+                     "NYSGRC",
+                     "TBSGC",
+                     "SGCGES",
+                     "MCSG",
+                     "MSGP",
+                     "OCSP",
+                     "MSGPP",
+                     "ISFI",
+                     "S2F",
+                     "SASTAD",
+                     "SSPF",
+                     "YSG",
+                     "SPINE-2",
+                     "CHSAM",
+                     "MPSBC",
+                     "NatPro",
+                     "BSGI",
+                     "NESG",
+                     "IFN",
+                     "TMPC",
+                     "NYCOMPS",
+                     "ISPC",
+                     "BSGC",
+                     "CSGID",
+                     "CSMP",
+                     "SSGCID",
+                     "NPCXstals",
+                     "TCELL",
+                     "NYSGXRC",
+                     "SECSG",
+                     "SPINE",
+                     "MCMR",
+                     "OPPF",
+                     "JCSG",
+                     "XMTB",
+                     "CHTSB",
+                     "CESG",
+                     "GPCR",
+                     "PSF",
+                     "MTBI"
+                  ]
+               },
+               "project_name": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NIAID, National Institute of Allergy and Infectious Diseases",
+                     "Enzyme Function Initiative",
+                     "PSI, Protein Structure Initiative",
+                     "PSI:Biology",
+                     "NPPSFA, National Project on Protein Structural and Functional Analyses"
+                  ]
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_audit_revision_category": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "category": {
+                  "bsonType": "string"
+               },
+               "data_content_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NMR shifts",
+                     "Structure factors",
+                     "NMR restraints",
+                     "Structure model",
+                     "Chemical component"
+                  ]
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "revision_ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "data_content_type",
+               "ordinal",
+               "revision_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_audit_revision_details": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "data_content_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NMR shifts",
+                     "Structure factors",
+                     "NMR restraints",
+                     "Structure model",
+                     "Chemical component"
+                  ]
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "provider": {
+                  "bsonType": "string",
+                  "enum": [
+                     "author",
+                     "repository"
+                  ]
+               },
+               "revision_ordinal": {
+                  "bsonType": "int"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Obsolete",
+                     "Coordinate replacement",
+                     "Initial release"
+                  ]
+               }
+            },
+            "required": [
+               "data_content_type",
+               "ordinal",
+               "revision_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_audit_revision_group": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "data_content_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NMR shifts",
+                     "Structure factors",
+                     "NMR restraints",
+                     "Structure model",
+                     "Chemical component"
+                  ]
+               },
+               "group": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Data processing",
+                     "Version format compliance",
+                     "Database references",
+                     "Refinement description",
+                     "Data collection",
+                     "Atomic model",
+                     "Derived calculations",
+                     "Polymer sequence",
+                     "Other",
+                     "Advisory",
+                     "Experimental data",
+                     "Source and taxonomy",
+                     "Structure summary",
+                     "Experimental preparation",
+                     "Author supporting evidence",
+                     "Non-polymer description",
+                     "Initial release"
+                  ]
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "revision_ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "data_content_type",
+               "ordinal",
+               "revision_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_audit_revision_history": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "data_content_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NMR shifts",
+                     "Structure factors",
+                     "NMR restraints",
+                     "Structure model",
+                     "Chemical component"
+                  ]
+               },
+               "major_revision": {
+                  "bsonType": "int"
+               },
+               "minor_revision": {
+                  "bsonType": "int"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "revision_date": {
+                  "bsonType": "date"
+               }
+            },
+            "required": [
+               "data_content_type",
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_audit_revision_item": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "data_content_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NMR shifts",
+                     "Structure factors",
+                     "NMR restraints",
+                     "Structure model",
+                     "Chemical component"
+                  ]
+               },
+               "item": {
+                  "bsonType": "string"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "revision_ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "data_content_type",
+               "ordinal",
+               "revision_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_audit_support": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "country": {
+                  "bsonType": "string"
+               },
+               "funding_organization": {
+                  "bsonType": "string"
+               },
+               "grant_number": {
+                  "bsonType": "string"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_database_PDB_obs_spr": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "date": {
+                  "bsonType": "date"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string",
+                  "enum": [
+                     "SPRSDE",
+                     "OBSLTE"
+                  ]
+               },
+               "pdb_id": {
+                  "bsonType": "string"
+               },
+               "replace_pdb_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "pdb_id",
+               "replace_pdb_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_database_related": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "content_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "associated EM volume",
+                     "associated NMR restraints",
+                     "other EM volume",
+                     "ensemble",
+                     "native structure",
+                     "associated SAS data",
+                     "complete structure",
+                     "unspecified",
+                     "derivative structure",
+                     "associated structure factors",
+                     "protein target sequence and/or protocol data",
+                     "representative structure",
+                     "split",
+                     "other",
+                     "minimized average structure",
+                     "re-refinement"
+                  ]
+               },
+               "db_id": {
+                  "bsonType": "string"
+               },
+               "db_name": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "content_type",
+               "db_id",
+               "db_name"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_database_status": {
+         "bsonType": "object",
+         "properties": {
+            "SG_entry": {
+               "bsonType": "string",
+               "enum": [
+                  "Y",
+                  "N"
+               ]
+            },
+            "deposit_site": {
+               "bsonType": "string",
+               "enum": [
+                  "RCSB",
+                  "BMRB",
+                  "PDBE",
+                  "BNL",
+                  "NDB",
+                  "PDBJ"
+               ]
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "methods_development_category": {
+               "bsonType": "string",
+               "enum": [
+                  "GPCR Dock",
+                  "D3R",
+                  "RNA-Puzzles",
+                  "CAPRI",
+                  "CASP",
+                  "CASD-NMR",
+                  "FoldIt"
+               ]
+            },
+            "pdb_format_compatible": {
+               "bsonType": "string",
+               "enum": [
+                  "Y",
+                  "N"
+               ]
+            },
+            "process_site": {
+               "bsonType": "string",
+               "enum": [
+                  "RCSB",
+                  "PDBE",
+                  "BNL",
+                  "NDB",
+                  "PDBJ"
+               ]
+            },
+            "recvd_initial_deposition_date": {
+               "bsonType": "date"
+            },
+            "status_code": {
+               "bsonType": "string",
+               "enum": [
+                  "WAIT",
+                  "HOLD",
+                  "REV",
+                  "REPL",
+                  "RMVD",
+                  "REFI",
+                  "DEL",
+                  "OBS",
+                  "AUCO",
+                  "REL",
+                  "POLC",
+                  "BIB",
+                  "WDRN",
+                  "TRSF",
+                  "PROC",
+                  "UPD",
+                  "AUTH",
+                  "HPUB"
+               ]
+            },
+            "status_code_cs": {
+               "bsonType": "string",
+               "enum": [
+                  "WAIT",
+                  "HOLD",
+                  "REPL",
+                  "RMVD",
+                  "OBS",
+                  "POLC",
+                  "REL",
+                  "WDRN",
+                  "PROC",
+                  "AUTH",
+                  "HPUB"
+               ]
+            },
+            "status_code_mr": {
+               "bsonType": "string",
+               "enum": [
+                  "WAIT",
+                  "HOLD",
+                  "REPL",
+                  "RMVD",
+                  "OBS",
+                  "REL",
+                  "POLC",
+                  "WDRN",
+                  "PROC",
+                  "AUTH",
+                  "HPUB"
+               ]
+            },
+            "status_code_sf": {
+               "bsonType": "string",
+               "enum": [
+                  "WAIT",
+                  "HOLD",
+                  "REPL",
+                  "RMVD",
+                  "OBS",
+                  "REL",
+                  "POLC",
+                  "WDRN",
+                  "PROC",
+                  "AUTH",
+                  "HPUB"
+               ]
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "pdbx_deposit_group": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "group_description": {
+                  "bsonType": "string"
+               },
+               "group_id": {
+                  "bsonType": "string"
+               },
+               "group_title": {
+                  "bsonType": "string"
+               },
+               "group_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "ground state",
+                     "changed state",
+                     "undefined"
+                  ]
+               }
+            },
+            "required": [
+               "group_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_molecule": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "asym_id": {
+                  "bsonType": "string"
+               },
+               "instance_id": {
+                  "bsonType": "int"
+               },
+               "prd_id": {
+                  "bsonType": "string"
+               },
+               "rcsb_comp_id": {
+                  "bsonType": "string"
+               },
+               "rcsb_entity_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "asym_id",
+               "instance_id",
+               "prd_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_molecule_features": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "class": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Thrombin inhibitor, Trypsin inhibitor",
+                     "Unknown",
+                     "Receptor",
+                     "Antiinflammatory",
+                     "Chaperone binding",
+                     "Metabolism",
+                     "Antibiotic, Antineoplastic",
+                     "Metal transport",
+                     "Antimicrobial, Antiretroviral",
+                     "Enzyme inhibitor",
+                     "Transport activator",
+                     "CASPASE inhibitor",
+                     "Antagonist",
+                     "Antifungal",
+                     "Oxidation-reduction",
+                     "Antitumor",
+                     "Trypsin inhibitor",
+                     "Antineoplastic",
+                     "Thrombin inhibitor",
+                     "Antiparasitic",
+                     "Anticoagulant",
+                     "Antimicrobial",
+                     "Immunosuppressant",
+                     "Antiviral",
+                     "Antimicrobial, Antiparasitic, Antibiotic",
+                     "Antibiotic, Antimicrobial",
+                     "Antibiotic, Anthelmintic",
+                     "Antibiotic",
+                     "Anticancer",
+                     "Antithrombotic",
+                     "Inhibitor",
+                     "Anticoagulant, Antithrombotic",
+                     "Anthelmintic",
+                     "Antimicrobial, Antitumor",
+                     "Antiretroviral",
+                     "Growth factor",
+                     "Lantibiotic",
+                     "Toxin"
+                  ]
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "prd_id": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Unknown",
+                     "Chalkophore, Polypeptide",
+                     "Polysaccharide",
+                     "Chromophore",
+                     "Aminoglycoside",
+                     "Anthraquinone",
+                     "Cyclic depsipeptide",
+                     "Cyclic peptide",
+                     "Lipopeptide",
+                     "Heterocyclic",
+                     "Oligosaccharide",
+                     "Macrolide",
+                     "Keto acid",
+                     "Lipoglycopeptide",
+                     "Amino acid",
+                     "Imino sugar",
+                     "Nucleoside",
+                     "Polypeptide",
+                     "Peptide-like",
+                     "Oligopeptide",
+                     "Chalkophore",
+                     "Thiopeptide",
+                     "Anthracycline",
+                     "Thiolactone",
+                     "Non-polymer",
+                     "Peptaibol",
+                     "Cyclic lipopeptide",
+                     "Ansamycin",
+                     "Siderophore",
+                     "Glycopeptide",
+                     "Quinolone",
+                     "Polycyclic"
+                  ]
+               }
+            },
+            "required": [
+               "prd_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_nmr_details": {
+         "bsonType": "object",
+         "properties": {
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "text": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "pdbx_nmr_ensemble": {
+         "bsonType": "object",
+         "properties": {
+            "average_constraint_violations_per_residue": {
+               "bsonType": "int"
+            },
+            "average_constraints_per_residue": {
+               "bsonType": "int"
+            },
+            "average_distance_constraint_violation": {
+               "bsonType": "double"
+            },
+            "average_torsion_angle_constraint_violation": {
+               "bsonType": "double"
+            },
+            "conformer_selection_criteria": {
+               "bsonType": "string"
+            },
+            "conformers_calculated_total_number": {
+               "bsonType": "int"
+            },
+            "conformers_submitted_total_number": {
+               "bsonType": "int"
+            },
+            "distance_constraint_violation_method": {
+               "bsonType": "string"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "maximum_distance_constraint_violation": {
+               "bsonType": "double"
+            },
+            "maximum_lower_distance_constraint_violation": {
+               "bsonType": "double"
+            },
+            "maximum_torsion_angle_constraint_violation": {
+               "bsonType": "double"
+            },
+            "maximum_upper_distance_constraint_violation": {
+               "bsonType": "double"
+            },
+            "representative_conformer": {
+               "bsonType": "int"
+            },
+            "torsion_angle_constraint_violation_method": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "pdbx_nmr_exptl": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "conditions_id": {
+                  "bsonType": "string"
+               },
+               "experiment_id": {
+                  "bsonType": "string"
+               },
+               "sample_state": {
+                  "bsonType": "string",
+                  "enum": [
+                     "anisotropic",
+                     "isotropic"
+                  ]
+               },
+               "solution_id": {
+                  "bsonType": "string"
+               },
+               "spectrometer_id": {
+                  "bsonType": "int"
+               },
+               "type": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "conditions_id",
+               "experiment_id",
+               "solution_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_nmr_exptl_sample_conditions": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "conditions_id": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "ionic_strength": {
+                  "bsonType": "string"
+               },
+               "ionic_strength_err": {
+                  "bsonType": "double"
+               },
+               "ionic_strength_units": {
+                  "bsonType": "string",
+                  "enum": [
+                     "M",
+                     "Not defined",
+                     "mM"
+                  ]
+               },
+               "label": {
+                  "bsonType": "string"
+               },
+               "pH": {
+                  "bsonType": "string"
+               },
+               "pH_err": {
+                  "bsonType": "double"
+               },
+               "pH_units": {
+                  "bsonType": "string",
+                  "enum": [
+                     "pH",
+                     "pH*",
+                     "pD",
+                     "Not defined"
+                  ]
+               },
+               "pressure": {
+                  "bsonType": "string"
+               },
+               "pressure_err": {
+                  "bsonType": "double"
+               },
+               "pressure_units": {
+                  "bsonType": "string"
+               },
+               "temperature": {
+                  "bsonType": "string"
+               },
+               "temperature_err": {
+                  "bsonType": "double"
+               },
+               "temperature_units": {
+                  "bsonType": "string",
+                  "enum": [
+                     "C",
+                     "Not defined",
+                     "K"
+                  ]
+               }
+            },
+            "required": [
+               "conditions_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_nmr_refine": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "method": {
+                  "bsonType": "string"
+               },
+               "software_ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "entry_id",
+               "software_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_nmr_representative": {
+         "bsonType": "object",
+         "properties": {
+            "conformer_id": {
+               "bsonType": "string"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "selection_criteria": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "pdbx_nmr_sample_details": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "contents": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "label": {
+                  "bsonType": "string"
+               },
+               "solution_id": {
+                  "bsonType": "string"
+               },
+               "solvent_system": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "fibrous protein",
+                     "oriented membrane film",
+                     "solution",
+                     "filamentous virus",
+                     "gel solid",
+                     "polycrystalline powder",
+                     "fiber",
+                     "single crystal",
+                     "lyophilized powder",
+                     "solid",
+                     "bicelle",
+                     "gel solution",
+                     "membrane",
+                     "micelle",
+                     "reverse micelle",
+                     "liposome",
+                     "emulsion"
+                  ]
+               }
+            },
+            "required": [
+               "solution_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_nmr_software": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "authors": {
+                  "bsonType": "string"
+               },
+               "classification": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "version": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_nmr_spectrometer": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "details": {
+                  "bsonType": "string"
+               },
+               "field_strength": {
+                  "bsonType": "double"
+               },
+               "manufacturer": {
+                  "bsonType": "string"
+               },
+               "model": {
+                  "bsonType": "string"
+               },
+               "spectrometer_id": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "spectrometer_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_serial_crystallography_data_reduction": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "crystal_hits": {
+                  "bsonType": "int"
+               },
+               "diffrn_id": {
+                  "bsonType": "string"
+               },
+               "droplet_hits": {
+                  "bsonType": "int"
+               },
+               "frame_hits": {
+                  "bsonType": "int"
+               },
+               "frames_failed_index": {
+                  "bsonType": "int"
+               },
+               "frames_indexed": {
+                  "bsonType": "int"
+               },
+               "frames_total": {
+                  "bsonType": "int"
+               },
+               "lattices_indexed": {
+                  "bsonType": "int"
+               },
+               "xfel_pulse_events": {
+                  "bsonType": "int"
+               },
+               "xfel_run_numbers": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "diffrn_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_serial_crystallography_measurement": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "collection_time_total": {
+                  "bsonType": "double"
+               },
+               "collimation": {
+                  "bsonType": "string"
+               },
+               "diffrn_id": {
+                  "bsonType": "string"
+               },
+               "focal_spot_size": {
+                  "bsonType": "double"
+               },
+               "photons_per_pulse": {
+                  "bsonType": "double"
+               },
+               "pulse_duration": {
+                  "bsonType": "double"
+               },
+               "pulse_energy": {
+                  "bsonType": "double"
+               },
+               "pulse_photon_energy": {
+                  "bsonType": "double"
+               },
+               "source_distance": {
+                  "bsonType": "double"
+               },
+               "source_size": {
+                  "bsonType": "double"
+               },
+               "xfel_pulse_repetition_rate": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "diffrn_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_serial_crystallography_sample_delivery": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "description": {
+                  "bsonType": "string"
+               },
+               "diffrn_id": {
+                  "bsonType": "string"
+               },
+               "method": {
+                  "bsonType": "string",
+                  "enum": [
+                     "fixed target",
+                     "injection"
+                  ]
+               }
+            },
+            "required": [
+               "diffrn_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_serial_crystallography_sample_delivery_fixed_target": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "crystals_per_unit": {
+                  "bsonType": "int"
+               },
+               "description": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "diffrn_id": {
+                  "bsonType": "string"
+               },
+               "motion_control": {
+                  "bsonType": "string"
+               },
+               "sample_dehydration_prevention": {
+                  "bsonType": "string"
+               },
+               "sample_holding": {
+                  "bsonType": "string"
+               },
+               "sample_solvent": {
+                  "bsonType": "string"
+               },
+               "sample_unit_size": {
+                  "bsonType": "double"
+               },
+               "support_base": {
+                  "bsonType": "string"
+               },
+               "velocity_horizontal": {
+                  "bsonType": "double"
+               },
+               "velocity_vertical": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "diffrn_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_serial_crystallography_sample_delivery_injection": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "carrier_solvent": {
+                  "bsonType": "string"
+               },
+               "crystal_concentration": {
+                  "bsonType": "double"
+               },
+               "description": {
+                  "bsonType": "string"
+               },
+               "diffrn_id": {
+                  "bsonType": "string"
+               },
+               "filter_size": {
+                  "bsonType": "double"
+               },
+               "flow_rate": {
+                  "bsonType": "double"
+               },
+               "injector_diameter": {
+                  "bsonType": "double"
+               },
+               "injector_nozzle": {
+                  "bsonType": "string"
+               },
+               "injector_pressure": {
+                  "bsonType": "double"
+               },
+               "injector_temperature": {
+                  "bsonType": "double"
+               },
+               "jet_diameter": {
+                  "bsonType": "double"
+               },
+               "power_by": {
+                  "bsonType": "string"
+               },
+               "preparation": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "diffrn_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_soln_scatter": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "buffer_name": {
+                  "bsonType": "string"
+               },
+               "concentration_range": {
+                  "bsonType": "string"
+               },
+               "data_analysis_software_list": {
+                  "bsonType": "string"
+               },
+               "data_reduction_software_list": {
+                  "bsonType": "string"
+               },
+               "detector_specific": {
+                  "bsonType": "string"
+               },
+               "detector_type": {
+                  "bsonType": "string"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "max_mean_cross_sectional_radii_gyration": {
+                  "bsonType": "double"
+               },
+               "max_mean_cross_sectional_radii_gyration_esd": {
+                  "bsonType": "double"
+               },
+               "mean_guiner_radius": {
+                  "bsonType": "double"
+               },
+               "mean_guiner_radius_esd": {
+                  "bsonType": "double"
+               },
+               "min_mean_cross_sectional_radii_gyration": {
+                  "bsonType": "double"
+               },
+               "min_mean_cross_sectional_radii_gyration_esd": {
+                  "bsonType": "double"
+               },
+               "num_time_frames": {
+                  "bsonType": "int"
+               },
+               "protein_length": {
+                  "bsonType": "string"
+               },
+               "sample_pH": {
+                  "bsonType": "double"
+               },
+               "source_beamline": {
+                  "bsonType": "string"
+               },
+               "source_beamline_instrument": {
+                  "bsonType": "string"
+               },
+               "source_class": {
+                  "bsonType": "string"
+               },
+               "source_type": {
+                  "bsonType": "string"
+               },
+               "temperature": {
+                  "bsonType": "double"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "modelling",
+                     "x-ray",
+                     "neutron"
+                  ]
+               }
+            },
+            "required": [
+               "entry_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_soln_scatter_model": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "conformer_selection_criteria": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "entry_fitting_list": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "method": {
+                  "bsonType": "string"
+               },
+               "num_conformers_calculated": {
+                  "bsonType": "int"
+               },
+               "num_conformers_submitted": {
+                  "bsonType": "int"
+               },
+               "representative_conformer": {
+                  "bsonType": "int"
+               },
+               "scatter_id": {
+                  "bsonType": "string"
+               },
+               "software_author_list": {
+                  "bsonType": "string"
+               },
+               "software_list": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id",
+               "scatter_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_summary": {
+         "bsonType": "object",
+         "properties": {
+            "B_factor_type": {
+               "bsonType": "string",
+               "enum": [
+                  "PARTIAL",
+                  "FULL"
+               ]
+            },
+            "Babinet_b": {
+               "bsonType": "double"
+            },
+            "Babinet_k": {
+               "bsonType": "double"
+            },
+            "CA_ONLY": {
+               "bsonType": "string",
+               "enum": [
+                  "yes"
+               ]
+            },
+            "DCC_R": {
+               "bsonType": "double"
+            },
+            "DCC_Rfree": {
+               "bsonType": "double"
+            },
+            "DCC_refinement_program": {
+               "bsonType": "string"
+            },
+            "EDS_R": {
+               "bsonType": "double"
+            },
+            "EDS_resolution": {
+               "bsonType": "double"
+            },
+            "EDS_resolution_low": {
+               "bsonType": "double"
+            },
+            "Fo_Fc_correlation": {
+               "bsonType": "double"
+            },
+            "I_over_sigma": {
+               "bsonType": "string"
+            },
+            "PDB_R": {
+               "bsonType": "double"
+            },
+            "PDB_Rfree": {
+               "bsonType": "double"
+            },
+            "PDB_deposition_date": {
+               "bsonType": "date"
+            },
+            "PDB_resolution": {
+               "bsonType": "double"
+            },
+            "PDB_resolution_low": {
+               "bsonType": "double"
+            },
+            "PDB_revision_date": {
+               "bsonType": "date"
+            },
+            "PDB_revision_number": {
+               "bsonType": "double"
+            },
+            "RNA_suiteness": {
+               "bsonType": "double"
+            },
+            "Wilson_B_aniso": {
+               "bsonType": "string"
+            },
+            "Wilson_B_estimate": {
+               "bsonType": "double"
+            },
+            "absolute_percentile_DCC_Rfree": {
+               "bsonType": "double"
+            },
+            "absolute_percentile_RNA_suiteness": {
+               "bsonType": "double"
+            },
+            "absolute_percentile_clashscore": {
+               "bsonType": "double"
+            },
+            "absolute_percentile_percent_RSRZ_outliers": {
+               "bsonType": "double"
+            },
+            "absolute_percentile_percent_ramachandran_outliers": {
+               "bsonType": "double"
+            },
+            "absolute_percentile_percent_rotamer_outliers": {
+               "bsonType": "double"
+            },
+            "acentric_outliers": {
+               "bsonType": "int"
+            },
+            "angles_RMSZ": {
+               "bsonType": "double"
+            },
+            "attempted_validation_steps": {
+               "bsonType": "string"
+            },
+            "bonds_RMSZ": {
+               "bsonType": "double"
+            },
+            "bulk_solvent_b": {
+               "bsonType": "double"
+            },
+            "bulk_solvent_k": {
+               "bsonType": "double"
+            },
+            "ccp4version": {
+               "bsonType": "string"
+            },
+            "centric_outliers": {
+               "bsonType": "double"
+            },
+            "chemical_shift_completeness": {
+               "bsonType": "double"
+            },
+            "chemical_shift_completeness_full_length": {
+               "bsonType": "double"
+            },
+            "chemical_shifts_input_filename": {
+               "bsonType": "string"
+            },
+            "clashscore": {
+               "bsonType": "double"
+            },
+            "clashscore_full_length": {
+               "bsonType": "double"
+            },
+            "coordinates_input_filename": {
+               "bsonType": "string"
+            },
+            "cyrange_error": {
+               "bsonType": "string"
+            },
+            "cyrange_number_of_domains": {
+               "bsonType": "int"
+            },
+            "cyrange_version": {
+               "bsonType": "string"
+            },
+            "data_anisotropy": {
+               "bsonType": "double"
+            },
+            "data_completeness": {
+               "bsonType": "double"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "high_resol_relative_percentile_DCC_Rfree": {
+               "bsonType": "double"
+            },
+            "high_resol_relative_percentile_RNA_suiteness": {
+               "bsonType": "double"
+            },
+            "high_resol_relative_percentile_clashscore": {
+               "bsonType": "double"
+            },
+            "high_resol_relative_percentile_percent_RSRZ_outliers": {
+               "bsonType": "double"
+            },
+            "high_resol_relative_percentile_percent_ramachandran_outliers": {
+               "bsonType": "double"
+            },
+            "high_resol_relative_percentile_percent_rotamer_outliers": {
+               "bsonType": "double"
+            },
+            "low_resol_relative_percentile_DCC_Rfree": {
+               "bsonType": "double"
+            },
+            "low_resol_relative_percentile_RNA_suiteness": {
+               "bsonType": "double"
+            },
+            "low_resol_relative_percentile_clashscore": {
+               "bsonType": "double"
+            },
+            "low_resol_relative_percentile_percent_RSRZ_outliers": {
+               "bsonType": "double"
+            },
+            "low_resol_relative_percentile_percent_ramachandran_outliers": {
+               "bsonType": "double"
+            },
+            "low_resol_relative_percentile_percent_rotamer_outliers": {
+               "bsonType": "double"
+            },
+            "medoid_model": {
+               "bsonType": "int"
+            },
+            "nmr_models_consistency_flag": {
+               "bsonType": "string"
+            },
+            "nmrclust_error": {
+               "bsonType": "string"
+            },
+            "nmrclust_number_of_clusters": {
+               "bsonType": "int"
+            },
+            "nmrclust_number_of_models": {
+               "bsonType": "int"
+            },
+            "nmrclust_number_of_outliers": {
+               "bsonType": "int"
+            },
+            "nmrclust_representative_model": {
+               "bsonType": "int"
+            },
+            "nmrclust_version": {
+               "bsonType": "string"
+            },
+            "no_ligands_for_mogul": {
+               "bsonType": "string",
+               "enum": [
+                  "yes"
+               ]
+            },
+            "no_percentile_property": {
+               "bsonType": "string"
+            },
+            "num_H_reduce": {
+               "bsonType": "double"
+            },
+            "num_PDBids_absolute_percentile_DCC_Rfree": {
+               "bsonType": "int"
+            },
+            "num_PDBids_absolute_percentile_RNA_suiteness": {
+               "bsonType": "int"
+            },
+            "num_PDBids_absolute_percentile_clashscore": {
+               "bsonType": "int"
+            },
+            "num_PDBids_absolute_percentile_percent_RSRZ_outliers": {
+               "bsonType": "int"
+            },
+            "num_PDBids_absolute_percentile_percent_ramachandran_outliers": {
+               "bsonType": "int"
+            },
+            "num_PDBids_absolute_percentile_percent_rotamer_outliers": {
+               "bsonType": "int"
+            },
+            "num_PDBids_relative_percentile_DCC_Rfree": {
+               "bsonType": "int"
+            },
+            "num_PDBids_relative_percentile_RNA_suiteness": {
+               "bsonType": "int"
+            },
+            "num_PDBids_relative_percentile_clashscore": {
+               "bsonType": "int"
+            },
+            "num_PDBids_relative_percentile_percent_RSRZ_outliers": {
+               "bsonType": "int"
+            },
+            "num_PDBids_relative_percentile_percent_ramachandran_outliers": {
+               "bsonType": "int"
+            },
+            "num_PDBids_relative_percentile_percent_rotamer_outliers": {
+               "bsonType": "int"
+            },
+            "num_angles_RMSZ": {
+               "bsonType": "int"
+            },
+            "num_bonds_RMSZ": {
+               "bsonType": "int"
+            },
+            "num_free_reflections": {
+               "bsonType": "int"
+            },
+            "num_miller_indices": {
+               "bsonType": "int"
+            },
+            "panav_version": {
+               "bsonType": "string"
+            },
+            "percent_RSRZ_outliers": {
+               "bsonType": "double"
+            },
+            "percent_free_reflections": {
+               "bsonType": "double"
+            },
+            "percent_ramachandran_outliers": {
+               "bsonType": "double"
+            },
+            "percent_ramachandran_outliers_full_length": {
+               "bsonType": "double"
+            },
+            "percent_rotamer_outliers": {
+               "bsonType": "double"
+            },
+            "percent_rotamer_outliers_full_length": {
+               "bsonType": "double"
+            },
+            "percentilebins": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            },
+            "protein_DNA_RNA_entities": {
+               "bsonType": "string"
+            },
+            "rci_version": {
+               "bsonType": "string"
+            },
+            "reflections_input_filename": {
+               "bsonType": "string"
+            },
+            "refmac_version": {
+               "bsonType": "string"
+            },
+            "relative_percentile_DCC_Rfree": {
+               "bsonType": "double"
+            },
+            "relative_percentile_RNA_suiteness": {
+               "bsonType": "double"
+            },
+            "relative_percentile_clashscore": {
+               "bsonType": "double"
+            },
+            "relative_percentile_percent_RSRZ_outliers": {
+               "bsonType": "double"
+            },
+            "relative_percentile_percent_ramachandran_outliers": {
+               "bsonType": "double"
+            },
+            "relative_percentile_percent_rotamer_outliers": {
+               "bsonType": "double"
+            },
+            "report_creation_date": {
+               "bsonType": "string"
+            },
+            "resol_high_from_reflectionsfile": {
+               "bsonType": "double"
+            },
+            "resol_low_from_reflectionsfile": {
+               "bsonType": "double"
+            },
+            "restypes_notchecked_for_bond_angle_geometry": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            },
+            "shiftchecker_version": {
+               "bsonType": "string"
+            },
+            "trans_NSC": {
+               "bsonType": "string"
+            },
+            "twin_L": {
+               "bsonType": "double"
+            },
+            "twin_L2": {
+               "bsonType": "double"
+            },
+            "twin_fraction": {
+               "bsonType": "string"
+            },
+            "xtriage_input_columns": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "rcsb_accession_info": {
+         "bsonType": "object",
+         "properties": {
+            "deposit_date": {
+               "bsonType": "date"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "initial_release_date": {
+               "bsonType": "date"
+            },
+            "major_revision": {
+               "bsonType": "int"
+            },
+            "minor_revision": {
+               "bsonType": "int"
+            },
+            "revision_date": {
+               "bsonType": "date"
+            },
+            "status_code": {
+               "bsonType": "string",
+               "enum": [
+                  "HOLD",
+                  "WAIT",
+                  "REPL",
+                  "REFI",
+                  "REL",
+                  "POLC",
+                  "WDRN",
+                  "PROC",
+                  "AUTH",
+                  "HPUB'",
+                  "AUCO"
+               ]
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "rcsb_entry_container_identifiers": {
+         "bsonType": "object",
+         "properties": {
+            "assembly_ids": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            },
+            "entity_ids": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "non_polymer_entity_ids": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            },
+            "polymer_entity_ids": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "rcsb_entry_info": {
+         "bsonType": "object",
+         "properties": {
+            "assembly_count": {
+               "bsonType": "int"
+            },
+            "branched_entity_count": {
+               "bsonType": "int"
+            },
+            "deposited_atom_count": {
+               "bsonType": "int"
+            },
+            "deposited_model_count": {
+               "bsonType": "int"
+            },
+            "deposited_modeled_polymer_monomer_count": {
+               "bsonType": "int"
+            },
+            "deposited_nonpolymer_entity_instance_count": {
+               "bsonType": "int"
+            },
+            "deposited_polymer_entity_instance_count": {
+               "bsonType": "int"
+            },
+            "deposited_polymer_monomer_count": {
+               "bsonType": "int"
+            },
+            "deposited_unmodeled_polymer_monomer_count": {
+               "bsonType": "int"
+            },
+            "disulfide_bond_count": {
+               "bsonType": "int"
+            },
+            "entity_count": {
+               "bsonType": "int"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "experimental_method": {
+               "bsonType": "string",
+               "enum": [
+                  "Multiple methods",
+                  "Neutron",
+                  "NMR",
+                  "X-ray",
+                  "Other",
+                  "EM"
+               ]
+            },
+            "experimental_method_count": {
+               "bsonType": "int"
+            },
+            "na_polymer_entity_types": {
+               "bsonType": "string",
+               "enum": [
+                  "RNA (only)",
+                  "DNA/RNA (only)",
+                  "NA-hybrid (only)",
+                  "Other",
+                  "DNA (only)"
+               ]
+            },
+            "nonpolymer_entity_count": {
+               "bsonType": "int"
+            },
+            "polymer_composition": {
+               "bsonType": "string",
+               "enum": [
+                  "protein/oligosaccharide",
+                  "DNA/RNA",
+                  "protein/NA/oligosaccharide",
+                  "RNA",
+                  "protein/NA",
+                  "NA-hybrid",
+                  "other type composition",
+                  "homomeric protein",
+                  "heteromeric protein",
+                  "other",
+                  "other type pair",
+                  "oligosaccharide",
+                  "DNA",
+                  "NA/oligosaccharide"
+               ]
+            },
+            "polymer_entity_count": {
+               "bsonType": "int"
+            },
+            "polymer_entity_count_DNA": {
+               "bsonType": "int"
+            },
+            "polymer_entity_count_RNA": {
+               "bsonType": "int"
+            },
+            "polymer_entity_count_nucleic_acid": {
+               "bsonType": "int"
+            },
+            "polymer_entity_count_nucleic_acid_hybrid": {
+               "bsonType": "int"
+            },
+            "polymer_entity_count_protein": {
+               "bsonType": "int"
+            },
+            "polymer_entity_taxonomy_count": {
+               "bsonType": "int"
+            },
+            "resolution_combined": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "double"
+               },
+               "uniqueItems": false
+            },
+            "selected_polymer_entity_types": {
+               "bsonType": "string",
+               "enum": [
+                  "Other",
+                  "Protein (only)",
+                  "Protein/NA",
+                  "Nucleic acid (only)"
+               ]
+            },
+            "software_programs_combined": {
+               "bsonType": "array",
+               "items": {
+                  "bsonType": "string"
+               },
+               "uniqueItems": false
+            },
+            "solvent_entity_count": {
+               "bsonType": "int"
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "rcsb_load_status": {
+         "bsonType": "object",
+         "properties": {
+            "datablock_name": {
+               "bsonType": "string"
+            },
+            "load_date": {
+               "bsonType": "date"
+            },
+            "locator": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "datablock_name"
+         ],
+         "additionalProperties": false
+      },
+      "refine": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "B_iso_max": {
+                  "bsonType": "double"
+               },
+               "B_iso_mean": {
+                  "bsonType": "double"
+               },
+               "B_iso_min": {
+                  "bsonType": "double"
+               },
+               "aniso_B_1_1": {
+                  "bsonType": "double"
+               },
+               "aniso_B_1_2": {
+                  "bsonType": "double"
+               },
+               "aniso_B_1_3": {
+                  "bsonType": "double"
+               },
+               "aniso_B_2_2": {
+                  "bsonType": "double"
+               },
+               "aniso_B_2_3": {
+                  "bsonType": "double"
+               },
+               "aniso_B_3_3": {
+                  "bsonType": "double"
+               },
+               "correlation_coeff_Fo_to_Fc": {
+                  "bsonType": "double"
+               },
+               "correlation_coeff_Fo_to_Fc_free": {
+                  "bsonType": "double"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "ls_R_factor_R_free": {
+                  "bsonType": "double"
+               },
+               "ls_R_factor_R_free_error": {
+                  "bsonType": "double"
+               },
+               "ls_R_factor_R_free_error_details": {
+                  "bsonType": "string"
+               },
+               "ls_R_factor_R_work": {
+                  "bsonType": "double"
+               },
+               "ls_R_factor_all": {
+                  "bsonType": "double"
+               },
+               "ls_R_factor_obs": {
+                  "bsonType": "double"
+               },
+               "ls_d_res_high": {
+                  "bsonType": "double"
+               },
+               "ls_d_res_low": {
+                  "bsonType": "double"
+               },
+               "ls_matrix_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "userblock",
+                     "fullcycle",
+                     "full",
+                     "atomblock",
+                     "diagonal",
+                     "sparse"
+                  ]
+               },
+               "ls_number_parameters": {
+                  "bsonType": "int"
+               },
+               "ls_number_reflns_R_free": {
+                  "bsonType": "int"
+               },
+               "ls_number_reflns_R_work": {
+                  "bsonType": "int"
+               },
+               "ls_number_reflns_all": {
+                  "bsonType": "int"
+               },
+               "ls_number_reflns_obs": {
+                  "bsonType": "int"
+               },
+               "ls_number_restraints": {
+                  "bsonType": "int"
+               },
+               "ls_percent_reflns_R_free": {
+                  "bsonType": "double"
+               },
+               "ls_percent_reflns_obs": {
+                  "bsonType": "double"
+               },
+               "ls_redundancy_reflns_all": {
+                  "bsonType": "double"
+               },
+               "ls_redundancy_reflns_obs": {
+                  "bsonType": "double"
+               },
+               "ls_wR_factor_R_free": {
+                  "bsonType": "double"
+               },
+               "ls_wR_factor_R_work": {
+                  "bsonType": "double"
+               },
+               "occupancy_max": {
+                  "bsonType": "double"
+               },
+               "occupancy_min": {
+                  "bsonType": "double"
+               },
+               "overall_FOM_free_R_set": {
+                  "bsonType": "double"
+               },
+               "overall_FOM_work_R_set": {
+                  "bsonType": "double"
+               },
+               "overall_SU_B": {
+                  "bsonType": "double"
+               },
+               "overall_SU_ML": {
+                  "bsonType": "double"
+               },
+               "overall_SU_R_Cruickshank_DPI": {
+                  "bsonType": "double"
+               },
+               "overall_SU_R_free": {
+                  "bsonType": "double"
+               },
+               "pdbx_R_Free_selection_details": {
+                  "bsonType": "string"
+               },
+               "pdbx_TLS_residual_ADP_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "UNVERIFIED",
+                     "LIKELY RESIDUAL"
+                  ]
+               },
+               "pdbx_average_fsc_free": {
+                  "bsonType": "double"
+               },
+               "pdbx_average_fsc_overall": {
+                  "bsonType": "double"
+               },
+               "pdbx_average_fsc_work": {
+                  "bsonType": "double"
+               },
+               "pdbx_data_cutoff_high_absF": {
+                  "bsonType": "double"
+               },
+               "pdbx_data_cutoff_high_rms_absF": {
+                  "bsonType": "double"
+               },
+               "pdbx_data_cutoff_low_absF": {
+                  "bsonType": "double"
+               },
+               "pdbx_diffrn_id": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "string"
+                  },
+                  "uniqueItems": false
+               },
+               "pdbx_isotropic_thermal_model": {
+                  "bsonType": "string"
+               },
+               "pdbx_ls_cross_valid_method": {
+                  "bsonType": "string"
+               },
+               "pdbx_ls_sigma_F": {
+                  "bsonType": "double"
+               },
+               "pdbx_ls_sigma_Fsqd": {
+                  "bsonType": "double"
+               },
+               "pdbx_ls_sigma_I": {
+                  "bsonType": "double"
+               },
+               "pdbx_method_to_determine_struct": {
+                  "bsonType": "string"
+               },
+               "pdbx_overall_ESU_R": {
+                  "bsonType": "double"
+               },
+               "pdbx_overall_ESU_R_Free": {
+                  "bsonType": "double"
+               },
+               "pdbx_overall_SU_R_Blow_DPI": {
+                  "bsonType": "double"
+               },
+               "pdbx_overall_SU_R_free_Blow_DPI": {
+                  "bsonType": "double"
+               },
+               "pdbx_overall_SU_R_free_Cruickshank_DPI": {
+                  "bsonType": "double"
+               },
+               "pdbx_overall_phase_error": {
+                  "bsonType": "double"
+               },
+               "pdbx_refine_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_solvent_ion_probe_radii": {
+                  "bsonType": "double"
+               },
+               "pdbx_solvent_shrinkage_radii": {
+                  "bsonType": "double"
+               },
+               "pdbx_solvent_vdw_probe_radii": {
+                  "bsonType": "double"
+               },
+               "pdbx_starting_model": {
+                  "bsonType": "string"
+               },
+               "pdbx_stereochem_target_val_spec_case": {
+                  "bsonType": "string"
+               },
+               "pdbx_stereochemistry_target_values": {
+                  "bsonType": "string"
+               },
+               "solvent_model_details": {
+                  "bsonType": "string"
+               },
+               "solvent_model_param_bsol": {
+                  "bsonType": "double"
+               },
+               "solvent_model_param_ksol": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "entry_id",
+               "pdbx_refine_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "refine_analyze": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "Luzzati_coordinate_error_free": {
+                  "bsonType": "double"
+               },
+               "Luzzati_coordinate_error_obs": {
+                  "bsonType": "double"
+               },
+               "Luzzati_d_res_low_free": {
+                  "bsonType": "double"
+               },
+               "Luzzati_d_res_low_obs": {
+                  "bsonType": "double"
+               },
+               "Luzzati_sigma_a_free": {
+                  "bsonType": "double"
+               },
+               "Luzzati_sigma_a_obs": {
+                  "bsonType": "double"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "number_disordered_residues": {
+                  "bsonType": "double"
+               },
+               "occupancy_sum_hydrogen": {
+                  "bsonType": "double"
+               },
+               "occupancy_sum_non_hydrogen": {
+                  "bsonType": "double"
+               },
+               "pdbx_Luzzati_d_res_high_obs": {
+                  "bsonType": "double"
+               },
+               "pdbx_refine_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "entry_id",
+               "pdbx_refine_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "refine_hist": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "cycle_id": {
+                  "bsonType": "string"
+               },
+               "d_res_high": {
+                  "bsonType": "double"
+               },
+               "d_res_low": {
+                  "bsonType": "double"
+               },
+               "number_atoms_solvent": {
+                  "bsonType": "int"
+               },
+               "number_atoms_total": {
+                  "bsonType": "int"
+               },
+               "pdbx_B_iso_mean_ligand": {
+                  "bsonType": "double"
+               },
+               "pdbx_B_iso_mean_solvent": {
+                  "bsonType": "double"
+               },
+               "pdbx_number_atoms_ligand": {
+                  "bsonType": "int"
+               },
+               "pdbx_number_atoms_nucleic_acid": {
+                  "bsonType": "int"
+               },
+               "pdbx_number_atoms_protein": {
+                  "bsonType": "int"
+               },
+               "pdbx_number_residues_total": {
+                  "bsonType": "int"
+               },
+               "pdbx_refine_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "cycle_id",
+               "pdbx_refine_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "refine_ls_restr": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "dev_ideal": {
+                  "bsonType": "double"
+               },
+               "dev_ideal_target": {
+                  "bsonType": "double"
+               },
+               "number": {
+                  "bsonType": "int"
+               },
+               "pdbx_refine_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_restraint_function": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string"
+               },
+               "weight": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "pdbx_refine_id",
+               "type"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "reflns": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "B_iso_Wilson_estimate": {
+                  "bsonType": "double"
+               },
+               "R_free_details": {
+                  "bsonType": "string"
+               },
+               "Rmerge_F_all": {
+                  "bsonType": "double"
+               },
+               "Rmerge_F_obs": {
+                  "bsonType": "double"
+               },
+               "d_resolution_high": {
+                  "bsonType": "double"
+               },
+               "d_resolution_low": {
+                  "bsonType": "double"
+               },
+               "data_reduction_details": {
+                  "bsonType": "string"
+               },
+               "data_reduction_method": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "entry_id": {
+                  "bsonType": "string"
+               },
+               "limit_h_max": {
+                  "bsonType": "int"
+               },
+               "limit_h_min": {
+                  "bsonType": "int"
+               },
+               "limit_k_max": {
+                  "bsonType": "int"
+               },
+               "limit_k_min": {
+                  "bsonType": "int"
+               },
+               "limit_l_max": {
+                  "bsonType": "int"
+               },
+               "limit_l_min": {
+                  "bsonType": "int"
+               },
+               "number_all": {
+                  "bsonType": "int"
+               },
+               "number_obs": {
+                  "bsonType": "int"
+               },
+               "observed_criterion": {
+                  "bsonType": "string"
+               },
+               "observed_criterion_F_max": {
+                  "bsonType": "double"
+               },
+               "observed_criterion_F_min": {
+                  "bsonType": "double"
+               },
+               "observed_criterion_I_max": {
+                  "bsonType": "double"
+               },
+               "observed_criterion_I_min": {
+                  "bsonType": "double"
+               },
+               "observed_criterion_sigma_F": {
+                  "bsonType": "double"
+               },
+               "observed_criterion_sigma_I": {
+                  "bsonType": "double"
+               },
+               "pdbx_CC_half": {
+                  "bsonType": "double"
+               },
+               "pdbx_R_split": {
+                  "bsonType": "double"
+               },
+               "pdbx_Rmerge_I_obs": {
+                  "bsonType": "double"
+               },
+               "pdbx_Rpim_I_all": {
+                  "bsonType": "double"
+               },
+               "pdbx_Rrim_I_all": {
+                  "bsonType": "double"
+               },
+               "pdbx_Rsym_value": {
+                  "bsonType": "double"
+               },
+               "pdbx_chi_squared": {
+                  "bsonType": "double"
+               },
+               "pdbx_diffrn_id": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "string"
+                  },
+                  "uniqueItems": false
+               },
+               "pdbx_netI_over_av_sigmaI": {
+                  "bsonType": "double"
+               },
+               "pdbx_netI_over_sigmaI": {
+                  "bsonType": "double"
+               },
+               "pdbx_number_measured_all": {
+                  "bsonType": "int"
+               },
+               "pdbx_ordinal": {
+                  "bsonType": "int"
+               },
+               "pdbx_redundancy": {
+                  "bsonType": "double"
+               },
+               "pdbx_scaling_rejects": {
+                  "bsonType": "int"
+               },
+               "percent_possible_obs": {
+                  "bsonType": "double"
+               },
+               "phase_calculation_details": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "pdbx_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "reflns_shell": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "Rmerge_F_all": {
+                  "bsonType": "double"
+               },
+               "Rmerge_F_obs": {
+                  "bsonType": "double"
+               },
+               "Rmerge_I_all": {
+                  "bsonType": "double"
+               },
+               "Rmerge_I_obs": {
+                  "bsonType": "double"
+               },
+               "d_res_high": {
+                  "bsonType": "double"
+               },
+               "d_res_low": {
+                  "bsonType": "double"
+               },
+               "meanI_over_sigI_all": {
+                  "bsonType": "double"
+               },
+               "meanI_over_sigI_obs": {
+                  "bsonType": "double"
+               },
+               "meanI_over_uI_all": {
+                  "bsonType": "double"
+               },
+               "number_measured_all": {
+                  "bsonType": "int"
+               },
+               "number_measured_obs": {
+                  "bsonType": "int"
+               },
+               "number_possible": {
+                  "bsonType": "int"
+               },
+               "number_unique_all": {
+                  "bsonType": "int"
+               },
+               "number_unique_obs": {
+                  "bsonType": "int"
+               },
+               "pdbx_CC_half": {
+                  "bsonType": "double"
+               },
+               "pdbx_R_split": {
+                  "bsonType": "double"
+               },
+               "pdbx_Rpim_I_all": {
+                  "bsonType": "double"
+               },
+               "pdbx_Rrim_I_all": {
+                  "bsonType": "double"
+               },
+               "pdbx_Rsym_value": {
+                  "bsonType": "double"
+               },
+               "pdbx_chi_squared": {
+                  "bsonType": "double"
+               },
+               "pdbx_diffrn_id": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "string"
+                  },
+                  "uniqueItems": false
+               },
+               "pdbx_netI_over_sigmaI_all": {
+                  "bsonType": "double"
+               },
+               "pdbx_netI_over_sigmaI_obs": {
+                  "bsonType": "double"
+               },
+               "pdbx_ordinal": {
+                  "bsonType": "int"
+               },
+               "pdbx_redundancy": {
+                  "bsonType": "double"
+               },
+               "pdbx_rejects": {
+                  "bsonType": "int"
+               },
+               "percent_possible_all": {
+                  "bsonType": "double"
+               },
+               "percent_possible_obs": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "pdbx_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "software": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "classification": {
+                  "bsonType": "string"
+               },
+               "contact_author": {
+                  "bsonType": "string"
+               },
+               "contact_author_email": {
+                  "bsonType": "string"
+               },
+               "date": {
+                  "bsonType": "string"
+               },
+               "description": {
+                  "bsonType": "string"
+               },
+               "language": {
+                  "bsonType": "string",
+                  "enum": [
+                     "C/C++",
+                     "C++",
+                     "Python",
+                     "Other",
+                     "Pascal",
+                     "Ada",
+                     "Fortran 90",
+                     "Java & Fortran",
+                     "Tcl",
+                     "Fortran 77",
+                     "assembler",
+                     "sh",
+                     "Awk",
+                     "Perl",
+                     "C",
+                     "Java",
+                     "ksh",
+                     "csh",
+                     "Python/C++",
+                     "Fortran",
+                     "Basic",
+                     "Fortran_77"
+                  ]
+               },
+               "location": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "os": {
+                  "bsonType": "string"
+               },
+               "pdbx_ordinal": {
+                  "bsonType": "int"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "package",
+                     "program",
+                     "jiffy",
+                     "filter",
+                     "library",
+                     "other"
+                  ]
+               },
+               "version": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "pdbx_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "struct": {
+         "bsonType": "object",
+         "properties": {
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "pdbx_CASP_flag": {
+               "bsonType": "string",
+               "enum": [
+                  "Y",
+                  "N"
+               ]
+            },
+            "pdbx_descriptor": {
+               "bsonType": "string"
+            },
+            "pdbx_model_details": {
+               "bsonType": "string"
+            },
+            "pdbx_model_type_details": {
+               "bsonType": "string"
+            },
+            "title": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "struct_keywords": {
+         "bsonType": "object",
+         "properties": {
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "pdbx_keywords": {
+               "bsonType": "string"
+            },
+            "text": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "symmetry": {
+         "bsonType": "object",
+         "properties": {
+            "Int_Tables_number": {
+               "bsonType": "int"
+            },
+            "cell_setting": {
+               "bsonType": "string",
+               "enum": [
+                  "triclinic",
+                  "cubic",
+                  "monoclinic",
+                  "rhombohedral",
+                  "trigonal",
+                  "orthorhombic",
+                  "hexagonal",
+                  "tetragonal"
+               ]
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "pdbx_full_space_group_name_H_M": {
+               "bsonType": "string"
+            },
+            "space_group_name_H_M": {
+               "bsonType": "string"
+            },
+            "space_group_name_Hall": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "_entry_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "additionalProperties": false,
+   "required": [
+      "_entry_id"
+   ]
+}

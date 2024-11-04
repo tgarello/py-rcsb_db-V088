@@ -1,0 +1,7159 @@
+{
+"entry": {
+"id": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"struct": {
+"entry_id": {
+"minWidth": 11,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"title": {
+"minWidth": 21,
+"maxWidth": 135,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"pdbx_structure_determination_methodology": {
+"minWidth": 11,
+"maxWidth": 87,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"pdbx_CASP_flag": {
+"minWidth": 1,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"pdbx_descriptor": {
+"minWidth": 7,
+"maxWidth": 197,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 8
+},
+"pdbx_model_details": {
+"minWidth": 28,
+"maxWidth": 586,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_details": {
+"minWidth": 42,
+"maxWidth": 219,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 8
+},
+"pdbx_model_type_details": {
+"minWidth": 46,
+"maxWidth": 722,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+}
+},
+"audit_conform": {
+"dict_name": {
+"minWidth": 14,
+"maxWidth": 17,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"dict_version": {
+"minWidth": 3,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"dict_location": {
+"minWidth": 60,
+"maxWidth": 69,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"database_2": {
+"database_id": {
+"minWidth": 3,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"database_code": {
+"minWidth": 4,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"pdbx_database_accession": {
+"minWidth": 12,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"pdbx_DOI": {
+"minWidth": 19,
+"maxWidth": 19,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"pdbx_database_status": {
+"status_code": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"entry_id": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"deposit_site": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"process_site": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"recvd_initial_deposition_date": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"pdbx_audit_revision_history": {
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"data_content_type": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"major_revision": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"minor_revision": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"revision_date": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"pdbx_audit_revision_details": {
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"revision_ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"data_content_type": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"provider": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"type": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"software": {
+"pdbx_ordinal": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"name": {
+"minWidth": 3,
+"maxWidth": 36,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"classification": {
+"minWidth": 7,
+"maxWidth": 81,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"description": {
+"minWidth": 11,
+"maxWidth": 266,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 126
+},
+"version": {
+"minWidth": 1,
+"maxWidth": 134,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 131
+},
+"type": {
+"minWidth": 5,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 173
+},
+"location": {
+"minWidth": 16,
+"maxWidth": 87,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 167
+},
+"citation_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 64
+},
+"dependencies": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"citation": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"title": {
+"minWidth": 27,
+"maxWidth": 178,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"journal_abbrev": {
+"minWidth": 4,
+"maxWidth": 41,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 164
+},
+"journal_volume": {
+"minWidth": 1,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 103
+},
+"page_first": {
+"minWidth": 1,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 103
+},
+"page_last": {
+"minWidth": 1,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 72
+},
+"year": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 169
+},
+"pdbx_database_id_PubMed": {
+"minWidth": 3,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 135
+},
+"pdbx_database_id_DOI": {
+"minWidth": 14,
+"maxWidth": 41,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 164
+},
+"journal_issue": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"journal_id_ISSN": {
+"minWidth": 9,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"country": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"journal_id_ASTM": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"journal_id_CSD": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"citation_author": {
+"citation_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"name": {
+"minWidth": 4,
+"maxWidth": 26,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"audit_author": {
+"name": {
+"minWidth": 4,
+"maxWidth": 26,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"pdbx_ordinal": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+}
+},
+"chem_comp": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"type": {
+"minWidth": 5,
+"maxWidth": 27,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"name": {
+"minWidth": 4,
+"maxWidth": 168,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 168
+},
+"formula": {
+"minWidth": 2,
+"maxWidth": 22,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 168
+},
+"formula_weight": {
+"minWidth": 5,
+"maxWidth": 8,
+"minPrec": 2,
+"maxPrec": 3,
+"count": 168
+},
+"mon_nstd_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 17
+},
+"pdbx_synonyms": {
+"minWidth": 4,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"entity": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"type": {
+"minWidth": 5,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"src_method": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"pdbx_description": {
+"minWidth": 2,
+"maxWidth": 104,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"formula_weight": {
+"minWidth": 5,
+"maxWidth": 10,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 167
+},
+"pdbx_number_of_molecules": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"details": {
+"minWidth": 3,
+"maxWidth": 1493,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 10
+}
+},
+"struct_ref": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+},
+"db_name": {
+"minWidth": 2,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+},
+"db_code": {
+"minWidth": 4,
+"maxWidth": 16,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+},
+"pdbx_db_accession": {
+"minWidth": 4,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 143
+},
+"pdbx_align_begin": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 147
+},
+"pdbx_seq_one_letter_code": {
+"minWidth": 10,
+"maxWidth": 4186,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 103
+},
+"details": {
+"minWidth": 3,
+"maxWidth": 143,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 84
+}
+},
+"struct_ref_seq": {
+"align_id": {
+"minWidth": 1,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+},
+"ref_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+},
+"seq_align_beg": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+},
+"seq_align_end": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+},
+"db_align_beg": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+},
+"db_align_end": {
+"minWidth": 2,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 148
+}
+},
+"struct_ref_seq_dif": {
+"pdbx_ordinal": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 28
+},
+"align_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 28
+},
+"seq_num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 28
+},
+"db_mon_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 23
+},
+"mon_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 27
+},
+"details": {
+"minWidth": 7,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 17
+}
+},
+"entity_poly": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"type": {
+"minWidth": 5,
+"maxWidth": 23,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"nstd_linkage": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"nstd_monomer": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"pdbx_strand_id": {
+"minWidth": 1,
+"maxWidth": 698,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"pdbx_seq_one_letter_code": {
+"minWidth": 1,
+"maxWidth": 4186,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"pdbx_seq_one_letter_code_can": {
+"minWidth": 1,
+"maxWidth": 4186,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"nstd_chirality": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_sequence_evidence_code": {
+"minWidth": 18,
+"maxWidth": 24,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"entity_poly_seq": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"mon_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"hetero": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 17
+}
+},
+"ihm_entity_poly_segment": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"seq_id_begin": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"seq_id_end": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"comp_id_begin": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"comp_id_end": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"struct_asym": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"details": {
+"minWidth": 1,
+"maxWidth": 120,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 97
+},
+"pdbx_PDB_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"pdbx_alt_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"pdbx_blank_PDB_chainid_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"pdbx_type": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"pdbx_order": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"pdbx_modified": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+}
+},
+"pdbx_poly_seq_scheme": {
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"seq_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"mon_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"pdb_seq_num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"auth_seq_num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"pdb_mon_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"auth_mon_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"pdb_strand_id": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"ndb_seq_num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"hetero": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+}
+},
+"ihm_struct_assembly": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"name": {
+"minWidth": 3,
+"maxWidth": 106,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"description": {
+"minWidth": 3,
+"maxWidth": 586,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"ihm_struct_assembly_details": {
+"id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"assembly_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"parent_assembly_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"entity_description": {
+"minWidth": 2,
+"maxWidth": 104,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 138
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"entity_poly_segment_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"ihm_external_reference_info": {
+"reference_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+},
+"reference_provider": {
+"minWidth": 6,
+"maxWidth": 52,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 65
+},
+"reference_type": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+},
+"reference": {
+"minWidth": 14,
+"maxWidth": 35,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 76
+},
+"refers_to": {
+"minWidth": 4,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+},
+"associated_url": {
+"minWidth": 33,
+"maxWidth": 118,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 65
+},
+"details": {
+"minWidth": 74,
+"maxWidth": 1113,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+}
+},
+"ihm_external_files": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+},
+"reference_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+},
+"file_path": {
+"minWidth": 4,
+"maxWidth": 113,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 61
+},
+"content_type": {
+"minWidth": 5,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 74
+},
+"file_size_bytes": {
+"minWidth": 3,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 35
+},
+"details": {
+"minWidth": 3,
+"maxWidth": 267,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 72
+},
+"file_format": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 8
+}
+},
+"ihm_dataset_list": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"data_type": {
+"minWidth": 5,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"database_hosted": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"details": {
+"minWidth": 3,
+"maxWidth": 179,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 68
+}
+},
+"ihm_dataset_group": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 169
+},
+"application": {
+"minWidth": 5,
+"maxWidth": 14,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 28
+},
+"name": {
+"minWidth": 4,
+"maxWidth": 144,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"details": {
+"minWidth": 4,
+"maxWidth": 286,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 8
+}
+},
+"ihm_dataset_group_link": {
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 169
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 169
+}
+},
+"ihm_dataset_external_reference": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+},
+"file_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+}
+},
+"ihm_dataset_related_db_reference": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 172
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 172
+},
+"db_name": {
+"minWidth": 3,
+"maxWidth": 13,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 172
+},
+"accession_code": {
+"minWidth": 4,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 172
+},
+"version": {
+"minWidth": 1,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 24
+},
+"details": {
+"minWidth": 12,
+"maxWidth": 327,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 63
+}
+},
+"ihm_model_representation": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"name": {
+"minWidth": 12,
+"maxWidth": 88,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 26
+},
+"details": {
+"minWidth": 104,
+"maxWidth": 245,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+}
+},
+"ihm_model_representation_details": {
+"id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"representation_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"entity_description": {
+"minWidth": 2,
+"maxWidth": 104,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 136
+},
+"entity_asym_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"entity_poly_segment_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"model_object_primitive": {
+"minWidth": 6,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"starting_model_id": {
+"minWidth": 1,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 127
+},
+"model_mode": {
+"minWidth": 5,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"model_granularity": {
+"minWidth": 7,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"model_object_count": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+},
+"description": {
+"minWidth": 2,
+"maxWidth": 121,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+}
+},
+"ihm_starting_model_details": {
+"starting_model_id": {
+"minWidth": 1,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 129
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 129
+},
+"entity_description": {
+"minWidth": 2,
+"maxWidth": 104,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 101
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 129
+},
+"entity_poly_segment_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 129
+},
+"starting_model_source": {
+"minWidth": 5,
+"maxWidth": 18,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 129
+},
+"starting_model_auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 129
+},
+"starting_model_sequence_offset": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 129
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 129
+},
+"description": {
+"minWidth": 13,
+"maxWidth": 138,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+}
+},
+"ihm_starting_model_coord": {
+"starting_model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"group_PDB": {
+"minWidth": 4,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"id": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"type_symbol": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"atom_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"comp_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"seq_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"Cartn_x": {
+"minWidth": 3,
+"maxWidth": 8,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 66
+},
+"Cartn_y": {
+"minWidth": 2,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 66
+},
+"Cartn_z": {
+"minWidth": 3,
+"maxWidth": 8,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 66
+},
+"B_iso_or_equiv": {
+"minWidth": 1,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 57
+},
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+}
+},
+"ihm_modeling_protocol": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"num_steps": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 174
+},
+"protocol_name": {
+"minWidth": 7,
+"maxWidth": 101,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 147
+},
+"details": {
+"minWidth": 32,
+"maxWidth": 1392,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 11
+}
+},
+"ihm_modeling_protocol_details": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"protocol_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"step_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"struct_assembly_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"dataset_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 163
+},
+"struct_assembly_description": {
+"minWidth": 3,
+"maxWidth": 154,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 61
+},
+"step_name": {
+"minWidth": 7,
+"maxWidth": 135,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 139
+},
+"step_method": {
+"minWidth": 3,
+"maxWidth": 1171,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 129
+},
+"num_models_begin": {
+"minWidth": 1,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 108
+},
+"num_models_end": {
+"minWidth": 1,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 109
+},
+"multi_scale_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 171
+},
+"multi_state_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 171
+},
+"ordered_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 171
+},
+"ensemble_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 136
+},
+"software_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 84
+},
+"description": {
+"minWidth": 30,
+"maxWidth": 378,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"script_file_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"ihm_modeling_post_process": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 57
+},
+"protocol_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 57
+},
+"analysis_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 57
+},
+"step_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 57
+},
+"type": {
+"minWidth": 4,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 57
+},
+"feature": {
+"minWidth": 4,
+"maxWidth": 12,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 55
+},
+"num_models_begin": {
+"minWidth": 1,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 50
+},
+"num_models_end": {
+"minWidth": 1,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 52
+},
+"struct_assembly_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 19
+},
+"dataset_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 15
+},
+"software_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 12
+},
+"feature_name": {
+"minWidth": 7,
+"maxWidth": 59,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"details": {
+"minWidth": 23,
+"maxWidth": 231,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"script_file_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"ihm_cross_link_list": {
+"id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"entity_description_1": {
+"minWidth": 2,
+"maxWidth": 36,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 97
+},
+"entity_id_1": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"seq_id_1": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"comp_id_1": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"entity_description_2": {
+"minWidth": 2,
+"maxWidth": 30,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 97
+},
+"entity_id_2": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"seq_id_2": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"comp_id_2": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"linker_type": {
+"minWidth": 3,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"linker_chem_comp_descriptor_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+},
+"details": {
+"minWidth": 3,
+"maxWidth": 53,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 10
+}
+},
+"ihm_cross_link_restraint": {
+"id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"entity_id_1": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"asym_id_1": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"seq_id_1": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"comp_id_1": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"entity_id_2": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"asym_id_2": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"seq_id_2": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"comp_id_2": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"restraint_type": {
+"minWidth": 8,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"conditional_crosslink_flag": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 51
+},
+"model_granularity": {
+"minWidth": 7,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 117
+},
+"distance_threshold": {
+"minWidth": 1,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 9,
+"count": 117
+},
+"psi": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 2,
+"maxPrec": 3,
+"count": 69
+},
+"sigma_1": {
+"minWidth": 1,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 36
+},
+"sigma_2": {
+"minWidth": 1,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 35
+},
+"pseudo_site_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 63
+},
+"atom_id_1": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"atom_id_2": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+}
+},
+"ihm_cross_link_result_parameters": {
+"id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"restraint_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"psi": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 3
+},
+"sigma_1": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 3
+},
+"sigma_2": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 3
+}
+},
+"ihm_model_list": {
+"model_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"model_name": {
+"minWidth": 1,
+"maxWidth": 159,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 59
+},
+"assembly_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"protocol_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"representation_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"ihm_model_group": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"name": {
+"minWidth": 1,
+"maxWidth": 56,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 66
+},
+"details": {
+"minWidth": 47,
+"maxWidth": 60,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"ihm_model_group_link": {
+"group_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 175
+}
+},
+"ihm_sphere_obj_site": {
+"id": {
+"minWidth": 1,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 35
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 35
+},
+"seq_id_begin": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 35
+},
+"seq_id_end": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 35
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 35
+},
+"Cartn_x": {
+"minWidth": 3,
+"maxWidth": 10,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 35
+},
+"Cartn_y": {
+"minWidth": 2,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 35
+},
+"Cartn_z": {
+"minWidth": 4,
+"maxWidth": 10,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 35
+},
+"object_radius": {
+"minWidth": 4,
+"maxWidth": 6,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 35
+},
+"rmsf": {
+"minWidth": 1,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 5
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 35
+}
+},
+"ihm_ensemble_info": {
+"ensemble_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 44
+},
+"ensemble_name": {
+"minWidth": 1,
+"maxWidth": 91,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 42
+},
+"post_process_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 41
+},
+"model_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 43
+},
+"ensemble_clustering_feature": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 33
+},
+"num_ensemble_models": {
+"minWidth": 1,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 43
+},
+"num_ensemble_models_deposited": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 44
+},
+"ensemble_precision_value": {
+"minWidth": 2,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 27
+},
+"ensemble_file_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"ensemble_clustering_method": {
+"minWidth": 5,
+"maxWidth": 12,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"sub_sample_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 25
+},
+"sub_sampling_type": {
+"minWidth": 11,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"details": {
+"minWidth": 34,
+"maxWidth": 57,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"ihm_localization_density_files": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+},
+"file_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+},
+"ensemble_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+},
+"entity_poly_segment_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+}
+},
+"ihm_multi_state_modeling": {
+"state_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"state_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"state_name": {
+"minWidth": 1,
+"maxWidth": 46,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 12
+},
+"experiment_type": {
+"minWidth": 15,
+"maxWidth": 16,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 11
+},
+"population_fraction": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 8
+},
+"state_type": {
+"minWidth": 16,
+"maxWidth": 32,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"details": {
+"minWidth": 9,
+"maxWidth": 95,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+}
+},
+"ihm_multi_state_model_group_link": {
+"state_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"model_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+}
+},
+"ihm_chemical_component_descriptor": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 87
+},
+"auth_name": {
+"minWidth": 3,
+"maxWidth": 51,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 87
+},
+"smiles": {
+"minWidth": 15,
+"maxWidth": 187,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 80
+},
+"chemical_name": {
+"minWidth": 17,
+"maxWidth": 81,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 47
+},
+"inchi": {
+"minWidth": 48,
+"maxWidth": 154,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 77
+},
+"inchi_key": {
+"minWidth": 27,
+"maxWidth": 28,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 79
+},
+"common_name": {
+"minWidth": 3,
+"maxWidth": 23,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 53
+},
+"details": {
+"minWidth": 23,
+"maxWidth": 137,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"smiles_canonical": {
+"minWidth": 15,
+"maxWidth": 39,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 8
+}
+},
+"atom_site": {
+"group_PDB": {
+"minWidth": 4,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"id": {
+"minWidth": 1,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"type_symbol": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"label_atom_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"label_comp_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"label_seq_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"auth_seq_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 101
+},
+"label_asym_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"Cartn_x": {
+"minWidth": 1,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 140
+},
+"Cartn_y": {
+"minWidth": 1,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 140
+},
+"Cartn_z": {
+"minWidth": 1,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 140
+},
+"occupancy": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 115
+},
+"label_entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"B_iso_or_equiv": {
+"minWidth": 1,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 113
+},
+"pdbx_PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+},
+"ihm_model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 138
+},
+"auth_comp_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 38
+},
+"auth_atom_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"pdbx_auth_seq_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"pdbx_auth_comp_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"pdbx_auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"pdbx_auth_atom_name": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 20
+},
+"pdbx_label_seq_num": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"pdbx_formal_charge": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"label_alt_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"atom_type": {
+"symbol": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 140
+}
+},
+"flr_experiment": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"instrument_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"inst_setting_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"exp_condition_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"sample_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"details": {
+"minWidth": 4,
+"maxWidth": 79,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+}
+},
+"flr_inst_setting": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"details": {
+"minWidth": 232,
+"maxWidth": 1642,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"flr_exp_condition": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"details": {
+"minWidth": 33,
+"maxWidth": 45,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"flr_instrument": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"details": {
+"minWidth": 49,
+"maxWidth": 1388,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"flr_entity_assembly": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"assembly_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"num_copies": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"entity_description": {
+"minWidth": 3,
+"maxWidth": 28,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"flr_sample_condition": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"details": {
+"minWidth": 24,
+"maxWidth": 1185,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"flr_sample": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"entity_assembly_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"num_of_probes": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"sample_condition_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"sample_description": {
+"minWidth": 7,
+"maxWidth": 39,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"solvent_phase": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"flr_probe_list": {
+"probe_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"chromophore_name": {
+"minWidth": 3,
+"maxWidth": 51,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"reactive_probe_flag": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"reactive_probe_name": {
+"minWidth": 10,
+"maxWidth": 51,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"probe_origin": {
+"minWidth": 9,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"probe_link_type": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"flr_probe_descriptor": {
+"probe_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"reactive_probe_chem_descriptor_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"chromophore_chem_descriptor_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"chromophore_center_atom": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"flr_sample_probe_details": {
+"sample_probe_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"sample_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"probe_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"fluorophore_type": {
+"minWidth": 5,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"description": {
+"minWidth": 10,
+"maxWidth": 48,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"poly_probe_position_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"flr_poly_probe_position": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"entity_description": {
+"minWidth": 3,
+"maxWidth": 28,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"comp_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"atom_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"mutation_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"modification_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"auth_name": {
+"minWidth": 1,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+}
+},
+"flr_poly_probe_position_modified": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"chem_descriptor_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"atom_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"flr_poly_probe_conjugate": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"sample_probe_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"chem_descriptor_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"ambiguous_stoichiometry_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"flr_fret_forster_radius": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"donor_probe_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"acceptor_probe_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"forster_radius": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 6
+},
+"reduced_forster_radius": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 2
+}
+},
+"flr_fret_calibration_parameters": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"phi_acceptor": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"alpha": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"gG_gR_ratio": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"a_b": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+}
+},
+"flr_fret_analysis": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"experiment_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"type": {
+"minWidth": 14,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"sample_probe_id_1": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"sample_probe_id_2": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"forster_radius_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"external_file_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"software_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+}
+},
+"flr_fret_analysis_intensity": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"analysis_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"calibration_parameters_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"chi_square_reduced": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"method_name": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"flr_peak_assignment": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"method_name": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"details": {
+"minWidth": 112,
+"maxWidth": 112,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"flr_fret_distance_restraint": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"sample_probe_id_1": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"sample_probe_id_2": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"state_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"analysis_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"distance": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 6
+},
+"distance_error_plus": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 5
+},
+"distance_error_minus": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 5
+},
+"distance_type": {
+"minWidth": 6,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"population_fraction": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 6
+},
+"peak_assignment_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"flr_fret_model_quality": {
+"model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"chi_square_reduced": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 4
+},
+"dataset_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"details": {
+"minWidth": 37,
+"maxWidth": 85,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"method": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"flr_fret_model_distance": {
+"id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"restraint_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"distance": {
+"minWidth": 5,
+"maxWidth": 7,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 5
+},
+"distance_deviation": {
+"minWidth": 1,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 5
+}
+},
+"flr_FPS_modeling": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"ihm_modeling_protocol_ordinal_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"restraint_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"global_parameter_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"probe_modeling_method": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"details": {
+"minWidth": 10,
+"maxWidth": 64,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"flr_FPS_global_parameter": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"forster_radius_value": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"conversion_function_polynom_order": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"repetition": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"AV_grid_rel": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 4
+},
+"AV_min_grid_A": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 4
+},
+"AV_allowed_sphere": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 4
+},
+"AV_search_nodes": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"AV_E_samples_k": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"sim_viscosity_adjustment": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 4
+},
+"sim_dt_adjustment": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 4
+},
+"sim_max_iter_k": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"sim_max_force": {
+"minWidth": 3,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"sim_clash_tolerance_A": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 4
+},
+"sim_reciprocal_kT": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"sim_clash_potential": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"convergence_E": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"convergence_K": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 4,
+"count": 4
+},
+"convergence_F": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 4,
+"count": 4
+},
+"convergence_T": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 4
+}
+},
+"flr_FPS_AV_parameter": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"num_linker_atoms": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"linker_length": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 4
+},
+"linker_width": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 4
+},
+"probe_radius_1": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 4
+},
+"probe_radius_2": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 3
+},
+"probe_radius_3": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 3
+}
+},
+"flr_FPS_AV_modeling": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"sample_probe_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"FPS_modeling_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"parameter_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"flr_FPS_mean_probe_position": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"sample_probe_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"mpp_xcoord": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"mpp_ycoord": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"mpp_zcoord": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+}
+},
+"flr_FPS_MPP_atom_position": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"seq_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"comp_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"atom_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"xcoord": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"ycoord": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"zcoord": {
+"minWidth": 5,
+"maxWidth": 6,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"flr_FPS_MPP_modeling": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"FPS_modeling_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"mpp_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"mpp_atom_position_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_feature_list": {
+"feature_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+},
+"feature_type": {
+"minWidth": 4,
+"maxWidth": 13,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+},
+"entity_type": {
+"minWidth": 7,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 32
+},
+"details": {
+"minWidth": 5,
+"maxWidth": 130,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+}
+},
+"ihm_poly_residue_feature": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 29
+},
+"feature_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 29
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 29
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 28
+},
+"seq_id_begin": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 29
+},
+"comp_id_begin": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 29
+},
+"seq_id_end": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 29
+},
+"comp_id_end": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 29
+},
+"interface_residue_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"residue_range_granularity": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"rep_atom": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"ihm_interface_residue_feature": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"feature_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"binding_partner_entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"binding_partner_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"details": {
+"minWidth": 4,
+"maxWidth": 59,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+}
+},
+"ihm_derived_distance_restraint": {
+"id": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 23
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 15
+},
+"feature_id_1": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 23
+},
+"feature_id_2": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 23
+},
+"group_conditionality": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 10
+},
+"restraint_type": {
+"minWidth": 8,
+"maxWidth": 21,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 22
+},
+"distance_upper_limit": {
+"minWidth": 1,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 21
+},
+"random_exclusion_fraction": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 1,
+"maxPrec": 1,
+"count": 4
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 21
+},
+"probability": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 8
+},
+"distance_upper_limit_esd": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 1,
+"maxPrec": 1,
+"count": 1
+},
+"distance_threshold_mean": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 1,
+"maxPrec": 1,
+"count": 1
+},
+"distance_threshold_esd": {
+"minWidth": 3,
+"maxWidth": 4,
+"minPrec": 1,
+"maxPrec": 2,
+"count": 1
+},
+"distance_lower_limit": {
+"minWidth": 3,
+"maxWidth": 6,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 3
+}
+},
+"ihm_starting_comparative_models": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 52
+},
+"starting_model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 52
+},
+"starting_model_auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 52
+},
+"starting_model_seq_id_begin": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 52
+},
+"starting_model_seq_id_end": {
+"minWidth": 2,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 52
+},
+"template_auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 52
+},
+"template_seq_id_begin": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 50
+},
+"template_seq_id_end": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 50
+},
+"template_dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 52
+},
+"template_sequence_identity": {
+"minWidth": 5,
+"maxWidth": 7,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 26
+},
+"template_sequence_identity_denominator": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 25
+},
+"alignment_file_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"details": {
+"minWidth": 18,
+"maxWidth": 205,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"ihm_3dem_restraint": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 25
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 25
+},
+"struct_assembly_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 25
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 25
+},
+"cross_correlation_coefficient": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 2,
+"maxPrec": 3,
+"count": 12
+},
+"fitting_method": {
+"minWidth": 16,
+"maxWidth": 151,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 15
+},
+"number_of_gaussians": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 12
+},
+"details": {
+"minWidth": 68,
+"maxWidth": 241,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"fitting_method_citation_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"map_segment_flag": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"entity_src_gen": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 22
+},
+"pdbx_src_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 22
+},
+"pdbx_gene_src_ncbi_taxonomy_id": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"pdbx_gene_src_scientific_name": {
+"minWidth": 12,
+"maxWidth": 24,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"gene_src_common_name": {
+"minWidth": 5,
+"maxWidth": 37,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"pdbx_host_org_ncbi_taxonomy_id": {
+"minWidth": 3,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"pdbx_host_org_scientific_name": {
+"minWidth": 15,
+"maxWidth": 26,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"host_org_common_name": {
+"minWidth": 14,
+"maxWidth": 14,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"pdbx_host_org_strain": {
+"minWidth": 10,
+"maxWidth": 24,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"gene_src_genus": {
+"minWidth": 4,
+"maxWidth": 12,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"pdbx_alt_source_flag": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_starting_model_seq_dif": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"starting_model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"db_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"db_seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"db_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"details": {
+"minWidth": 22,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+}
+},
+"entity_name_com": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 10
+},
+"name": {
+"minWidth": 2,
+"maxWidth": 43,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 10
+}
+},
+"ihm_poly_probe_conjugate": {
+"chem_comp_descriptor_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"position_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"probe_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"ihm_poly_probe_position": {
+"comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"description": {
+"minWidth": 34,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_description": {
+"minWidth": 34,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"mod_res_chem_comp_descriptor_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"modification_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"mut_res_chem_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"mutation_flag": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"seq_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"ihm_probe_list": {
+"probe_chem_comp_descriptor_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"probe_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"probe_link_type": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"probe_name": {
+"minWidth": 3,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"probe_origin": {
+"minWidth": 9,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"ihm_model_representative": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"model_group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"selection_criteria": {
+"minWidth": 8,
+"maxWidth": 18,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 8
+}
+},
+"ihm_entry_collection": {
+"id": {
+"minWidth": 16,
+"maxWidth": 16,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 40
+},
+"details": {
+"minWidth": 150,
+"maxWidth": 168,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 40
+}
+},
+"ihm_entry_collection_mapping": {
+"collection_id": {
+"minWidth": 16,
+"maxWidth": 16,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 40
+},
+"entry_id": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 40
+}
+},
+"ihm_2dem_class_average_restraint": {
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"details": {
+"minWidth": 41,
+"maxWidth": 239,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"image_resolution": {
+"minWidth": 2,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 9
+},
+"number_raw_micrographs": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"pixel_size_height": {
+"minWidth": 3,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 9
+},
+"pixel_size_width": {
+"minWidth": 3,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 9
+},
+"struct_assembly_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 9
+},
+"image_segment_flag": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"number_of_projections": {
+"minWidth": 3,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+}
+},
+"ihm_related_datasets": {
+"dataset_list_id_derived": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 37
+},
+"dataset_list_id_primary": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 37
+}
+},
+"ihm_starting_computational_models": {
+"starting_model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 24
+},
+"software_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 24
+},
+"script_file_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+}
+},
+"ihm_sas_restraint": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"struct_assembly_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"profile_segment_flag": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 11
+},
+"fitting_atom_type": {
+"minWidth": 5,
+"maxWidth": 37,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 13
+},
+"fitting_method": {
+"minWidth": 4,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 15
+},
+"fitting_state": {
+"minWidth": 6,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 16
+},
+"radius_of_gyration": {
+"minWidth": 2,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 13
+},
+"chi_value": {
+"minWidth": 2,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 16
+},
+"details": {
+"minWidth": 40,
+"maxWidth": 68,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+}
+},
+"ihm_ensemble_sub_sample": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"name": {
+"minWidth": 21,
+"maxWidth": 21,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"ensemble_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"num_models": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"num_models_deposited": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"file_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"ihm_residues_not_modeled": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"entity_description": {
+"minWidth": 2,
+"maxWidth": 11,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"seq_id_begin": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"seq_id_end": {
+"minWidth": 2,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"comp_id_begin": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"comp_id_end": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"reason": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_entity_nonpoly": {
+"comp_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+},
+"name": {
+"minWidth": 5,
+"maxWidth": 104,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+}
+},
+"pdbx_nonpoly_scheme": {
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+},
+"mon_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+},
+"ndb_seq_num": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+},
+"pdb_seq_num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 17
+},
+"auth_seq_num": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 17
+},
+"auth_mon_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+},
+"pdb_strand_id": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 18
+},
+"pdb_mon_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+}
+},
+"entity_name_sys": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 8
+},
+"name": {
+"minWidth": 3,
+"maxWidth": 104,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 8
+}
+},
+"ihm_ordered_model": {
+"process_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"ordered_by": {
+"minWidth": 4,
+"maxWidth": 27,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"step_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"step_description": {
+"minWidth": 6,
+"maxWidth": 37,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"edge_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"model_group_id_begin": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"model_group_id_end": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"edge_description": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"process_description": {
+"minWidth": 32,
+"maxWidth": 32,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_2dem_class_average_fitting": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"restraint_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"cross_correlation_coefficient": {
+"minWidth": 3,
+"maxWidth": 5,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 6
+},
+"rot_matrix[1][1]": {
+"minWidth": 8,
+"maxWidth": 9,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 5
+},
+"rot_matrix[2][1]": {
+"minWidth": 8,
+"maxWidth": 9,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 5
+},
+"rot_matrix[3][1]": {
+"minWidth": 8,
+"maxWidth": 9,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 5
+},
+"rot_matrix[1][2]": {
+"minWidth": 8,
+"maxWidth": 9,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 5
+},
+"rot_matrix[2][2]": {
+"minWidth": 8,
+"maxWidth": 9,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 5
+},
+"rot_matrix[3][2]": {
+"minWidth": 8,
+"maxWidth": 9,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 5
+},
+"rot_matrix[1][3]": {
+"minWidth": 8,
+"maxWidth": 9,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 5
+},
+"rot_matrix[2][3]": {
+"minWidth": 8,
+"maxWidth": 9,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 5
+},
+"rot_matrix[3][3]": {
+"minWidth": 8,
+"maxWidth": 9,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 5
+},
+"tr_vector[1]": {
+"minWidth": 7,
+"maxWidth": 7,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 5
+},
+"tr_vector[2]": {
+"minWidth": 6,
+"maxWidth": 7,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 5
+},
+"tr_vector[3]": {
+"minWidth": 5,
+"maxWidth": 8,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 5
+}
+},
+"ihm_cross_link_result": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"restraint_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"ensemble_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"num_models": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"distance_threshold": {
+"minWidth": 2,
+"maxWidth": 9,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 2
+},
+"median_distance": {
+"minWidth": 5,
+"maxWidth": 18,
+"minPrec": 3,
+"maxPrec": 15,
+"count": 2
+}
+},
+"ihm_geometric_object_list": {
+"object_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"object_type": {
+"minWidth": 4,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"object_name": {
+"minWidth": 8,
+"maxWidth": 39,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"object_description": {
+"minWidth": 101,
+"maxWidth": 223,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"ihm_geometric_object_distance_restraint": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"object_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"feature_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"object_characteristic": {
+"minWidth": 5,
+"maxWidth": 13,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"restraint_type": {
+"minWidth": 8,
+"maxWidth": 21,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 7
+},
+"distance_upper_limit": {
+"minWidth": 1,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 7
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"details": {
+"minWidth": 74,
+"maxWidth": 77,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"distance_lower_limit": {
+"minWidth": 1,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 4
+},
+"distance_probability": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"harmonic_force_constant": {
+"minWidth": 3,
+"maxWidth": 5,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 4
+},
+"group_conditionality": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+}
+},
+"flr_poly_probe_position_mutated": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"chem_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"atom_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+}
+},
+"flr_lifetime_fit_model": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"name": {
+"minWidth": 12,
+"maxWidth": 293,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"citation_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+}
+},
+"flr_reference_measurement_group": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"num_measurements": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"details": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"flr_reference_measurement_group_link": {
+"group_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"reference_measurement_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+}
+},
+"flr_reference_measurement": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"reference_sample_probe_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"num_species": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"details": {
+"minWidth": 16,
+"maxWidth": 34,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"flr_reference_measurement_lifetime": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"reference_measurement_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"species_fraction": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"lifetime": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"species_name": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"flr_fret_analysis_lifetime": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"analysis_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"reference_measurement_group_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"lifetime_fit_model_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"chi_square_reduced": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"method_name": {
+"minWidth": 12,
+"maxWidth": 64,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"ihm_epr_restraint": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"fitting_software_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"details": {
+"minWidth": 20,
+"maxWidth": 21,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"fitting_particle_type": {
+"minWidth": 30,
+"maxWidth": 30,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"fitting_method": {
+"minWidth": 52,
+"maxWidth": 52,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"fitting_method_citation_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"fitting_state": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"chi_value": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+}
+},
+"ihm_predicted_contact_restraint": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"entity_id_1": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"asym_id_1": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"comp_id_1": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"seq_id_1": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"rep_atom_1": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"entity_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"asym_id_2": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"comp_id_2": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"seq_id_2": {
+"minWidth": 2,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"rep_atom_2": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"restraint_type": {
+"minWidth": 11,
+"maxWidth": 21,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"distance_upper_limit": {
+"minWidth": 1,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 6
+},
+"probability": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 2,
+"maxPrec": 3,
+"count": 4
+},
+"model_granularity": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 6
+},
+"software_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"distance_lower_limit": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_poly_atom_feature": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"feature_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"seq_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+},
+"atom_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 5
+}
+},
+"pdbx_entry_details": {
+"entry_id": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"sequence_details": {
+"minWidth": 106,
+"maxWidth": 106,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_geometric_object_center": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"xcoord": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"ycoord": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"zcoord": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+}
+},
+"ihm_geometric_object_half_torus": {
+"object_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"section": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"thickness_th": {
+"minWidth": 2,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 3,
+"count": 4
+}
+},
+"ihm_geometric_object_plane": {
+"object_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"plane_type": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"transformation_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_geometric_object_torus": {
+"center_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"major_radius_R": {
+"minWidth": 5,
+"maxWidth": 7,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 4
+},
+"minor_radius_r": {
+"minWidth": 5,
+"maxWidth": 7,
+"minPrec": 1,
+"maxPrec": 3,
+"count": 4
+},
+"object_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"transformation_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+}
+},
+"ihm_geometric_object_transformation": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 4
+},
+"rot_matrix[1][1]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 3
+},
+"rot_matrix[2][1]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 3
+},
+"rot_matrix[3][1]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 3
+},
+"rot_matrix[1][2]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 3
+},
+"rot_matrix[2][2]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 3
+},
+"rot_matrix[3][2]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 3
+},
+"rot_matrix[1][3]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 3
+},
+"rot_matrix[2][3]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 3
+},
+"rot_matrix[3][3]": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 6,
+"maxPrec": 6,
+"count": 3
+},
+"tr_vector[1]": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 3
+},
+"tr_vector[2]": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 3
+},
+"tr_vector[3]": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 3
+}
+},
+"pdbx_protein_info": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"name": {
+"minWidth": 10,
+"maxWidth": 10,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"num_per_asym_unit": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_geometric_object_axis": {
+"object_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+},
+"axis_type": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 3
+}
+},
+"ihm_hydroxyl_radical_fp_restraint": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"seq_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"fp_rate": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+},
+"fp_rate_error": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+},
+"log_pf": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+},
+"log_pf_error": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 2,
+"maxPrec": 2,
+"count": 1
+},
+"predicted_sasa": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 1,
+"maxPrec": 1,
+"count": 1
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"software_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_pseudo_site": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"Cartn_x": {
+"minWidth": 6,
+"maxWidth": 8,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 2
+},
+"Cartn_y": {
+"minWidth": 5,
+"maxWidth": 8,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 2
+},
+"Cartn_z": {
+"minWidth": 5,
+"maxWidth": 8,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 2
+},
+"description": {
+"minWidth": 142,
+"maxWidth": 145,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"ihm_cross_link_pseudo_site": {
+"id": {
+"minWidth": 1,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"restraint_id": {
+"minWidth": 1,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"cross_link_partner": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"pseudo_site_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"model_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"pdbx_entity_poly_na_type": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"type": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"struct_conn": {
+"id": {
+"minWidth": 7,
+"maxWidth": 7,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"conn_type_id": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr1_label_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr1_label_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr1_label_seq_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr1_label_atom_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr1_symmetry": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr2_label_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr2_label_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr2_label_atom_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr1_auth_asym_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr1_auth_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr1_auth_seq_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr2_auth_asym_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr2_auth_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr2_auth_seq_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"ptnr2_symmetry": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdbx_dist_value": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 3,
+"maxPrec": 3,
+"count": 1
+}
+},
+"struct_conn_type": {
+"id": {
+"minWidth": 6,
+"maxWidth": 6,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_non_poly_feature": {
+"ordinal_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"feature_id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+},
+"atom_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 2
+}
+},
+"pdbx_entity_branch_list": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"num": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_entity_branch": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"type": {
+"minWidth": 15,
+"maxWidth": 15,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_branch_scheme": {
+"asym_id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"mon_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"num": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdb_seq_num": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_num": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_mon_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdb_mon_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"pdb_asym_id": {
+"minWidth": 3,
+"maxWidth": 5,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_entity_branch_descriptor": {
+"ordinal": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"descriptor": {
+"minWidth": 362,
+"maxWidth": 362,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"type": {
+"minWidth": 25,
+"maxWidth": 25,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"program": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"program_version": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_entity_branch_link": {
+"link_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_branch_list_num_1": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"comp_id_1": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"atom_id_1": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"leaving_atom_id_1": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"entity_branch_list_num_2": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"comp_id_2": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"atom_id_2": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"leaving_atom_id_2": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"value_order": {
+"minWidth": 4,
+"maxWidth": 4,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_derived_angle_restraint": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"feature_id_1": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"feature_id_2": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"feature_id_3": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"group_conditionality": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"restraint_type": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"angle_threshold_mean": {
+"minWidth": 5,
+"maxWidth": 5,
+"minPrec": 1,
+"maxPrec": 1,
+"count": 1
+},
+"angle_threshold_esd": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ihm_derived_dihedral_restraint": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"feature_id_1": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"feature_id_2": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"feature_id_3": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"feature_id_4": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"group_conditionality": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"restraint_type": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"dihedral_threshold_mean": {
+"minWidth": 4,
+"maxWidth": 5,
+"minPrec": 1,
+"maxPrec": 1,
+"count": 1
+},
+"dihedral_threshold_esd": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 1,
+"maxPrec": 1,
+"count": 1
+},
+"dataset_list_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_unobs_or_zero_occ_atoms": {
+"id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"polymer_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"occupancy_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_atom_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"label_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"label_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"label_seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"label_atom_id": {
+"minWidth": 2,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_unobs_or_zero_occ_residues": {
+"id": {
+"minWidth": 1,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"PDB_model_num": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"polymer_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"occupancy_flag": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"label_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"label_comp_id": {
+"minWidth": 3,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"label_seq_id": {
+"minWidth": 1,
+"maxWidth": 3,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_inhibitor_info": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"name": {
+"minWidth": 22,
+"maxWidth": 22,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"num_per_asym_unit": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_ion_info": {
+"id": {
+"minWidth": 2,
+"maxWidth": 2,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"name": {
+"minWidth": 8,
+"maxWidth": 8,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"numb_per_asym_unit": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"pdbx_seq_map_depositor_info": {
+"entity_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"auth_asym_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"one_letter_code": {
+"minWidth": 70,
+"maxWidth": 406,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"one_letter_code_mod": {
+"minWidth": 70,
+"maxWidth": 406,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+}
+}

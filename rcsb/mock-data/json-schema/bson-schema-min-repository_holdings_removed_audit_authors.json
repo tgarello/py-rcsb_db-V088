@@ -1,0 +1,29 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "audit_author": {
+         "bsonType": "string"
+      },
+      "entry_id": {
+         "bsonType": "string"
+      },
+      "ordinal_id": {
+         "bsonType": "int"
+      },
+      "update_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "required": [
+      "entry_id",
+      "ordinal_id",
+      "update_id"
+   ],
+   "additionalProperties": false
+}

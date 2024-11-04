@@ -1,0 +1,1675 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "pdbx_unobs_or_zero_occ_atoms": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_atom_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "occupancy_flag": {
+                  "bsonType": "int",
+                  "enum": [
+                     0,
+                     1
+                  ]
+               },
+               "polymer_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Y",
+                     "N"
+                  ]
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_unobs_or_zero_occ_residues": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "occupancy_flag": {
+                  "bsonType": "int",
+                  "enum": [
+                     0,
+                     1
+                  ]
+               },
+               "polymer_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Y",
+                     "N"
+                  ]
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_chiral": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "omega": {
+                  "bsonType": "double"
+               },
+               "rcsb_label_asym_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_close_contact": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code_1": {
+                  "bsonType": "string"
+               },
+               "PDB_ins_code_2": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_2": {
+                  "bsonType": "string"
+               },
+               "dist": {
+                  "bsonType": "double"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id_1": {
+                  "bsonType": "string"
+               },
+               "label_alt_id_2": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_2": {
+                  "bsonType": "string"
+               },
+               "symm_as_xyz_1": {
+                  "bsonType": "string"
+               },
+               "symm_as_xyz_2": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_main_chain_plane": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "improper_torsion_angle": {
+                  "bsonType": "double"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_peptide_omega": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code_1": {
+                  "bsonType": "string"
+               },
+               "PDB_ins_code_2": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_2": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id_1": {
+                  "bsonType": "string"
+               },
+               "label_alt_id_2": {
+                  "bsonType": "string"
+               },
+               "omega": {
+                  "bsonType": "double"
+               },
+               "rcsb_label_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_2": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_planes": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id": {
+                  "bsonType": "string"
+               },
+               "rmsd": {
+                  "bsonType": "double"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "MAIN CHAIN",
+                     "SIDE CHAIN",
+                     "MAIN_CHAIN",
+                     "SIDE_CHAIN"
+                  ]
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_planes_atom": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "atom_deviation": {
+                  "bsonType": "double"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "plane_id": {
+                  "bsonType": "int"
+               },
+               "rcsb_label_asym_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_polymer_linkage": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code_1": {
+                  "bsonType": "string"
+               },
+               "PDB_ins_code_2": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_2": {
+                  "bsonType": "string"
+               },
+               "dist": {
+                  "bsonType": "double"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id_1": {
+                  "bsonType": "string"
+               },
+               "label_alt_id_2": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_2": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_rmsd_angle": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code_1": {
+                  "bsonType": "string"
+               },
+               "PDB_ins_code_2": {
+                  "bsonType": "string"
+               },
+               "PDB_ins_code_3": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "angle_deviation": {
+                  "bsonType": "double"
+               },
+               "angle_standard_deviation": {
+                  "bsonType": "double"
+               },
+               "angle_target_value": {
+                  "bsonType": "double"
+               },
+               "angle_value": {
+                  "bsonType": "double"
+               },
+               "auth_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id_3": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_3": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_3": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_3": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id_1": {
+                  "bsonType": "string"
+               },
+               "label_alt_id_2": {
+                  "bsonType": "string"
+               },
+               "label_alt_id_3": {
+                  "bsonType": "string"
+               },
+               "linker_flag": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_2": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_3": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_rmsd_bond": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code_1": {
+                  "bsonType": "string"
+               },
+               "PDB_ins_code_2": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_2": {
+                  "bsonType": "string"
+               },
+               "bond_deviation": {
+                  "bsonType": "double"
+               },
+               "bond_standard_deviation": {
+                  "bsonType": "double"
+               },
+               "bond_target_value": {
+                  "bsonType": "double"
+               },
+               "bond_value": {
+                  "bsonType": "double"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id_1": {
+                  "bsonType": "string"
+               },
+               "label_alt_id_2": {
+                  "bsonType": "string"
+               },
+               "linker_flag": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_2": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_symm_contact": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code_1": {
+                  "bsonType": "string"
+               },
+               "PDB_ins_code_2": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id_2": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_1": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id_2": {
+                  "bsonType": "string"
+               },
+               "dist": {
+                  "bsonType": "double"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id_1": {
+                  "bsonType": "string"
+               },
+               "label_alt_id_2": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_1": {
+                  "bsonType": "string"
+               },
+               "rcsb_label_asym_id_2": {
+                  "bsonType": "string"
+               },
+               "site_symmetry_1": {
+                  "bsonType": "string"
+               },
+               "site_symmetry_2": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_validate_torsion": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_ins_code": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "phi": {
+                  "bsonType": "double"
+               },
+               "psi": {
+                  "bsonType": "double"
+               },
+               "rcsb_label_asym_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_angle_outliers": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "Z": {
+                  "bsonType": "double"
+               },
+               "atom0": {
+                  "bsonType": "string"
+               },
+               "atom1": {
+                  "bsonType": "string"
+               },
+               "atom2": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "link": {
+                  "bsonType": "string",
+                  "enum": [
+                     "yes"
+                  ]
+               },
+               "mean": {
+                  "bsonType": "double"
+               },
+               "obs": {
+                  "bsonType": "double"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "stdev": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_bond_outliers": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "Z": {
+                  "bsonType": "double"
+               },
+               "atom0": {
+                  "bsonType": "string"
+               },
+               "atom1": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "link": {
+                  "bsonType": "string",
+                  "enum": [
+                     "yes"
+                  ]
+               },
+               "mean": {
+                  "bsonType": "double"
+               },
+               "obs": {
+                  "bsonType": "double"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "stdev": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_clashes": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "cid": {
+                  "bsonType": "int"
+               },
+               "clashmag": {
+                  "bsonType": "double"
+               },
+               "dist": {
+                  "bsonType": "double"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_atom_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_instance_results": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "OWAB": {
+                  "bsonType": "double"
+               },
+               "PDB_ins_code": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "RNA_pucker": {
+                  "bsonType": "string"
+               },
+               "RNA_score": {
+                  "bsonType": "double"
+               },
+               "RNA_suite": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NonRotameric",
+                     "Triaged/NotBinned",
+                     "NotAvailable",
+                     "Rotameric"
+                  ]
+               },
+               "RSR": {
+                  "bsonType": "double"
+               },
+               "RSRCC": {
+                  "bsonType": "double"
+               },
+               "RSRZ": {
+                  "bsonType": "double"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "average_occupancy": {
+                  "bsonType": "double"
+               },
+               "cis_peptide": {
+                  "bsonType": "string",
+                  "enum": [
+                     "yes"
+                  ]
+               },
+               "cyrange_domain_id": {
+                  "bsonType": "int"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "flippable_sidechain": {
+                  "bsonType": "string",
+                  "enum": [
+                     "1"
+                  ]
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "lig_RSRZ": {
+                  "bsonType": "double"
+               },
+               "lig_RSRZ_nbr_id": {
+                  "bsonType": "array",
+                  "items": {
+                     "bsonType": "string"
+                  },
+                  "uniqueItems": false
+               },
+               "lig_RSR_nbr_mean": {
+                  "bsonType": "double"
+               },
+               "lig_RSR_nbr_stdev": {
+                  "bsonType": "double"
+               },
+               "lig_RSR_numnbrs": {
+                  "bsonType": "int"
+               },
+               "ligand_chirality_outlier": {
+                  "bsonType": "string",
+                  "enum": [
+                     "yes"
+                  ]
+               },
+               "ligand_clashes_outlier": {
+                  "bsonType": "string",
+                  "enum": [
+                     "yes"
+                  ]
+               },
+               "ligand_density_outlier": {
+                  "bsonType": "string",
+                  "enum": [
+                     "yes"
+                  ]
+               },
+               "ligand_geometry_outlier": {
+                  "bsonType": "string",
+                  "enum": [
+                     "yes"
+                  ]
+               },
+               "ligand_num_clashes": {
+                  "bsonType": "int"
+               },
+               "ligand_num_symm_clashes": {
+                  "bsonType": "int"
+               },
+               "mogul_RMSZ_num_angles": {
+                  "bsonType": "int"
+               },
+               "mogul_RMSZ_num_bonds": {
+                  "bsonType": "int"
+               },
+               "mogul_angles_RMSZ": {
+                  "bsonType": "double"
+               },
+               "mogul_bonds_RMSZ": {
+                  "bsonType": "double"
+               },
+               "mogul_ignore": {
+                  "bsonType": "string",
+                  "enum": [
+                     "yes"
+                  ]
+               },
+               "natoms_eds": {
+                  "bsonType": "int"
+               },
+               "num_H_reduce": {
+                  "bsonType": "double"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "phi": {
+                  "bsonType": "double"
+               },
+               "psi": {
+                  "bsonType": "double"
+               },
+               "ramachandran_class": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Allowed",
+                     "OUTLIER",
+                     "Favored"
+                  ]
+               },
+               "rotamer_class": {
+                  "bsonType": "string"
+               },
+               "validate": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_mogul_angle_outliers": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "Zscore": {
+                  "bsonType": "double"
+               },
+               "atoms": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "mean": {
+                  "bsonType": "double"
+               },
+               "mindiff": {
+                  "bsonType": "double"
+               },
+               "numobs": {
+                  "bsonType": "int"
+               },
+               "obsval": {
+                  "bsonType": "double"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "stdev": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_mogul_bond_outliers": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "Zscore": {
+                  "bsonType": "double"
+               },
+               "atoms": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "mean": {
+                  "bsonType": "double"
+               },
+               "mindiff": {
+                  "bsonType": "double"
+               },
+               "numobs": {
+                  "bsonType": "int"
+               },
+               "obsval": {
+                  "bsonType": "double"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "stdev": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_mogul_ring_outliers": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "atoms": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "mean": {
+                  "bsonType": "double"
+               },
+               "mindiff": {
+                  "bsonType": "double"
+               },
+               "numobs": {
+                  "bsonType": "int"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "stdev": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_mogul_torsion_outliers": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "atoms": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "mean": {
+                  "bsonType": "double"
+               },
+               "mindiff": {
+                  "bsonType": "double"
+               },
+               "numobs": {
+                  "bsonType": "int"
+               },
+               "obsval": {
+                  "bsonType": "double"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "stdev": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_plane_outliers": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "improper": {
+                  "bsonType": "double"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "omega": {
+                  "bsonType": "double"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "plane_rmsd": {
+                  "bsonType": "double"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "peptide",
+                     "mainchain",
+                     "sidechain"
+                  ]
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_stereo_outliers": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_atom_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "problem": {
+                  "bsonType": "string",
+                  "enum": [
+                     "WRONG HAND",
+                     "PLANAR"
+                  ]
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_vrpt_symmetry_clashes": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "PDB_model_num": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "clashmag": {
+                  "bsonType": "double"
+               },
+               "dist": {
+                  "bsonType": "double"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "label_alt_id": {
+                  "bsonType": "string"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_atom_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               },
+               "scid": {
+                  "bsonType": "int"
+               },
+               "symop": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "rcsb_entity_instance_validation_container_identifiers": {
+         "bsonType": "object",
+         "properties": {
+            "asym_id": {
+               "bsonType": "string"
+            },
+            "auth_asym_id": {
+               "bsonType": "string"
+            },
+            "auth_seq_id": {
+               "bsonType": "string"
+            },
+            "comp_id": {
+               "bsonType": "string"
+            },
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "entity_type": {
+               "bsonType": "string",
+               "enum": [
+                  "non-polymer",
+                  "polymer",
+                  "macrolide",
+                  "branched",
+                  "water"
+               ]
+            },
+            "entry_id": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "asym_id",
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "rcsb_load_status": {
+         "bsonType": "object",
+         "properties": {
+            "datablock_name": {
+               "bsonType": "string"
+            },
+            "load_date": {
+               "bsonType": "date"
+            },
+            "locator": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "datablock_name"
+         ],
+         "additionalProperties": false
+      },
+      "struct_asym": {
+         "bsonType": "object",
+         "properties": {
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "id": {
+               "bsonType": "string"
+            },
+            "pdbx_blank_PDB_chainid_flag": {
+               "bsonType": "string",
+               "enum": [
+                  "Y",
+                  "N"
+               ]
+            },
+            "pdbx_modified": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "id"
+         ],
+         "additionalProperties": false
+      },
+      "_entry_id": {
+         "bsonType": "string"
+      },
+      "_entity_id": {
+         "bsonType": "string"
+      },
+      "_asym_id": {
+         "bsonType": "string"
+      },
+      "_auth_asym_id": {
+         "bsonType": "string"
+      },
+      "_comp_id": {
+         "bsonType": "string"
+      },
+      "_auth_seq_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "additionalProperties": false,
+   "required": [
+      "_entry_id",
+      "_entity_id",
+      "_asym_id",
+      "_auth_asym_id"
+   ]
+}

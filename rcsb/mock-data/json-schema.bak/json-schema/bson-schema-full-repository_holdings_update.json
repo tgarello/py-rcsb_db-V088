@@ -1,0 +1,46 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "entry_id": {
+         "bsonType": "string"
+      },
+      "repository_content_types": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "string",
+            "enum": [
+               "NMR chemical shifts",
+               "coordinates",
+               "structure factors",
+               "NMR restraints"
+            ]
+         },
+         "uniqueItems": false
+      },
+      "update_id": {
+         "bsonType": "string"
+      },
+      "update_type": {
+         "bsonType": "string",
+         "enum": [
+            "added",
+            "obsolete",
+            "modified",
+            "removed"
+         ]
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "required": [
+      "entry_id",
+      "repository_content_types",
+      "update_id",
+      "update_type"
+   ],
+   "additionalProperties": false
+}

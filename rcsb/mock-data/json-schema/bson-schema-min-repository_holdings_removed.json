@@ -1,0 +1,51 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "audit_authors": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "string"
+         },
+         "uniqueItems": false
+      },
+      "deposit_date": {
+         "bsonType": "date"
+      },
+      "details": {
+         "bsonType": "string"
+      },
+      "entry_id": {
+         "bsonType": "string"
+      },
+      "id_codes_replaced_by": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "string"
+         },
+         "uniqueItems": false
+      },
+      "release_date": {
+         "bsonType": "date"
+      },
+      "remove_date": {
+         "bsonType": "date"
+      },
+      "title": {
+         "bsonType": "string"
+      },
+      "update_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "required": [
+      "entry_id",
+      "update_id"
+   ],
+   "additionalProperties": false
+}

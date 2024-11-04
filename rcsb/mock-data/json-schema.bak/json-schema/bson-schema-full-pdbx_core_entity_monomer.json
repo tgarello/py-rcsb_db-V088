@@ -1,0 +1,87 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "rcsb_entity_monomer_container_identifiers": {
+         "bsonType": "object",
+         "properties": {
+            "comp_id": {
+               "bsonType": "string"
+            },
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "ordinal_id": {
+               "bsonType": "int"
+            }
+         },
+         "required": [
+            "comp_id",
+            "entity_id",
+            "entry_id",
+            "ordinal_id"
+         ],
+         "additionalProperties": false
+      },
+      "rcsb_entity_poly_info": {
+         "bsonType": "object",
+         "properties": {
+            "chem_comp_count": {
+               "bsonType": "int"
+            },
+            "comp_id": {
+               "bsonType": "string"
+            },
+            "entity_id": {
+               "bsonType": "string"
+            },
+            "entity_sequence_length": {
+               "bsonType": "int"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "is_modified": {
+               "bsonType": "string",
+               "enum": [
+                  "Y",
+                  "N"
+               ]
+            },
+            "ordinal_id": {
+               "bsonType": "int"
+            }
+         },
+         "required": [
+            "comp_id",
+            "entity_id",
+            "entry_id",
+            "ordinal_id"
+         ],
+         "additionalProperties": false
+      },
+      "_entry_id": {
+         "bsonType": "string"
+      },
+      "_entity_id": {
+         "bsonType": "string"
+      },
+      "_comp_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "additionalProperties": false,
+   "required": [
+      "_entry_id",
+      "_entity_id",
+      "_comp_id"
+   ]
+}

@@ -1,0 +1,2905 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "atom_type": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "symbol": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "symbol"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "audit_author": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "pdbx_ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "name",
+               "pdbx_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "audit_conform": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "dict_location": {
+                  "bsonType": "string"
+               },
+               "dict_name": {
+                  "bsonType": "string"
+               },
+               "dict_version": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "dict_name",
+               "dict_version"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "chem_comp": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "formula": {
+                  "bsonType": "string"
+               },
+               "formula_weight": {
+                  "bsonType": "double",
+                  "minimum": 1.0
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "mon_nstd_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "n",
+                     "yes",
+                     "y",
+                     "no"
+                  ]
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "L-peptide linking",
+                     "L-DNA linking",
+                     "saccharide",
+                     "L-saccharide",
+                     "L-gamma-peptide, C-delta linking",
+                     "L-peptide COOH carboxy terminus",
+                     "D-beta-peptide, C-gamma linking",
+                     "L-saccharide 1,4 and 1,4 linking",
+                     "L-saccharide 1,4 and 1,6 linking",
+                     "L-beta-peptide, C-gamma linking",
+                     "D-saccharide 1,4 and 1,6 linking",
+                     "D-peptide NH3 amino terminus",
+                     "DNA OH 5 prime terminus",
+                     "L-RNA linking",
+                     "peptide-like",
+                     "DNA OH 3 prime terminus",
+                     "RNA linking",
+                     "L-peptide NH3 amino terminus",
+                     "other",
+                     "D-peptide linking",
+                     "D-saccharide",
+                     "non-polymer",
+                     "D-peptide COOH carboxy terminus",
+                     "peptide linking",
+                     "DNA linking",
+                     "RNA OH 3 prime terminus",
+                     "RNA OH 5 prime terminus",
+                     "D-saccharide 1,4 and 1,4 linking",
+                     "D-gamma-peptide, C-delta linking"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "id",
+               "type"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "citation": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "country": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "journal_abbrev": {
+                  "bsonType": "string"
+               },
+               "journal_id_ASTM": {
+                  "bsonType": "string"
+               },
+               "journal_id_CSD": {
+                  "bsonType": "string"
+               },
+               "journal_id_ISSN": {
+                  "bsonType": "string"
+               },
+               "journal_volume": {
+                  "bsonType": "string"
+               },
+               "page_first": {
+                  "bsonType": "string"
+               },
+               "page_last": {
+                  "bsonType": "string"
+               },
+               "pdbx_database_id_DOI": {
+                  "bsonType": "string"
+               },
+               "pdbx_database_id_PubMed": {
+                  "bsonType": "int",
+                  "minimum": -1
+               },
+               "title": {
+                  "bsonType": "string"
+               },
+               "year": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "citation_author": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "citation_id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "ordinal": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "citation_id",
+               "name",
+               "ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "entity": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "formula_weight": {
+                  "bsonType": "double",
+                  "minimum": 1.0
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "pdbx_description": {
+                  "bsonType": "string"
+               },
+               "pdbx_number_of_molecules": {
+                  "bsonType": "double"
+               },
+               "src_method": {
+                  "bsonType": "string",
+                  "enum": [
+                     "syn",
+                     "nat",
+                     "man"
+                  ]
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "non-polymer",
+                     "polymer",
+                     "macrolide",
+                     "branched",
+                     "water"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "entity_name_com": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "entity_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "entity_name_sys": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "entity_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "entity_poly": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "nstd_chirality": {
+                  "bsonType": "string",
+                  "enum": [
+                     "n",
+                     "yes",
+                     "y",
+                     "no"
+                  ]
+               },
+               "nstd_linkage": {
+                  "bsonType": "string",
+                  "enum": [
+                     "n",
+                     "yes",
+                     "y",
+                     "no"
+                  ]
+               },
+               "nstd_monomer": {
+                  "bsonType": "string",
+                  "enum": [
+                     "n",
+                     "yes",
+                     "y",
+                     "no"
+                  ]
+               },
+               "pdbx_seq_one_letter_code": {
+                  "bsonType": "string"
+               },
+               "pdbx_seq_one_letter_code_can": {
+                  "bsonType": "string"
+               },
+               "pdbx_sequence_evidence_code": {
+                  "bsonType": "string",
+                  "enum": [
+                     "derived from coordinates",
+                     "depositor provided"
+                  ]
+               },
+               "pdbx_strand_id": {
+                  "bsonType": "string"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "polydeoxyribonucleotide",
+                     "cyclic-pseudo-peptide",
+                     "polyribonucleotide",
+                     "peptide nucleic acid",
+                     "polysaccharide(D)",
+                     "polypeptide(L)",
+                     "polysaccharide(L)",
+                     "polydeoxyribonucleotide/polyribonucleotide hybrid",
+                     "polypeptide(D)",
+                     "other"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "entity_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "entity_poly_seq": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "hetero": {
+                  "bsonType": "string",
+                  "enum": [
+                     "n",
+                     "yes",
+                     "y",
+                     "no"
+                  ]
+               },
+               "mon_id": {
+                  "bsonType": "string"
+               },
+               "num": {
+                  "bsonType": "int",
+                  "minimum": 1
+               }
+            },
+            "required": [
+               "structure_id",
+               "entity_id",
+               "mon_id",
+               "num"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "entity_src_gen": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "gene_src_common_name": {
+                  "bsonType": "string"
+               },
+               "gene_src_genus": {
+                  "bsonType": "string"
+               },
+               "pdbx_alt_source_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "model",
+                     "sample"
+                  ]
+               },
+               "pdbx_gene_src_scientific_name": {
+                  "bsonType": "string"
+               },
+               "pdbx_src_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "entity_id",
+               "pdbx_src_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "entry": {
+         "bsonType": "object",
+         "properties": {
+            "structure_id": {
+               "bsonType": "string"
+            },
+            "id": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "structure_id",
+            "id"
+         ],
+         "additionalProperties": false
+      },
+      "ihm_2dem_class_average_fitting": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "cross_correlation_coefficient": {
+                  "bsonType": "double"
+               },
+               "model_id": {
+                  "bsonType": "int"
+               },
+               "restraint_id": {
+                  "bsonType": "int"
+               },
+               "rot_matrix_1_1": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_1_2": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_1_3": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_2_1": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_2_2": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_2_3": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_3_1": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_3_2": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_3_3": {
+                  "bsonType": "double"
+               },
+               "tr_vector_1": {
+                  "bsonType": "double"
+               },
+               "tr_vector_2": {
+                  "bsonType": "double"
+               },
+               "tr_vector_3": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "structure_id",
+               "cross_correlation_coefficient",
+               "model_id",
+               "restraint_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_2dem_class_average_restraint": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "image_resolution": {
+                  "bsonType": "double"
+               },
+               "image_segment_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NO",
+                     "YES"
+                  ]
+               },
+               "number_of_projections": {
+                  "bsonType": "int"
+               },
+               "number_raw_micrographs": {
+                  "bsonType": "int"
+               },
+               "pixel_size_height": {
+                  "bsonType": "double"
+               },
+               "pixel_size_width": {
+                  "bsonType": "double"
+               },
+               "struct_assembly_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "dataset_list_id",
+               "id",
+               "image_resolution",
+               "pixel_size_height",
+               "pixel_size_width",
+               "struct_assembly_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_3dem_restraint": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "cross_correlation_coefficient": {
+                  "bsonType": "double"
+               },
+               "dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "fitting_method": {
+                  "bsonType": "string"
+               },
+               "model_id": {
+                  "bsonType": "int"
+               },
+               "number_of_gaussians": {
+                  "bsonType": "int"
+               },
+               "struct_assembly_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "cross_correlation_coefficient",
+               "dataset_list_id",
+               "model_id",
+               "struct_assembly_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_cross_link_list": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "comp_id_1": {
+                  "bsonType": "string"
+               },
+               "comp_id_2": {
+                  "bsonType": "string"
+               },
+               "dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "entity_description_1": {
+                  "bsonType": "string"
+               },
+               "entity_description_2": {
+                  "bsonType": "string"
+               },
+               "entity_id_1": {
+                  "bsonType": "string"
+               },
+               "entity_id_2": {
+                  "bsonType": "string"
+               },
+               "group_id": {
+                  "bsonType": "int"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "linker_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "DSSO",
+                     "sulfo-SMCC",
+                     "BS2G",
+                     "EGS",
+                     "sulfo-SDA",
+                     "EDC",
+                     "DSS",
+                     "Other",
+                     "DST",
+                     "BS3"
+                  ]
+               },
+               "seq_id_1": {
+                  "bsonType": "int"
+               },
+               "seq_id_2": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "comp_id_1",
+               "comp_id_2",
+               "dataset_list_id",
+               "entity_id_1",
+               "entity_id_2",
+               "group_id",
+               "id",
+               "linker_type",
+               "seq_id_1",
+               "seq_id_2"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_cross_link_restraint": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "asym_id_1": {
+                  "bsonType": "string"
+               },
+               "asym_id_2": {
+                  "bsonType": "string"
+               },
+               "atom_id_1": {
+                  "bsonType": "string"
+               },
+               "atom_id_2": {
+                  "bsonType": "string"
+               },
+               "comp_id_1": {
+                  "bsonType": "string"
+               },
+               "comp_id_2": {
+                  "bsonType": "string"
+               },
+               "conditional_crosslink_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "ALL",
+                     "ANY"
+                  ]
+               },
+               "distance_threshold": {
+                  "bsonType": "double"
+               },
+               "entity_id_1": {
+                  "bsonType": "string"
+               },
+               "entity_id_2": {
+                  "bsonType": "string"
+               },
+               "group_id": {
+                  "bsonType": "int"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "model_granularity": {
+                  "bsonType": "string",
+                  "enum": [
+                     "by-residue",
+                     "by-feature",
+                     "by-atom"
+                  ]
+               },
+               "psi": {
+                  "bsonType": "double",
+                  "minimum": 0.0,
+                  "maximum": 1.0
+               },
+               "restraint_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "lower bound",
+                     "upper bound",
+                     "harmonic"
+                  ]
+               },
+               "seq_id_1": {
+                  "bsonType": "int"
+               },
+               "seq_id_2": {
+                  "bsonType": "int"
+               },
+               "sigma_1": {
+                  "bsonType": "double"
+               },
+               "sigma_2": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "structure_id",
+               "asym_id_1",
+               "asym_id_2",
+               "comp_id_1",
+               "comp_id_2",
+               "distance_threshold",
+               "entity_id_1",
+               "entity_id_2",
+               "group_id",
+               "id",
+               "model_granularity",
+               "seq_id_1",
+               "seq_id_2"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_cross_link_result_parameters": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "model_id": {
+                  "bsonType": "int"
+               },
+               "psi": {
+                  "bsonType": "double",
+                  "minimum": 0.0,
+                  "maximum": 1.0
+               },
+               "restraint_id": {
+                  "bsonType": "int"
+               },
+               "sigma_1": {
+                  "bsonType": "double"
+               },
+               "sigma_2": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "structure_id",
+               "model_id",
+               "restraint_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_dataset_external_reference": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "file_id": {
+                  "bsonType": "int"
+               },
+               "id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "dataset_list_id",
+               "file_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_dataset_group": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_dataset_list": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "data_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Mass Spectrometry data",
+                     "Integrative model",
+                     "Other",
+                     "Single molecule FRET data",
+                     "CX-MS data",
+                     "3DEM volume",
+                     "Mutagenesis data",
+                     "Yeast two-hybrid screening data",
+                     "Experimental model",
+                     "H/D exchange data",
+                     "Predicted contacts",
+                     "NMR data",
+                     "EM raw micrographs",
+                     "SAS data",
+                     "2DEM class average",
+                     "EPR data",
+                     "Hydroxyl radical footprinting data",
+                     "De Novo model",
+                     "Comparative model",
+                     "DNA footprinting data"
+                  ]
+               },
+               "database_hosted": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NO",
+                     "YES"
+                  ]
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "data_type",
+               "database_hosted",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_dataset_related_db_reference": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "accession_code": {
+                  "bsonType": "string"
+               },
+               "dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "db_name": {
+                  "bsonType": "string",
+                  "enum": [
+                     "MODEL ARCHIVE",
+                     "PDB",
+                     "EMPIAR",
+                     "BMRB",
+                     "MASSIVE",
+                     "BioGRID",
+                     "Other",
+                     "EMDB",
+                     "SASBDB",
+                     "PRIDE"
+                  ]
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "version": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "accession_code",
+               "dataset_list_id",
+               "db_name",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_derived_distance_restraint": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "distance_upper_limit": {
+                  "bsonType": "double"
+               },
+               "feature_id_1": {
+                  "bsonType": "int"
+               },
+               "feature_id_2": {
+                  "bsonType": "int"
+               },
+               "group_conditionality": {
+                  "bsonType": "string",
+                  "enum": [
+                     "ALL",
+                     "ANY"
+                  ]
+               },
+               "group_id": {
+                  "bsonType": "int"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "random_exclusion_fraction": {
+                  "bsonType": "double"
+               },
+               "restraint_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "lower and upper bound",
+                     "lower bound",
+                     "upper bound"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "dataset_list_id",
+               "feature_id_1",
+               "feature_id_2",
+               "id",
+               "restraint_type"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_ensemble_info": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "ensemble_clustering_feature": {
+                  "bsonType": "string",
+                  "enum": [
+                     "RMSD",
+                     "dRMSD",
+                     "other"
+                  ]
+               },
+               "ensemble_clustering_method": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Other",
+                     "Partitioning (k-means)",
+                     "Hierarchical"
+                  ]
+               },
+               "ensemble_file_id": {
+                  "bsonType": "int"
+               },
+               "ensemble_id": {
+                  "bsonType": "int"
+               },
+               "ensemble_name": {
+                  "bsonType": "string"
+               },
+               "ensemble_precision_value": {
+                  "bsonType": "double"
+               },
+               "model_group_id": {
+                  "bsonType": "int"
+               },
+               "num_ensemble_models": {
+                  "bsonType": "int"
+               },
+               "num_ensemble_models_deposited": {
+                  "bsonType": "int"
+               },
+               "post_process_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "ensemble_id",
+               "num_ensemble_models"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_external_files": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "content_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Modeling workflow or script",
+                     "Modeling or post-processing output",
+                     "Other",
+                     "Input data or restraints",
+                     "Visualization script"
+                  ]
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "file_format": {
+                  "bsonType": "string",
+                  "enum": [
+                     "CCP4",
+                     "CLUSTALW",
+                     "Other",
+                     "A2M",
+                     "PIR/NBRF",
+                     "PDB",
+                     "CIF",
+                     "HDF5",
+                     "A3M",
+                     "TIF",
+                     "TXT",
+                     "PDF",
+                     "JPG",
+                     "PNG",
+                     "DCD",
+                     "FASTA",
+                     "PGM",
+                     "MRC",
+                     "GIF"
+                  ]
+               },
+               "file_path": {
+                  "bsonType": "string"
+               },
+               "file_size_bytes": {
+                  "bsonType": "double"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "reference_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "content_type",
+               "id",
+               "reference_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_external_reference_info": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "associated_url": {
+                  "bsonType": "string"
+               },
+               "reference": {
+                  "bsonType": "string"
+               },
+               "reference_id": {
+                  "bsonType": "int"
+               },
+               "reference_provider": {
+                  "bsonType": "string"
+               },
+               "reference_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "DOI",
+                     "Supplementary Files"
+                  ]
+               },
+               "refers_to": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Publication",
+                     "Archive",
+                     "File",
+                     "Other"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "reference",
+               "reference_id",
+               "reference_type",
+               "refers_to"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_feature_list": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "entity_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "polymer",
+                     "water",
+                     "non-polymer",
+                     "other"
+                  ]
+               },
+               "feature_id": {
+                  "bsonType": "int"
+               },
+               "feature_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "atom",
+                     "pseudo site",
+                     "residue",
+                     "residue range",
+                     "ligand"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "entity_type",
+               "feature_id",
+               "feature_type"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_geometric_object_axis": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "axis_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "y-axis",
+                     "z-axis",
+                     "x-axis"
+                  ]
+               },
+               "object_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "axis_type",
+               "object_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_geometric_object_center": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "xcoord": {
+                  "bsonType": "double"
+               },
+               "ycoord": {
+                  "bsonType": "double"
+               },
+               "zcoord": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "structure_id",
+               "id",
+               "xcoord",
+               "ycoord",
+               "zcoord"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_geometric_object_distance_restraint": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "distance_lower_limit": {
+                  "bsonType": "double"
+               },
+               "distance_upper_limit": {
+                  "bsonType": "double"
+               },
+               "feature_id": {
+                  "bsonType": "int"
+               },
+               "group_conditionality": {
+                  "bsonType": "string",
+                  "enum": [
+                     "ALL",
+                     "ANY"
+                  ]
+               },
+               "harmonic_force_constant": {
+                  "bsonType": "double"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "object_characteristic": {
+                  "bsonType": "string",
+                  "enum": [
+                     "outer surface",
+                     "plane",
+                     "center",
+                     "axis",
+                     "inner surface",
+                     "other"
+                  ]
+               },
+               "object_id": {
+                  "bsonType": "int"
+               },
+               "restraint_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "lower and upper bound",
+                     "lower bound",
+                     "upper bound",
+                     "harmonic",
+                     "other"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "feature_id",
+               "id",
+               "object_id",
+               "restraint_type"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_geometric_object_half_torus": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "object_id": {
+                  "bsonType": "int"
+               },
+               "section": {
+                  "bsonType": "string",
+                  "enum": [
+                     "inner half",
+                     "outer half",
+                     "other"
+                  ]
+               },
+               "thickness_th": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "structure_id",
+               "object_id",
+               "section",
+               "thickness_th"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_geometric_object_list": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "object_id": {
+                  "bsonType": "int"
+               },
+               "object_name": {
+                  "bsonType": "string"
+               },
+               "object_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "plane",
+                     "torus",
+                     "sphere",
+                     "axis",
+                     "other",
+                     "half-torus"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "object_id",
+               "object_type"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_geometric_object_plane": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "object_id": {
+                  "bsonType": "int"
+               },
+               "plane_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "xy-plane",
+                     "xz-plane",
+                     "yz-plane"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "object_id",
+               "plane_type"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_geometric_object_torus": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "center_id": {
+                  "bsonType": "int"
+               },
+               "major_radius_R": {
+                  "bsonType": "double"
+               },
+               "minor_radius_r": {
+                  "bsonType": "double"
+               },
+               "object_id": {
+                  "bsonType": "int"
+               },
+               "transformation_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "center_id",
+               "major_radius_R",
+               "minor_radius_r",
+               "object_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_geometric_object_transformation": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "rot_matrix_1_1": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_1_2": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_1_3": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_2_1": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_2_2": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_2_3": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_3_1": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_3_2": {
+                  "bsonType": "double"
+               },
+               "rot_matrix_3_3": {
+                  "bsonType": "double"
+               },
+               "tr_vector_1": {
+                  "bsonType": "double"
+               },
+               "tr_vector_2": {
+                  "bsonType": "double"
+               },
+               "tr_vector_3": {
+                  "bsonType": "double"
+               }
+            },
+            "required": [
+               "structure_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_localization_density_files": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "asym_id": {
+                  "bsonType": "string"
+               },
+               "ensemble_id": {
+                  "bsonType": "int"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "file_id": {
+                  "bsonType": "int"
+               },
+               "id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "asym_id",
+               "ensemble_id",
+               "entity_id",
+               "file_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_model_list": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "assembly_id": {
+                  "bsonType": "int"
+               },
+               "model_id": {
+                  "bsonType": "int"
+               },
+               "model_name": {
+                  "bsonType": "string"
+               },
+               "protocol_id": {
+                  "bsonType": "int"
+               },
+               "representation_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "assembly_id",
+               "model_id",
+               "protocol_id",
+               "representation_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_model_representation": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_model_representative": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "model_group_id": {
+                  "bsonType": "int"
+               },
+               "model_id": {
+                  "bsonType": "int"
+               },
+               "selection_criteria": {
+                  "bsonType": "string",
+                  "enum": [
+                     "medoid",
+                     "centroid",
+                     "closest to the average",
+                     "other selction criteria",
+                     "target function",
+                     "lowest energy",
+                     "best scoring model",
+                     "minimized average structure",
+                     "fewest violations"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "id",
+               "model_group_id",
+               "model_id",
+               "selection_criteria"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_modeling_post_process": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "analysis_id": {
+                  "bsonType": "int"
+               },
+               "dataset_group_id": {
+                  "bsonType": "int"
+               },
+               "feature": {
+                  "bsonType": "string",
+                  "enum": [
+                     "none",
+                     "RMSD",
+                     "energy/score",
+                     "dRMSD",
+                     "other"
+                  ]
+               },
+               "feature_name": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "num_models_begin": {
+                  "bsonType": "int"
+               },
+               "num_models_end": {
+                  "bsonType": "int"
+               },
+               "protocol_id": {
+                  "bsonType": "int"
+               },
+               "software_id": {
+                  "bsonType": "int"
+               },
+               "step_id": {
+                  "bsonType": "int"
+               },
+               "struct_assembly_id": {
+                  "bsonType": "int"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "validation",
+                     "rescore",
+                     "cluster",
+                     "none",
+                     "filter",
+                     "other"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "analysis_id",
+               "feature",
+               "id",
+               "protocol_id",
+               "step_id",
+               "type"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_modeling_protocol": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "protocol_name": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_multi_state_modeling": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "experiment_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Single molecule",
+                     "Fraction of bulk"
+                  ]
+               },
+               "population_fraction": {
+                  "bsonType": "double"
+               },
+               "state_group_id": {
+                  "bsonType": "int"
+               },
+               "state_id": {
+                  "bsonType": "int"
+               },
+               "state_name": {
+                  "bsonType": "string"
+               },
+               "state_type": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "state_id",
+               "state_name",
+               "state_type"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_ordered_ensemble": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "edge_id": {
+                  "bsonType": "int"
+               },
+               "model_group_id_begin": {
+                  "bsonType": "int"
+               },
+               "model_group_id_end": {
+                  "bsonType": "int"
+               },
+               "ordered_by": {
+                  "bsonType": "string"
+               },
+               "process_id": {
+                  "bsonType": "int"
+               },
+               "step_description": {
+                  "bsonType": "string"
+               },
+               "step_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "edge_id",
+               "model_group_id_begin",
+               "model_group_id_end",
+               "ordered_by",
+               "process_id",
+               "step_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_poly_residue_feature": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "asym_id": {
+                  "bsonType": "string"
+               },
+               "comp_id_begin": {
+                  "bsonType": "string"
+               },
+               "comp_id_end": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "feature_id": {
+                  "bsonType": "int"
+               },
+               "ordinal_id": {
+                  "bsonType": "int"
+               },
+               "rep_atom": {
+                  "bsonType": "string",
+                  "enum": [
+                     "CA",
+                     "CB"
+                  ]
+               },
+               "residue_range_granularity": {
+                  "bsonType": "string",
+                  "enum": [
+                     "by-residue",
+                     "by-feature"
+                  ]
+               },
+               "seq_id_begin": {
+                  "bsonType": "int"
+               },
+               "seq_id_end": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "entity_id",
+               "feature_id",
+               "ordinal_id",
+               "seq_id_begin",
+               "seq_id_end"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_predicted_contact_restraint": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "asym_id_1": {
+                  "bsonType": "string"
+               },
+               "asym_id_2": {
+                  "bsonType": "string"
+               },
+               "comp_id_1": {
+                  "bsonType": "string"
+               },
+               "comp_id_2": {
+                  "bsonType": "string"
+               },
+               "dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "distance_upper_limit": {
+                  "bsonType": "double"
+               },
+               "entity_id_1": {
+                  "bsonType": "string"
+               },
+               "entity_id_2": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "model_granularity": {
+                  "bsonType": "string",
+                  "enum": [
+                     "by-residue",
+                     "by-feature"
+                  ]
+               },
+               "probability": {
+                  "bsonType": "double",
+                  "minimum": 0.0,
+                  "maximum": 1.0
+               },
+               "restraint_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "lower and upper bound",
+                     "lower bound",
+                     "upper bound"
+                  ]
+               },
+               "seq_id_1": {
+                  "bsonType": "int"
+               },
+               "seq_id_2": {
+                  "bsonType": "int"
+               },
+               "software_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "asym_id_1",
+               "asym_id_2",
+               "comp_id_1",
+               "comp_id_2",
+               "dataset_list_id",
+               "entity_id_1",
+               "entity_id_2",
+               "id",
+               "model_granularity",
+               "restraint_type",
+               "seq_id_1",
+               "seq_id_2"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_related_datasets": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "dataset_list_id_derived": {
+                  "bsonType": "int"
+               },
+               "dataset_list_id_primary": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "dataset_list_id_derived",
+               "dataset_list_id_primary"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_sas_restraint": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "chi_value": {
+                  "bsonType": "double"
+               },
+               "dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "fitting_atom_type": {
+                  "bsonType": "string"
+               },
+               "fitting_method": {
+                  "bsonType": "string"
+               },
+               "fitting_state": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Multiple",
+                     "Single"
+                  ]
+               },
+               "model_id": {
+                  "bsonType": "int"
+               },
+               "profile_segment_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "NO",
+                     "YES"
+                  ]
+               },
+               "radius_of_gyration": {
+                  "bsonType": "double"
+               },
+               "struct_assembly_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "dataset_list_id",
+               "model_id",
+               "struct_assembly_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_starting_comparative_models": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "alignment_file_id": {
+                  "bsonType": "int"
+               },
+               "starting_model_auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "starting_model_id": {
+                  "bsonType": "string"
+               },
+               "starting_model_seq_id_begin": {
+                  "bsonType": "int"
+               },
+               "starting_model_seq_id_end": {
+                  "bsonType": "int"
+               },
+               "template_auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "template_dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "template_seq_id_begin": {
+                  "bsonType": "int"
+               },
+               "template_seq_id_end": {
+                  "bsonType": "int"
+               },
+               "template_sequence_identity": {
+                  "bsonType": "double"
+               },
+               "template_sequence_identity_denominator": {
+                  "bsonType": "int",
+                  "enum": [
+                     2,
+                     4,
+                     5,
+                     3,
+                     1
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "starting_model_auth_asym_id",
+               "starting_model_id",
+               "template_auth_asym_id",
+               "template_dataset_list_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_starting_computational_models": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "script_file_id": {
+                  "bsonType": "int"
+               },
+               "software_id": {
+                  "bsonType": "int"
+               },
+               "starting_model_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "script_file_id",
+               "software_id",
+               "starting_model_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_starting_model_details": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "asym_id": {
+                  "bsonType": "string"
+               },
+               "dataset_list_id": {
+                  "bsonType": "int"
+               },
+               "entity_description": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "starting_model_auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "starting_model_id": {
+                  "bsonType": "string"
+               },
+               "starting_model_sequence_offset": {
+                  "bsonType": "int"
+               },
+               "starting_model_source": {
+                  "bsonType": "string",
+                  "enum": [
+                     "comparative model",
+                     "integrative model",
+                     "ab initio model",
+                     "experimental model",
+                     "other"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "asym_id",
+               "dataset_list_id",
+               "entity_id",
+               "starting_model_auth_asym_id",
+               "starting_model_id",
+               "starting_model_source"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_starting_model_seq_dif": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "asym_id": {
+                  "bsonType": "string"
+               },
+               "comp_id": {
+                  "bsonType": "string"
+               },
+               "db_asym_id": {
+                  "bsonType": "string"
+               },
+               "db_comp_id": {
+                  "bsonType": "string"
+               },
+               "db_seq_id": {
+                  "bsonType": "int"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "seq_id": {
+                  "bsonType": "int"
+               },
+               "starting_model_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "asym_id",
+               "comp_id",
+               "db_asym_id",
+               "db_comp_id",
+               "db_seq_id",
+               "entity_id",
+               "seq_id",
+               "starting_model_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_struct_assembly": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "ihm_struct_assembly_details": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "assembly_id": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "assembly_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_entity_nonpoly": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "comp_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "entity_id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_entry_details": {
+         "bsonType": "object",
+         "properties": {
+            "structure_id": {
+               "bsonType": "string"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "sequence_details": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "structure_id",
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "pdbx_inhibitor_info": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "num_per_asym_unit": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "id",
+               "name",
+               "num_per_asym_unit"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_ion_info": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "numb_per_asym_unit": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "id",
+               "name",
+               "numb_per_asym_unit"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_nonpoly_scheme": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_mon_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_num": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "mon_id": {
+                  "bsonType": "string"
+               },
+               "ndb_seq_num": {
+                  "bsonType": "string"
+               },
+               "pdb_mon_id": {
+                  "bsonType": "string"
+               },
+               "pdb_seq_num": {
+                  "bsonType": "string"
+               },
+               "pdb_strand_id": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "asym_id",
+               "ndb_seq_num"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_protein_info": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "num_per_asym_unit": {
+                  "bsonType": "int"
+               }
+            },
+            "required": [
+               "structure_id",
+               "id",
+               "name",
+               "num_per_asym_unit"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_seq_map_depositor_info": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "one_letter_code": {
+                  "bsonType": "string"
+               },
+               "one_letter_code_mod": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "auth_asym_id",
+               "entity_id",
+               "one_letter_code"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_unobs_or_zero_occ_atoms": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_atom_id": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_atom_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "occupancy_flag": {
+                  "bsonType": "int",
+                  "enum": [
+                     0,
+                     1
+                  ]
+               },
+               "polymer_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Y",
+                     "N"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "PDB_model_num",
+               "auth_asym_id",
+               "auth_atom_id",
+               "auth_comp_id",
+               "auth_seq_id",
+               "id",
+               "occupancy_flag",
+               "polymer_flag"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "pdbx_unobs_or_zero_occ_residues": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "PDB_model_num": {
+                  "bsonType": "int"
+               },
+               "auth_asym_id": {
+                  "bsonType": "string"
+               },
+               "auth_comp_id": {
+                  "bsonType": "string"
+               },
+               "auth_seq_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "int"
+               },
+               "label_asym_id": {
+                  "bsonType": "string"
+               },
+               "label_comp_id": {
+                  "bsonType": "string"
+               },
+               "label_seq_id": {
+                  "bsonType": "int"
+               },
+               "occupancy_flag": {
+                  "bsonType": "int",
+                  "enum": [
+                     0,
+                     1
+                  ]
+               },
+               "polymer_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Y",
+                     "N"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "PDB_model_num",
+               "auth_asym_id",
+               "auth_comp_id",
+               "auth_seq_id",
+               "id",
+               "occupancy_flag",
+               "polymer_flag"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "software": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "citation_id": {
+                  "bsonType": "string"
+               },
+               "classification": {
+                  "bsonType": "string"
+               },
+               "description": {
+                  "bsonType": "string"
+               },
+               "location": {
+                  "bsonType": "string"
+               },
+               "name": {
+                  "bsonType": "string"
+               },
+               "pdbx_ordinal": {
+                  "bsonType": "int"
+               },
+               "type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "package",
+                     "program",
+                     "jiffy",
+                     "filter",
+                     "library",
+                     "other"
+                  ]
+               },
+               "version": {
+                  "bsonType": "string"
+               }
+            },
+            "required": [
+               "structure_id",
+               "classification",
+               "name",
+               "pdbx_ordinal"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "struct": {
+         "bsonType": "object",
+         "properties": {
+            "structure_id": {
+               "bsonType": "string"
+            },
+            "entry_id": {
+               "bsonType": "string"
+            },
+            "pdbx_descriptor": {
+               "bsonType": "string"
+            },
+            "title": {
+               "bsonType": "string"
+            }
+         },
+         "required": [
+            "structure_id",
+            "entry_id"
+         ],
+         "additionalProperties": false
+      },
+      "struct_asym": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "object",
+            "properties": {
+               "structure_id": {
+                  "bsonType": "string"
+               },
+               "details": {
+                  "bsonType": "string"
+               },
+               "entity_id": {
+                  "bsonType": "string"
+               },
+               "id": {
+                  "bsonType": "string"
+               },
+               "pdbx_PDB_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_alt_id": {
+                  "bsonType": "string"
+               },
+               "pdbx_blank_PDB_chainid_flag": {
+                  "bsonType": "string",
+                  "enum": [
+                     "Y",
+                     "N"
+                  ]
+               },
+               "pdbx_modified": {
+                  "bsonType": "string"
+               },
+               "pdbx_order": {
+                  "bsonType": "int"
+               },
+               "pdbx_type": {
+                  "bsonType": "string",
+                  "enum": [
+                     "HETAD",
+                     "ATOMS",
+                     "HETAS",
+                     "HETIC",
+                     "HETAC",
+                     "HETAI",
+                     "HETAIN",
+                     "ATOMN",
+                     "ATOMP"
+                  ]
+               }
+            },
+            "required": [
+               "structure_id",
+               "entity_id",
+               "id"
+            ],
+            "additionalProperties": false
+         },
+         "minItems": 1,
+         "uniqueItems": true
+      },
+      "_entry_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "additionalProperties": false,
+   "required": [
+      "_entry_id"
+   ]
+}

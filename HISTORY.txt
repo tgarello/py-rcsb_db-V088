@@ -1,0 +1,185 @@
+# RCSB_DB HISTORY
+
+11-Mar-2018  - Py2->Py3 and refactored for python packaging tools
+ 4-Jul-2018  - V0.12 reformulate schema definitions directly from dictionary
+               metadata and targeted helper functions.
+20-Jul-2018    V0.13 overhaul static schema management
+28-Jul-2018    V0.14 corrections for selection and type filters and object size pruning
+20-Aug-2018.   V0.15 added sliced collections (e.g. entity or cannonical identifier),
+               JSON schema description of collections, sfx/xfel examples, dictionary
+               methods implemented in helper classes, and incremental repository metadata
+               updates.
+25-Aug-2018    V0.16 split out rcsb.utils.config, rcsb.utils.io, rcsb.utils.multiproc and
+               mock-data as a shared submodule for test data. Merged branch ' namespace'
+               back into master.
+28-Aug-2018    V0.17 rename console scripts directory to avoid conflict with reserved keyword in Py2.
+ 9-Sep-2018    V0.18 add support for multi-level JSON schema generation and validation,
+               integrate linking CIF methods to generate content at load time, add core
+               assembly collection, add cardinal identifiers in new categories to each
+               core collection, and enum normalization as a data transformation filter operation.
+11-Sep-2018    V0.19 add dictionary method for citation author aggregation
+                     adjust cardinality of entity and assembly identifier categories
+14-Sep-2018    V0.20 Require at least one record in any array type, adjust constraints on iterables.
+18-Sep-2018    V0.21 Require homogeneous categories/classes in JSON schema production.
+22-Sep-2018    V0.22 Add method to generate _pdbx_struct_assembly.rcsb_candidate_assembly
+10-Oct-2018    V0.23 Add date format to schema definitions; generate schemas and add validation tests
+                     for repository_holdings, entity_sequence_clusters, and data_exchange schema types;
+                     extend derived content for core_entry and core_entity collections;
+                     add subcategory aggregation feature; and refactor api for helper methods.
+12-Oct-2018    V0.24 Add rcsb_repository_holdings_transferred and  rcsb_repository_holdings_insilico_models,
+                     make datetime type mappings the same as date, check for empty required properties for
+                     subcategory aggregates
+28-Oct-2018    V0.25 Move local helper method configuration to common YAML configuration, restore some missing
+                     modules for cockroach and crate server types,  add category rcsb_accession_info in core_entry,
+                     make audit_authors an iterable type in categories rcsb_repository_holdings_transferred,
+                     rcsb_repository_holdings_insilico_models, and rcsb_repository_holdings_unreleased,
+                     verify data types in sequence cluster collections.
+13-Nov-2018    V0.26 Add chemical component and bird chemical compoment core collections with convenience
+                   categories rcsb_chem_comp_info, rcsb_chem_comp_synonyms, rcsb_chem_comp_descriptor,
+                   and rcsb_chem_comp_target. Add convenience category rcsb_entry_info in pdbx_core core_entry
+                   collection.  Include correspondence details for DrugBank and CCDC/CSD.
+                   Add dictionary methods to filter core entry objects by experiment type to
+                   remove largely vacuous categories.  Add new CLI entry point for schema generation.
+27-Nov-2018    V0.27 resolve inconsistent handling of multiple sources for antibody molecule types. Add
+                   dictionary method rcsb_file_block_by_method add item pdbx_chem_comp_audit.ordinal to replace
+                   the primary key for this category.    Add new mechanism to inject private document key
+                   attributes to support Solr access and indexing.  (Feature branch  multisourcefix). Extend
+                   repository holdings collection with prerelease sequences and extended content types for
+                   the current repository state.
+28-Nov-2018    V0.28 minor update to FASTA sequence content type to repository holdings current inventory and
+               adjustments in constraints for rcsb_entry_info category production
+30-Nov-2018    V0.29 branch birdconsolidate includes mashup of all BIRD definition data, additional content
+               types in current repository holdings with adjustments to filter obsolete entries, various
+               additional categories added to core entry collection.
+ 1-Dec-2018    V0.30  Adjustments for roundtrip CI/CD
+ 2-Dec-2018    V0.31 Fixes for expansion of semi-colon separated value types, add methods to
+               include NCBI scientific and common names.
+ 3-Dec-2018    V0.32 interim update for troubleshooting entity collection load issues, adding search indices
+               for core collections, adding optional private identifier chemical component identifiers for non-polymer
+               entities, adjustments to bird core citation schema.
+ 9-Dec-2018    V0.33 Add _pdbx_reference_molecule.class, _pdbx_reference_molecule.type, Add categories drugbank_info
+               and drugbank_target, add method rcsb_add_bird_entity_identifiers, add  _rcsb_entry_info.solvent_entity_count
+               and adjust counts to include solvent.  Add consolidated loader for BIRD data, add loader for DrugBank
+               corresponding data from rcsb.utils.chemref.    Add CLI option for loading integrated chemical reference data.
+               Move time consuming schema validation tests to seperate subdirectory.  Add mandatory option for injected
+               private keys.  Resolve schema loading issues with current chemical component and BIRD definitions.
+ 12-Dec-2018   V0.34 Add rcsb_entity_id identifiers in categories struct_ref_seq and struct_ref_seq_dif.Add category rcsb_entity_poly_info
+               as the basis for a new core collection core_entity_monomer. Adjust logic for reporting assembly format availibility.
+ 13-Dec-2018   V0.35 Add ihm_dev collection and support for I/HM repository model files
+ 18-Dec-2018   V0.36 Add _entity_poly.rcsb_prd_id and configuration to include private key for BIRD identifier in the core_entity collection.'
+  7-Jan-2019   V0.37 Simplify and consolidate site specific configuration options, streamline cli scripts, and consolidate common
+               schema access and building methods in SchemDefUtil() (feature branch configpath)
+  9-Jan-2019   V0.38 Introduce a new data transformation filter for XML character references and miscellaneous related changes.
+ 10-Jan-2019   V0.39 Adjustments to improve diagnostics relative remaining data issues observed loading latest data files, and
+               tuning of classification for RCSB candidate assemblies.
+ 17-Jan-2019   V0.40 adjust handling of document replacement in sliced collections
+ 25-Jan-2019   V0.41 schema extension for DrugBank core collection
+ 16-Feb-2019   V0.42 Add entity_instance_core support, add content type merging feature to allow consolidation of data artifacts
+               prior to data load processing, and overhaul the slice processing to improve performance.
+ 18-Feb-2019   V0.43 provide a more graceful handling of empty slices,
+ 19-Feb-2019   V0.44 add slice support for pdbx_validate_* categories, and adjust category exclusions for the entity_core collection.
+ 20-Feb-2019   V0.44 adding EntityInstanceExtractor.py preliminary version, adjust logging and cli script options.
+#
+ 22-Feb-2019   V0.45 preliminary version of tools for validation load analysis.
+  3-Mar-2019   V0.46 move validation analysis tools, EntityInstanceExtractor.py and related tests to package rcsb.utils.anal.
+               Change helper criteria for identifying chemical component objects and warn for missing chem_comp_atom category cases.
+               Change release filter for chem_comp_* collection to allow only status codes 'REL' and 'REF_ONLY' -
+ 14-Mar-2019   V0.47 Additonal dictionary content and helper method support for -
+                _entity.rcsb_macromolecular_names_combined,   _rcsb_entry_info.software_programs_combined,
+                _rcsb_entity_container_identifiers.chem_comp_ligand, _rcsb_entity_container_identifiers.chem_comp_monomers,
+
+                Added new data types int-csv and int-scsv
+
+                Added automated subcategory aggregation in the general data processing pipeline.
+
+                New sub-category taxonomy_lineage with items: _rcsb_entity_source_organism.taxonomy_lineage_id, _rcsb_entity_source_organism.taxonomy_lineage_name, _rcsb_entity_source_organism.taxonomy_lineage_depth
+                and _rcsb_entity_host_organism.taxonomy_lineage_id, _rcsb_entity_host_organism.taxonomy_lineage_name,
+                _rcsb_entity_host_organism.taxonomy_lineage_depth
+
+                New sub-category rcsb_ec_lineage with items _entity.rcsb_ec_lineage_name _entity.rcsb_ec_lineage_id
+                and _entity.rcsb_ec_lineage_depth
+
+                Add_rcsb_schema_container_identifiers.schema_name, _rcsb_schema_container_identifiers.collection_name
+                _rcsb_schema_container_identifiers.collection_schema_version
+
+               Configuration changes to simplify the handling of versioning removing these from database and collection names
+               and schema file names, version configuration now managed in separate configuration options,
+               NCBI_TAXONOMY_LOCATOR removed, added configuration options NCBI_TAXONOMY_CACHE_PATH and ENZYME_CLASSIFICATION_CACHE_PATH,
+               provide separate configuration options schema version assignment within collections,
+               up-version api and json schema, add config option VRPT_REPO_PATH_ENV.
+
+               chem_comp category attributes normalized between chem_comp_core and bird_chem_comp_core collections.
+ 17-Mar-2019   V0.48 adding subcategory aggregate rcsb_macromolecular_names_combined
+ 24-Mar-2019   V0.49 address missing category issues in chemical reference data collections, various changes to
+               address schema validation exceptions introduced by additionalProperties: False.  Add consolidated
+               EC item.   Extend taxonomy lineaage to include leaf node.
+ 24-Mar-2019   V0.50 temporary adjustment for error handing for obsolete taxonony ids.
+ 25-Mar-2019   V0.51 remap merged taxons and adjust exception handling for taxonomy lineage generation
+ 31-Mar-2019   V0.52 block_attributes: REF_PARENT_CATEGORY_NAME: REF_PARENT_ATTRIBUTE_NAME: to provide parent details for synthetic key
+               add 'addParentRefs' in enforceOpts to write relative $ref properties to describe parent relationships.
+                Address GitHub issues:
+                        Failed int cast for None in DataTransformFactory #20 and
+                        MySQL SchemaDefLoader skip zero values #19
+  3-Apr-2019   V0.53 added private schema property _primary_key to mark attributes that are part of an object primary key.
+               This feature is controlled by 'addPrimaryKey' enforceOpts property.
+  7-Apr-2019   V0.54 adding support for integrating CATH and SCOP structural classifiers and sequence difference type counts.
+ 11-Apr-2019   V0.55 add tree loaders to etl cli tool, add entity_instance_validation, add a variety of counts, add atc codes.
+ 13-Apr-2019   V0.56 add prototypical json schema properties '_attribute_groups' mapped to subcategory id/labels.
+ 17-Apr-2019   V0.57/58 schema and cache adjustments for node tree loading
+ 25-Apr-2019   V0.59 adds parent source/host organism and polymer monomer counts
+  3-May-2019   V0.60 adds helper support for attributes:
+                   _rcsb_entry_info.deposited_polymer_monomer_count,
+                   _rcsb_entry_info.polymer_entity_count_protein,
+                   _rcsb_entry_info.polymer_entity_count_nucleic_acid,
+                   _rcsb_entry_info.polymer_entity_count_nucleic_acid_hybrid,
+                   _rcsb_entry_info.polymer_entity_count_DNA,
+                   _rcsb_entry_info.polymer_entity_count_RNA,
+                   _rcsb_entry_info.nonpolymer_ligand_entity_count
+                   _rcsb_entry_info.selected_polymer_entity_types
+                   _rcsb_entry_info.polymer_entity_taxonomy_count
+                   _rcsb_entry_info.assembly_count
+                and categories
+                    rcsb_entity_instance_domain_scop
+                    rcsb_entity_instance_domain_cath
+  4-May-2019  V0.61 extend content in and categories rcsb_entity_instance_domain_scop
+                    rcsb_entity_instance_domain_cath to support slicing
+ 18-May-2019  V0.62 add rcsb_assembly_info category to the core_assembly
+                    adjust classificatoin of ternary complexes extending enumeration for _rcsb_entry_info.selected_polymer_entity_types
+                    add new classifier _rcsb_entry_info.na_polymer_entity_types
+                    and removed _rcsb_entry_info.nonpolymer_ligand_entity_count
+ 20-May-2019  V0.63 Category rcsb_prot_sec_struct_info added to core_entity_instance and prune primary secondary structure
+                    categories from this collection.
+ 21-May-2019  V0.64 Handle odd ordering of records in struct_ref_seq_dif
+ 29-Jun-2019  V0.65 Update development workflow, method code packaging,  and general housekeeping
+  8-Aug-2019  V0.66 Refactoring dictionary method helpers and external resource provisioning to
+                    reduce redundant processing and facilitate greater caching. Remove testing
+                    dependencies on mock schemas and add explicit schema differencing to better
+                    schema evolution. Add new helper methods for sites and connections and revise helper
+                    methods for all entity and instance features.
+ 10-Sep-2019  V0.67 Adding extended metadata types, AtcProvider() and SiftsSummaryProvider().
+ 19-Sep-2019  V0.68 Eliminate private keys, revise/extend interenal schema metadata, purge schema,
+                    add polymer alignment methods.
+ 24-Sep-2019  V0.69 Add additional polymer_instance features and new polymer_instance_validations methods.
+ 25-Sep-2019  V0.70 Incorporate RCSB extensions in 'min' schemas add single collection specific identifiers core collections
+                    Add missing required entry identifiers.
+ 25-Sep-2019  V0.71 Adjustments for edge cases and enums after full-load tests
+ 29-Sep-2019  V0.72 Further adjustments for edge cases and enums after full-load tests
+ 29-Sep-2019  V0.73 Parallelize merging content types in RepositoryProvider()
+ 29-Sep-2019  V0.74 Cleaning up more edge cases with missing or misorganized data
+  6-Oct-2019  V0.75 Reorganize feature value within feature range and position subcategories
+  7-Oct-2019  V0.76 Tweak sequence reference processing to better cope with inconsistencies and missing data.
+  8-Oct-2019  V0.77 Upversion schema after successful build
+ 14-Oct-2019  V0.78 Add support for sequence isoforms, entry molecular weight, turn off SIFTS for
+                    references and alignments,  and various schema adjusts.
+ 14-Oct-2019  V0.79 Add test cases and fix exceptions for missing sequence difference details.
+ 14-Oct-2019  V0.80 Fix linting issue and update documentation in configuration example file -
+ 16-Oct-2019  V0.81 Filter reference sequence assignments marked as self-reference - added tests for GO Id consistency
+ 17-Oct-2019  V0.82 Preserve annotations on self-referenced sequences for now/shift ATC depth
+ 19-Oct-2019  V0.83 Strip missing/empty values from subcategory aggregates/handle missing accession codes on struct_ref_seq records
+ 19-Oct-2019  V0.84 Abandon reliance on ref_id/align_id consistency in struct_ref_* categories.
+ 20-Oct-2019  V0.85 Update type, coverage and configuration for latest IHM dictioanry update
+ 27-Feb-2024  V0.86 Update config yml files for ihm DEPO and HOLD-REL; update testSchemaDataPrep-ihm.py
+ 30-May-2024  V0.87 Update schema for deposition and data harvesting workflow based on IHMCIF and PDBx/mmCIF updates
+ 16-Jul-2024  V0.88 Update schema for deposition and data harvesting workflow based on IHMCIF (v1.26) and PDBx/mmCIF (v5.395) updates
+                    Update config yml files to generate schema based on INCLUDE categories rather than EXCLUDE categories
+                    Update config yml files to customize creation of JSON data for PDB-Dev website 

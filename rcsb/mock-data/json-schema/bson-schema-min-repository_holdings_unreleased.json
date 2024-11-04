@@ -1,0 +1,80 @@
+{
+   "bsonType": "object",
+   "properties": {
+      "audit_authors": {
+         "bsonType": "array",
+         "items": {
+            "bsonType": "string"
+         },
+         "uniqueItems": false
+      },
+      "author_prerelease_sequence_status": {
+         "bsonType": "string",
+         "enum": [
+            "HOLD FOR RELEASE",
+            "RELEASE IMMEDIATELY",
+            "RELEASE NOW",
+            "HOLD FOR PUBLICATION"
+         ]
+      },
+      "deposit_date": {
+         "bsonType": "date"
+      },
+      "deposit_date_coordinates": {
+         "bsonType": "date"
+      },
+      "deposit_date_nmr_restraints": {
+         "bsonType": "date"
+      },
+      "deposit_date_structure_factors": {
+         "bsonType": "date"
+      },
+      "entry_id": {
+         "bsonType": "string"
+      },
+      "hold_date_coordinates": {
+         "bsonType": "date"
+      },
+      "hold_date_nmr_restraints": {
+         "bsonType": "date"
+      },
+      "hold_date_structure_factors": {
+         "bsonType": "date"
+      },
+      "release_date": {
+         "bsonType": "date"
+      },
+      "status_code": {
+         "bsonType": "string",
+         "enum": [
+            "HOLD",
+            "WAIT",
+            "REPL",
+            "REFI",
+            "AUCO",
+            "POLC",
+            "WDRN",
+            "PROC",
+            "AUTH",
+            "HPUB"
+         ]
+      },
+      "title": {
+         "bsonType": "string"
+      },
+      "update_id": {
+         "bsonType": "string"
+      },
+      "_schema_version": {
+         "bsonType": "string"
+      },
+      "_id": {
+         "bsonType": "objectId"
+      }
+   },
+   "required": [
+      "entry_id",
+      "update_id"
+   ],
+   "additionalProperties": false
+}
