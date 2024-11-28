@@ -5,6 +5,7 @@ test-output/
 !test-output/.gitkeep
 CACHE/
 LOGTOX
+ModelCIF_examples
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

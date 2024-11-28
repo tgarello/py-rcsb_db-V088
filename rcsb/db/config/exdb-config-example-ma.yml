@@ -228,7 +228,10 @@ content_info_helper_configuration:
         ma:
             INCLUDE: []
             EXCLUDE:
+                - ma_qa_metric_local
+                - atom_site
                 - atom_site_anisotrop
+                - entity_poly_seq
                 - pdbx_poly_seq_scheme
                 - pdbx_nonpoly_scheme
                 - pdbx_seq_map_depositor_info
@@ -373,7 +376,10 @@ document_helper_configuration:
         ma:
             INCLUDE: []
             EXCLUDE:
+                - MA_QA_METRIC_LOCAL
+                - ATOM_SITE
                 - ATOM_SITE_ANISOTROP
+                - ENTITY_POLY_SEQ
                 - PDBX_POLY_SEQ_SCHEME
                 - PDBX_NONPOLY_SCHEME
                 - PDBX_UNOBS_OR_ZERO_OCC_ATOMS
@@ -391,6 +397,8 @@ document_helper_configuration:
         ma:
             - PARENT_CATEGORY_NAME: chem_comp_atom
             - PARENT_CATEGORY_NAME: atom_site
+            - PARENT_CATEGORY_NAME: entity_poly_seq
+            - PARENT_CATEGORY_NAME: ma_qa_metric_local
             - PARENT_CATEGORY_NAME: atom_site_anisotrop
             - PARENT_CATEGORY_NAME: pdbx_poly_seq_scheme
             - PARENT_CATEGORY_NAME: pdbx_nonpoly_scheme
