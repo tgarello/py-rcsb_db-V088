@@ -229,6 +229,7 @@ content_info_helper_configuration:
             INCLUDE: []
             EXCLUDE:
                 - ma_qa_metric_local
+                - ma_qa_metric_local_pairwise
                 - atom_site
                 - atom_site_anisotrop
                 - entity_poly_seq
@@ -377,6 +378,7 @@ document_helper_configuration:
             INCLUDE: []
             EXCLUDE:
                 - MA_QA_METRIC_LOCAL
+                - MA_QA_METRIC_LOCAL_PAIRWISE
                 - ATOM_SITE
                 - ATOM_SITE_ANISOTROP
                 - ENTITY_POLY_SEQ
@@ -399,6 +401,7 @@ document_helper_configuration:
             - PARENT_CATEGORY_NAME: atom_site
             - PARENT_CATEGORY_NAME: entity_poly_seq
             - PARENT_CATEGORY_NAME: ma_qa_metric_local
+            - PARENT_CATEGORY_NAME: ma_qa_metric_local_pairwise
             - PARENT_CATEGORY_NAME: atom_site_anisotrop
             - PARENT_CATEGORY_NAME: pdbx_poly_seq_scheme
             - PARENT_CATEGORY_NAME: pdbx_nonpoly_scheme

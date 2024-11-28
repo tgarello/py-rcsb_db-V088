@@ -1,280 +1,6 @@
 {
    "type": "object",
    "properties": {
-      "atom_site": {
-         "type": "array",
-         "items": {
-            "type": "object",
-            "properties": {
-               "structure_id": {
-                  "$ref": "#entry/id",
-                  "_primary_key": true
-               },
-               "B_iso_or_equiv": {
-                  "type": "number",
-                  "description": "Isotropic atomic displacement parameter, or equivalent isotropic\n atomic displacement parameter, B~eq~, calculated from the\n anisotropic displacement parameters.\n\n B~eq~ = (1/3) sum~i~[sum~j~(B^ij^ A~i~ A~j~ a*~i~ a*~j~)]\n\n A     = the real space cell lengths\n a*    = the reciprocal space cell lengths\n B^ij^ = 8 pi^2^ U^ij^\n\n Ref: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44,\n      775-776.\n\n The IUCr Commission on Nomenclature recommends against the use\n of B for reporting atomic displacement parameters. U, being\n directly proportional to B, is preferred.\n\n Note -\n\n The particular type of ADP stored in this item is qualified\n by item _refine.pdbx_adp_type.",
-                  "rcsb_units": "8pi2_angstroms_squared",
-                  "rcsb_description": [
-                     {
-                        "text": "Isotropic atomic displacement parameter, or equivalent isotropic\n atomic displacement parameter, B~eq~, calculated from the\n anisotropic displacement parameters.\n\n B~eq~ = (1/3) sum~i~[sum~j~(B^ij^ A~i~ A~j~ a*~i~ a*~j~)]\n\n A     = the real space cell lengths\n a*    = the reciprocal space cell lengths\n B^ij^ = 8 pi^2^ U^ij^\n\n Ref: Fischer, R. X. & Tillmanns, E. (1988). Acta Cryst. C44,\n      775-776.\n\n The IUCr Commission on Nomenclature recommends against the use\n of B for reporting atomic displacement parameters. U, being\n directly proportional to B, is preferred.\n\n Note -\n\n The particular type of ADP stored in this item is qualified\n by item _refine.pdbx_adp_type.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "Cartn_x": {
-                  "type": "number",
-                  "description": "The x atom-site coordinate in angstroms specified according to\n a set of orthogonal Cartesian axes related to the cell axes as\n specified by the description given in\n _atom_sites.Cartn_transform_axes.",
-                  "_attribute_groups": [
-                     {
-                        "id": "cartesian_coordinate"
-                     }
-                  ],
-                  "rcsb_units": "angstroms",
-                  "rcsb_description": [
-                     {
-                        "text": "The x atom-site coordinate in angstroms specified according to\n a set of orthogonal Cartesian axes related to the cell axes as\n specified by the description given in\n _atom_sites.Cartn_transform_axes.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "Cartn_y": {
-                  "type": "number",
-                  "description": "The y atom-site coordinate in angstroms specified according to\n a set of orthogonal Cartesian axes related to the cell axes as\n specified by the description given in\n _atom_sites.Cartn_transform_axes.",
-                  "_attribute_groups": [
-                     {
-                        "id": "cartesian_coordinate"
-                     }
-                  ],
-                  "rcsb_units": "angstroms",
-                  "rcsb_description": [
-                     {
-                        "text": "The y atom-site coordinate in angstroms specified according to\n a set of orthogonal Cartesian axes related to the cell axes as\n specified by the description given in\n _atom_sites.Cartn_transform_axes.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "Cartn_z": {
-                  "type": "number",
-                  "description": "The z atom-site coordinate in angstroms specified according to\n a set of orthogonal Cartesian axes related to the cell axes as\n specified by the description given in\n _atom_sites.Cartn_transform_axes.",
-                  "_attribute_groups": [
-                     {
-                        "id": "cartesian_coordinate"
-                     }
-                  ],
-                  "rcsb_units": "angstroms",
-                  "rcsb_description": [
-                     {
-                        "text": "The z atom-site coordinate in angstroms specified according to\n a set of orthogonal Cartesian axes related to the cell axes as\n specified by the description given in\n _atom_sites.Cartn_transform_axes.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "auth_asym_id": {
-                  "type": "string",
-                  "description": "An alternative identifier for _atom_site.label_asym_id that\n may be provided by an author in order to match the identification\n used in the publication that describes the structure.",
-                  "_attribute_groups": [
-                     {
-                        "id": "mm_atom_site_auth_label"
-                     }
-                  ],
-                  "rcsb_description": [
-                     {
-                        "text": "An alternative identifier for _atom_site.label_asym_id that\n may be provided by an author in order to match the identification\n used in the publication that describes the structure.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "auth_atom_id": {
-                  "type": "string",
-                  "description": "An alternative identifier for _atom_site.label_atom_id that\n may be provided by an author in order to match the identification\n used in the publication that describes the structure.",
-                  "_attribute_groups": [
-                     {
-                        "id": "mm_atom_site_auth_label"
-                     }
-                  ],
-                  "rcsb_description": [
-                     {
-                        "text": "An alternative identifier for _atom_site.label_atom_id that\n may be provided by an author in order to match the identification\n used in the publication that describes the structure.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "auth_comp_id": {
-                  "type": "string",
-                  "description": "An alternative identifier for _atom_site.label_comp_id that\n may be provided by an author in order to match the identification\n used in the publication that describes the structure.",
-                  "_attribute_groups": [
-                     {
-                        "id": "mm_atom_site_auth_label"
-                     }
-                  ],
-                  "rcsb_description": [
-                     {
-                        "text": "An alternative identifier for _atom_site.label_comp_id that\n may be provided by an author in order to match the identification\n used in the publication that describes the structure.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "auth_seq_id": {
-                  "type": "string",
-                  "description": "An alternative identifier for _atom_site.label_seq_id that\n may be provided by an author in order to match the identification\n used in the publication that describes the structure.\n\n Note that this is not necessarily a number, that the values do\n not have to be positive, and that the value does not have to\n correspond to the value of _atom_site.label_seq_id. The value\n of _atom_site.label_seq_id is required to be a sequential list\n of positive integers.\n\n The author may assign values to _atom_site.auth_seq_id in any\n desired way. For instance, the values may be used to relate\n this structure to a numbering scheme in a homologous structure,\n including sequence gaps or insertion codes. Alternatively, a\n scheme may be used for a truncated polymer that maintains the\n numbering scheme of the full length polymer. In all cases, the\n scheme used here must match the scheme used in the publication\n that describes the structure.",
-                  "_attribute_groups": [
-                     {
-                        "id": "mm_atom_site_auth_label"
-                     }
-                  ],
-                  "rcsb_description": [
-                     {
-                        "text": "An alternative identifier for _atom_site.label_seq_id that\n may be provided by an author in order to match the identification\n used in the publication that describes the structure.\n\n Note that this is not necessarily a number, that the values do\n not have to be positive, and that the value does not have to\n correspond to the value of _atom_site.label_seq_id. The value\n of _atom_site.label_seq_id is required to be a sequential list\n of positive integers.\n\n The author may assign values to _atom_site.auth_seq_id in any\n desired way. For instance, the values may be used to relate\n this structure to a numbering scheme in a homologous structure,\n including sequence gaps or insertion codes. Alternatively, a\n scheme may be used for a truncated polymer that maintains the\n numbering scheme of the full length polymer. In all cases, the\n scheme used here must match the scheme used in the publication\n that describes the structure.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "group_PDB": {
-                  "type": "string",
-                  "enum": [
-                     "ATOM",
-                     "HETATM"
-                  ],
-                  "description": "The group of atoms to which the atom site belongs. This data\n item is provided for compatibility with the original Protein\n Data Bank format, and only for that purpose.",
-                  "rcsb_description": [
-                     {
-                        "text": "The group of atoms to which the atom site belongs. This data\n item is provided for compatibility with the original Protein\n Data Bank format, and only for that purpose.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "id": {
-                  "type": "string",
-                  "examples": [
-                     "5",
-                     "C12",
-                     "Ca3g28",
-                     "Fe3+17",
-                     "H*251",
-                     "boron2a",
-                     "C_a_phe_83_a_0",
-                     "Zn_Zn_301_A_0"
-                  ],
-                  "description": "The value of _atom_site.id must uniquely identify a record in the\n               ATOM_SITE list.\n\n               Note that this item need not be a number; it can be any unique\n               identifier.\n\n               This data item was introduced to provide compatibility between\n               small-molecule and macromolecular CIFs. In a small-molecule\n               CIF, _atom_site_label is the identifier for the atom. In a\n               macromolecular CIF, the atom identifier is the aggregate of\n               _atom_site.label_alt_id, _atom_site.label_asym_id,\n               _atom_site.label_atom_id, _atom_site.label_comp_id and\n               _atom_site.label_seq_id. For the two types of files to be\n               compatible, a formal identifier for the category had to be\n               introduced that was independent of the different modes of\n               identifying the atoms. For compatibility with older CIFs,\n               _atom_site_label is aliased to _atom_site.id.\n\n\t       In general, this aggregate identifier does not uniquely\n\t       identify an atom site as for non-polymers _atom_site.label_seq_id\n\t       is '.'.",
-                  "_primary_key": true,
-                  "rcsb_description": [
-                     {
-                        "text": "The value of _atom_site.id must uniquely identify a record in the\n               ATOM_SITE list.\n\n               Note that this item need not be a number; it can be any unique\n               identifier.\n\n               This data item was introduced to provide compatibility between\n               small-molecule and macromolecular CIFs. In a small-molecule\n               CIF, _atom_site_label is the identifier for the atom. In a\n               macromolecular CIF, the atom identifier is the aggregate of\n               _atom_site.label_alt_id, _atom_site.label_asym_id,\n               _atom_site.label_atom_id, _atom_site.label_comp_id and\n               _atom_site.label_seq_id. For the two types of files to be\n               compatible, a formal identifier for the category had to be\n               introduced that was independent of the different modes of\n               identifying the atoms. For compatibility with older CIFs,\n               _atom_site_label is aliased to _atom_site.id.\n\n\t       In general, this aggregate identifier does not uniquely\n\t       identify an atom site as for non-polymers _atom_site.label_seq_id\n\t       is '.'.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "label_asym_id": {
-                  "$ref": "#struct_asym/id",
-                  "_attribute_groups": [
-                     {
-                        "id": "mm_atom_site_label"
-                     }
-                  ]
-               },
-               "label_atom_id": {
-                  "type": "string",
-                  "description": "A component of the identifier for this atom site.\n\n This data item is a pointer to _chem_comp_atom.atom_id in the\n CHEM_COMP_ATOM category.",
-                  "_attribute_groups": [
-                     {
-                        "id": "mm_atom_site_label"
-                     }
-                  ],
-                  "rcsb_description": [
-                     {
-                        "text": "A component of the identifier for this atom site.\n\n This data item is a pointer to _chem_comp_atom.atom_id in the\n CHEM_COMP_ATOM category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "label_comp_id": {
-                  "$ref": "#chem_comp/id",
-                  "_attribute_groups": [
-                     {
-                        "id": "mm_atom_site_label"
-                     }
-                  ]
-               },
-               "label_entity_id": {
-                  "$ref": "#entity/id"
-               },
-               "label_seq_id": {
-                  "$ref": "#entity_poly_seq/num"
-               },
-               "occupancy": {
-                  "type": "number",
-                  "description": "The fraction of the atom type present at this site.\n The sum of the occupancies of all the atom types at this site\n may not exceed 1.0 unless it is a dummy site.",
-                  "rcsb_description": [
-                     {
-                        "text": "The fraction of the atom type present at this site.\n The sum of the occupancies of all the atom types at this site\n may not exceed 1.0 unless it is a dummy site.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "pdbx_PDB_model_num": {
-                  "$ref": "#ma_model_list/model_id"
-               },
-               "pdbx_auth_asym_id": {
-                  "type": "string",
-                  "description": "Author's strand id.",
-                  "rcsb_description": [
-                     {
-                        "text": "Author's strand id.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "pdbx_auth_atom_name": {
-                  "type": "string",
-                  "description": "Author's atom name.",
-                  "rcsb_description": [
-                     {
-                        "text": "Author's atom name.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "pdbx_auth_comp_id": {
-                  "type": "string",
-                  "description": "Author's residue name.",
-                  "rcsb_description": [
-                     {
-                        "text": "Author's residue name.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "pdbx_auth_seq_id": {
-                  "type": "string",
-                  "description": "Author's sequence identifier.",
-                  "rcsb_description": [
-                     {
-                        "text": "Author's sequence identifier.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "type_symbol": {
-                  "$ref": "#atom_type/symbol"
-               }
-            },
-            "additionalProperties": false,
-            "required": [
-               "structure_id",
-               "auth_asym_id",
-               "id",
-               "label_asym_id",
-               "label_atom_id",
-               "label_comp_id",
-               "label_entity_id",
-               "label_seq_id",
-               "type_symbol"
-            ]
-         },
-         "minItems": 1,
-         "uniqueItems": true,
-         "rcsb_nested_indexing": false
-      },
       "atom_sites": {
          "type": "object",
          "properties": {
@@ -1634,82 +1360,6 @@
          "uniqueItems": true,
          "rcsb_nested_indexing": false
       },
-      "entity_poly_seq": {
-         "type": "array",
-         "items": {
-            "type": "object",
-            "properties": {
-               "structure_id": {
-                  "$ref": "#entry/id",
-                  "_primary_key": true
-               },
-               "entity_id": {
-                  "$ref": "#entity_poly/entity_id",
-                  "_primary_key": true
-               },
-               "hetero": {
-                  "type": "string",
-                  "enum": [
-                     "n",
-                     "no",
-                     "y",
-                     "yes"
-                  ],
-                  "description": "A flag to indicate whether this monomer in the polymer is\n heterogeneous in sequence.",
-                  "rcsb_enum_annotated": [
-                     {
-                        "value": "n",
-                        "detail": "abbreviation for \"no\""
-                     },
-                     {
-                        "value": "no",
-                        "detail": "sequence is not heterogeneous at this monomer"
-                     },
-                     {
-                        "value": "y",
-                        "detail": "abbreviation for \"yes\""
-                     },
-                     {
-                        "value": "yes",
-                        "detail": "sequence is heterogeneous at this monomer"
-                     }
-                  ],
-                  "rcsb_description": [
-                     {
-                        "text": "A flag to indicate whether this monomer in the polymer is\n heterogeneous in sequence.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "mon_id": {
-                  "$ref": "#chem_comp/id",
-                  "_primary_key": true
-               },
-               "num": {
-                  "type": "integer",
-                  "minimum": 1,
-                  "description": "The value of _entity_poly_seq.num must uniquely and sequentially\n identify a record in the ENTITY_POLY_SEQ list.\n\n Note that this item must be a number and that the sequence\n numbers must progress in increasing numerical order.",
-                  "_primary_key": true,
-                  "rcsb_description": [
-                     {
-                        "text": "The value of _entity_poly_seq.num must uniquely and sequentially\n identify a record in the ENTITY_POLY_SEQ list.\n\n Note that this item must be a number and that the sequence\n numbers must progress in increasing numerical order.",
-                        "context": "dictionary"
-                     }
-                  ]
-               }
-            },
-            "additionalProperties": false,
-            "required": [
-               "structure_id",
-               "entity_id",
-               "mon_id",
-               "num"
-            ]
-         },
-         "minItems": 1,
-         "uniqueItems": true,
-         "rcsb_nested_indexing": false
-      },
       "entity_src_nat": {
          "type": "array",
          "items": {
@@ -2125,22 +1775,64 @@
                   ]
                },
                "comp_id_1": {
-                  "$ref": "#entity_poly_seq/mon_id"
+                  "type": "string",
+                  "description": "The component identifier for the first partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The component identifier for the first partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "comp_id_2": {
-                  "$ref": "#entity_poly_seq/mon_id"
+                  "type": "string",
+                  "description": "The component identifier for the second partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The component identifier for the second partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "comp_id_3": {
-                  "$ref": "#entity_poly_seq/mon_id"
+                  "type": "string",
+                  "description": "The component identifier for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The component identifier for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "entity_id_1": {
-                  "$ref": "#entity_poly_seq/entity_id"
+                  "type": "string",
+                  "description": "The entity identifier for the first partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The entity identifier for the first partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "entity_id_2": {
-                  "$ref": "#entity_poly_seq/entity_id"
+                  "type": "string",
+                  "description": "The entity identifier for the second partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The entity identifier for the second partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "entity_id_3": {
-                  "$ref": "#entity_poly_seq/entity_id"
+                  "type": "string",
+                  "description": "The entity identifier for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The entity identifier for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "lower_limit": {
                   "type": "number",
@@ -2216,13 +1908,34 @@
                   ]
                },
                "seq_id_1": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence index for the first partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence index for the first partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "seq_id_2": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence index for the second partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence index for the second partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "seq_id_3": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence index for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence index for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "upper_limit": {
                   "type": "number",
@@ -3138,28 +2851,84 @@
                   ]
                },
                "comp_id_1": {
-                  "$ref": "#entity_poly_seq/mon_id"
+                  "type": "string",
+                  "description": "The component identifier for the first partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The component identifier for the first partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "comp_id_2": {
-                  "$ref": "#entity_poly_seq/mon_id"
+                  "type": "string",
+                  "description": "The component identifier for the second partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The component identifier for the second partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "comp_id_3": {
-                  "$ref": "#entity_poly_seq/mon_id"
+                  "type": "string",
+                  "description": "The component identifier for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The component identifier for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "comp_id_4": {
-                  "$ref": "#entity_poly_seq/mon_id"
+                  "type": "string",
+                  "description": "The component identifier for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The component identifier for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "entity_id_1": {
-                  "$ref": "#entity_poly_seq/entity_id"
+                  "type": "string",
+                  "description": "The entity identifier for the first partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The entity identifier for the first partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "entity_id_2": {
-                  "$ref": "#entity_poly_seq/entity_id"
+                  "type": "string",
+                  "description": "The entity identifier for the second partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The entity identifier for the second partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "entity_id_3": {
-                  "$ref": "#entity_poly_seq/entity_id"
+                  "type": "string",
+                  "description": "The entity identifier for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The entity identifier for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "entity_id_4": {
-                  "$ref": "#entity_poly_seq/entity_id"
+                  "type": "string",
+                  "description": "The entity identifier for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The entity identifier for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "lower_limit": {
                   "type": "number",
@@ -3239,16 +3008,44 @@
                   ]
                },
                "seq_id_1": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence index for the first partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence index for the first partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "seq_id_2": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence index for the second partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence index for the second partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "seq_id_3": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence index for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence index for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "seq_id_4": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence index for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence index for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "uncertainty": {
                   "type": "number",
@@ -3352,16 +3149,44 @@
                   ]
                },
                "comp_id_1": {
-                  "$ref": "#entity_poly_seq/mon_id"
+                  "type": "string",
+                  "description": "The component identifier for the first partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The component identifier for the first partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "comp_id_2": {
-                  "$ref": "#entity_poly_seq/mon_id"
+                  "type": "string",
+                  "description": "The component identifier for the second partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The component identifier for the second partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "entity_id_1": {
-                  "$ref": "#entity_poly_seq/entity_id"
+                  "type": "string",
+                  "description": "The entity identifier for the first partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The entity identifier for the first partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "entity_id_2": {
-                  "$ref": "#entity_poly_seq/entity_id"
+                  "type": "string",
+                  "description": "The entity identifier for the second partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The entity identifier for the second partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "granularity": {
                   "type": "string",
@@ -3451,10 +3276,24 @@
                   ]
                },
                "seq_id_1": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence index for the first partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence index for the first partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "seq_id_2": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence index for the second partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence index for the second partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "upper_limit": {
                   "type": "number",
@@ -4303,205 +4142,6 @@
          "uniqueItems": true,
          "rcsb_nested_indexing": false
       },
-      "ma_qa_metric_local": {
-         "type": "array",
-         "items": {
-            "type": "object",
-            "properties": {
-               "structure_id": {
-                  "$ref": "#entry/id",
-                  "_primary_key": true
-               },
-               "label_asym_id": {
-                  "type": "string",
-                  "description": "The identifier for the asym id of the residue in the \n structural model, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_asym_id\n in the ATOM_SITE category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The identifier for the asym id of the residue in the \n structural model, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_asym_id\n in the ATOM_SITE category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "label_comp_id": {
-                  "type": "string",
-                  "description": "The component identifier for the residue in the \n structural model, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_comp_id\n in the ATOM_SITE category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the residue in the \n structural model, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_comp_id\n in the ATOM_SITE category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "label_seq_id": {
-                  "type": "integer",
-                  "description": "The identifier for the sequence index of the residue \n in the structural model, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_seq_id\n in the ATOM_SITE category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The identifier for the sequence index of the residue \n in the structural model, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_seq_id\n in the ATOM_SITE category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "metric_id": {
-                  "$ref": "#ma_qa_metric/id"
-               },
-               "metric_value": {
-                  "type": "number",
-                  "description": "The value of the local QA metric.",
-                  "rcsb_description": [
-                     {
-                        "text": "The value of the local QA metric.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "model_id": {
-                  "$ref": "#ma_model_list/model_id"
-               },
-               "ordinal_id": {
-                  "type": "integer",
-                  "description": "A unique identifier for the category.",
-                  "_primary_key": true,
-                  "rcsb_description": [
-                     {
-                        "text": "A unique identifier for the category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               }
-            },
-            "additionalProperties": false,
-            "required": [
-               "structure_id",
-               "label_asym_id",
-               "label_comp_id",
-               "label_seq_id",
-               "metric_id",
-               "metric_value",
-               "model_id",
-               "ordinal_id"
-            ]
-         },
-         "minItems": 1,
-         "uniqueItems": true,
-         "rcsb_nested_indexing": false
-      },
-      "ma_qa_metric_local_pairwise": {
-         "type": "array",
-         "items": {
-            "type": "object",
-            "properties": {
-               "structure_id": {
-                  "$ref": "#entry/id",
-                  "_primary_key": true
-               },
-               "label_asym_id_1": {
-                  "type": "string",
-                  "description": "The identifier for the asym id of the first residue in the \n pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_asym_id\n in the ATOM_SITE category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The identifier for the asym id of the first residue in the \n pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_asym_id\n in the ATOM_SITE category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "label_asym_id_2": {
-                  "type": "string",
-                  "description": "The identifier for the asym id of the second residue in the\n pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_asym_id\n in the ATOM_SITE category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The identifier for the asym id of the second residue in the\n pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_asym_id\n in the ATOM_SITE category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "label_comp_id_1": {
-                  "type": "string",
-                  "description": "The component identifier for the first residue in the \n pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_comp_id\n in the ATOM_SITE category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the first residue in the \n pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_comp_id\n in the ATOM_SITE category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "label_comp_id_2": {
-                  "type": "string",
-                  "description": "The component identifier for the second residue in the\n pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_comp_id\n in the ATOM_SITE category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the second residue in the\n pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_comp_id\n in the ATOM_SITE category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "label_seq_id_1": {
-                  "type": "integer",
-                  "description": "The identifier for the sequence index of the first residue \n in the pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_seq_id\n in the ATOM_SITE category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The identifier for the sequence index of the first residue \n in the pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_seq_id\n in the ATOM_SITE category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "label_seq_id_2": {
-                  "type": "integer",
-                  "description": "The identifier for the sequence index of the second residue\n in the pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_seq_id\n in the ATOM_SITE category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The identifier for the sequence index of the second residue\n in the pair, for which local QA metric is provided.\n This data item is a pointer to _atom_site.label_seq_id\n in the ATOM_SITE category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "metric_id": {
-                  "$ref": "#ma_qa_metric/id"
-               },
-               "metric_value": {
-                  "type": "number",
-                  "description": "The value of the local QA metric.",
-                  "rcsb_description": [
-                     {
-                        "text": "The value of the local QA metric.",
-                        "context": "dictionary"
-                     }
-                  ]
-               },
-               "model_id": {
-                  "$ref": "#ma_model_list/model_id"
-               },
-               "ordinal_id": {
-                  "type": "integer",
-                  "description": "A unique identifier for the category.",
-                  "_primary_key": true,
-                  "rcsb_description": [
-                     {
-                        "text": "A unique identifier for the category.",
-                        "context": "dictionary"
-                     }
-                  ]
-               }
-            },
-            "additionalProperties": false,
-            "required": [
-               "structure_id",
-               "label_asym_id_1",
-               "label_asym_id_2",
-               "label_comp_id_1",
-               "label_comp_id_2",
-               "label_seq_id_1",
-               "label_seq_id_2",
-               "metric_id",
-               "metric_value",
-               "model_id",
-               "ordinal_id"
-            ]
-         },
-         "minItems": 1,
-         "uniqueItems": true,
-         "rcsb_nested_indexing": false
-      },
       "ma_restraints": {
          "type": "array",
          "items": {
@@ -4852,10 +4492,24 @@
                   ]
                },
                "seq_id_begin": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The starting residue index for the sequence segment of the entity instance \n that is part of the assembly.",
+                  "rcsb_description": [
+                     {
+                        "text": "The starting residue index for the sequence segment of the entity instance \n that is part of the assembly.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "seq_id_end": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The ending residue index for the sequence segment of the entity instance \n that is part of the assembly.",
+                  "rcsb_description": [
+                     {
+                        "text": "The ending residue index for the sequence segment of the entity instance \n that is part of the assembly.",
+                        "context": "dictionary"
+                     }
+                  ]
                }
             },
             "additionalProperties": false,
@@ -9720,10 +9374,24 @@
                   "$ref": "#struct_ref/id"
                },
                "seq_align_beg": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence position in the entity or biological unit described\n  in the data block at which the alignment begins.\n\n This data item is a pointer to _entity_poly_seq.num in the\n ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence position in the entity or biological unit described\n  in the data block at which the alignment begins.\n\n This data item is a pointer to _entity_poly_seq.num in the\n ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                },
                "seq_align_end": {
-                  "$ref": "#entity_poly_seq/num"
+                  "type": "integer",
+                  "description": "The sequence position in the entity or biological unit described\n in the data block at which the alignment ends.\n\n This data item is a pointer to _entity_poly_seq.num in the\n ENTITY_POLY_SEQ category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The sequence position in the entity or biological unit described\n in the data block at which the alignment ends.\n\n This data item is a pointer to _entity_poly_seq.num in the\n ENTITY_POLY_SEQ category.",
+                        "context": "dictionary"
+                     }
+                  ]
                }
             },
             "additionalProperties": false,
