@@ -494,6 +494,29 @@
                      }
                   ]
                },
+               "pdbx_smiles": {
+                  "type": "string",
+                  "description": "SMILES code for component.",
+                  "rcsb_description": [
+                     {
+                        "text": "SMILES code for component.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "pdbx_synonyms": {
+                  "type": "string",
+                  "examples": [
+                     "ATP"
+                  ],
+                  "description": "Synonym list for the component.",
+                  "rcsb_description": [
+                     {
+                        "text": "Synonym list for the component.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
                "type": {
                   "type": "string",
                   "enum": [
@@ -710,6 +733,29 @@
                   "rcsb_description": [
                      {
                         "text": "Full name of the cited journal; relevant for journal articles.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "journal_id_ASTM": {
+                  "type": "string",
+                  "description": "The American Society for Testing and Materials (ASTM) code\n assigned to the journal cited (also referred to as the CODEN\n designator of the Chemical Abstracts Service); relevant for\n journal articles.",
+                  "rcsb_description": [
+                     {
+                        "text": "The American Society for Testing and Materials (ASTM) code\n assigned to the journal cited (also referred to as the CODEN\n designator of the Chemical Abstracts Service); relevant for\n journal articles.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "journal_id_CSD": {
+                  "type": "string",
+                  "examples": [
+                     "0070"
+                  ],
+                  "description": "The Cambridge Structural Database (CSD) code assigned to the\n journal cited; relevant for journal articles. This is also the\n system used at the Protein Data Bank (PDB).",
+                  "rcsb_description": [
+                     {
+                        "text": "The Cambridge Structural Database (CSD) code assigned to the\n journal cited; relevant for journal articles. This is also the\n system used at the Protein Data Bank (PDB).",
                         "context": "dictionary"
                      }
                   ]
@@ -965,6 +1011,7 @@
                      "NBS",
                      "NDB",
                      "PDB",
+                     "PDB-Dev",
                      "PDBE",
                      "PDB_ACC",
                      "PDF",
@@ -1026,6 +1073,10 @@
                      {
                         "value": "PDB",
                         "detail": "                                 Protein Data Bank"
+                     },
+                     {
+                        "value": "PDB-Dev",
+                        "detail": "                                 PDB-Dev integrative/hybrid methods"
                      },
                      {
                         "value": "PDBE",
@@ -1288,10 +1339,10 @@
                      "HHHH(MSE)AKQRSG or AUCGGAAU",
                      "(MSE)SHHWGYGKHNGPEHWHKDFPIAKGERQSPVDIDTHTAKYDPSLKPLSVSYDQATSLRILNNGAAFNVEFD"
                   ],
-                  "description": "Sequence of protein or nucleic acid polymer in standard one-letter\n               codes of amino acids or nucleotides. Non-standard amino\n               acids/nucleotides are represented by their Chemical\n               Component Dictionary (CCD) codes in\n               parenthesis. Deoxynucleotides are represented by the\n               specially-assigned 2-letter CCD codes in parenthesis,\n               with 'D' prefix added to their ribonucleotide\n               counterparts. For hybrid polymer, each residue is\n               represented by the code of its individual type. A\n               cyclic polymer is represented in linear sequence from\n               the chosen start to end.\n\nA for Alanine or Adenosine-5'-monophosphate\nC for Cysteine or Cytidine-5'-monophosphate\nD for Aspartic acid\nE for Glutamic acid\nF for Phenylalanine\nG for Glycine or Guanosine-5'-monophosphate\nH for Histidine\nI for Isoleucine or Inosinic Acid\nL for Leucine\nK for Lysine\nM for Methionine\nN for Asparagine  or Unknown ribonucleotide\nO for Pyrrolysine\nP for Proline\nQ for Glutamine\nR for Arginine\nS for Serine\nT for Threonine\nU for Selenocysteine or Uridine-5'-monophosphate\nV for Valine\nW for Tryptophan\nY for Tyrosine\n(DA) for 2'-deoxyadenosine-5'-monophosphate\n(DC) for 2'-deoxycytidine-5'-monophosphate\n(DG) for 2'-deoxyguanosine-5'-monophosphate\n(DT) for Thymidine-5'-monophosphate\n(MSE) for Selenomethionine\n(SEP) for Phosphoserine\n(PTO) for Phosphothreonine\n(PTR) for Phosphotyrosine\n(PCA) for Pyroglutamic acid\n(UNK) for Unknown amino acid\n(ACE) for Acetylation cap\n(NH2) for Amidation cap",
+                  "description": "Sequence of protein or nucleic acid polymer in standard one-letter\n               codes of amino acids or nucleotides. Non-standard amino\n               acids/nucleotides are represented by their Chemical\n               Component Dictionary (CCD) codes in\n               parenthesis. Deoxynucleotides are represented by the\n               specially-assigned 2-letter CCD codes in parenthesis,\n               with 'D' prefix added to their ribonucleotide\n               counterparts. For hybrid polymer, each residue is\n               represented by the code of its individual type. A\n               cyclic polymer is represented in linear sequence from\n               the chosen start to end.\n\nA for Alanine or Adenosine-5'-monophosphate\nC for Cysteine or Cytidine-5'-monophosphate\nD for Aspartic acid\nE for Glutamic acid\nF for Phenylalanine\nG for Glycine or Guanosine-5'-monophosphate\nH for Histidine\nI for Isoleucine or Inosinic Acid\nL for Leucine\nK for Lysine\nM for Methionine\nN for Asparagine  or Unknown ribonucleotide\nO for Pyrrolysine\nP for Proline\nQ for Glutamine\nR for Arginine\nS for Serine\nT for Threonine\nU for Selenocysteine or Uridine-5'-monophosphate\nV for Valine\nW for Tryptophan\nY for Tyrosine\n(DA) for 2'-deoxyadenosine-5'-monophosphate\n(DC) for 2'-deoxycytidine-5'-monophosphate\n(DG) for 2'-deoxyguanosine-5'-monophosphate\n(DT) for Thymidine-5'-monophosphate\n(MSE) for Selenomethionine\n(SEP) for Phosphoserine\n(TPO) for Phosphothreonine\n(PTR) for Phosphotyrosine\n(PCA) for Pyroglutamic acid\n(UNK) for Unknown amino acid\n(ACE) for Acetylation cap\n(NH2) for Amidation cap",
                   "rcsb_description": [
                      {
-                        "text": "Sequence of protein or nucleic acid polymer in standard one-letter\n               codes of amino acids or nucleotides. Non-standard amino\n               acids/nucleotides are represented by their Chemical\n               Component Dictionary (CCD) codes in\n               parenthesis. Deoxynucleotides are represented by the\n               specially-assigned 2-letter CCD codes in parenthesis,\n               with 'D' prefix added to their ribonucleotide\n               counterparts. For hybrid polymer, each residue is\n               represented by the code of its individual type. A\n               cyclic polymer is represented in linear sequence from\n               the chosen start to end.\n\nA for Alanine or Adenosine-5'-monophosphate\nC for Cysteine or Cytidine-5'-monophosphate\nD for Aspartic acid\nE for Glutamic acid\nF for Phenylalanine\nG for Glycine or Guanosine-5'-monophosphate\nH for Histidine\nI for Isoleucine or Inosinic Acid\nL for Leucine\nK for Lysine\nM for Methionine\nN for Asparagine  or Unknown ribonucleotide\nO for Pyrrolysine\nP for Proline\nQ for Glutamine\nR for Arginine\nS for Serine\nT for Threonine\nU for Selenocysteine or Uridine-5'-monophosphate\nV for Valine\nW for Tryptophan\nY for Tyrosine\n(DA) for 2'-deoxyadenosine-5'-monophosphate\n(DC) for 2'-deoxycytidine-5'-monophosphate\n(DG) for 2'-deoxyguanosine-5'-monophosphate\n(DT) for Thymidine-5'-monophosphate\n(MSE) for Selenomethionine\n(SEP) for Phosphoserine\n(PTO) for Phosphothreonine\n(PTR) for Phosphotyrosine\n(PCA) for Pyroglutamic acid\n(UNK) for Unknown amino acid\n(ACE) for Acetylation cap\n(NH2) for Amidation cap",
+                        "text": "Sequence of protein or nucleic acid polymer in standard one-letter\n               codes of amino acids or nucleotides. Non-standard amino\n               acids/nucleotides are represented by their Chemical\n               Component Dictionary (CCD) codes in\n               parenthesis. Deoxynucleotides are represented by the\n               specially-assigned 2-letter CCD codes in parenthesis,\n               with 'D' prefix added to their ribonucleotide\n               counterparts. For hybrid polymer, each residue is\n               represented by the code of its individual type. A\n               cyclic polymer is represented in linear sequence from\n               the chosen start to end.\n\nA for Alanine or Adenosine-5'-monophosphate\nC for Cysteine or Cytidine-5'-monophosphate\nD for Aspartic acid\nE for Glutamic acid\nF for Phenylalanine\nG for Glycine or Guanosine-5'-monophosphate\nH for Histidine\nI for Isoleucine or Inosinic Acid\nL for Leucine\nK for Lysine\nM for Methionine\nN for Asparagine  or Unknown ribonucleotide\nO for Pyrrolysine\nP for Proline\nQ for Glutamine\nR for Arginine\nS for Serine\nT for Threonine\nU for Selenocysteine or Uridine-5'-monophosphate\nV for Valine\nW for Tryptophan\nY for Tyrosine\n(DA) for 2'-deoxyadenosine-5'-monophosphate\n(DC) for 2'-deoxycytidine-5'-monophosphate\n(DG) for 2'-deoxyguanosine-5'-monophosphate\n(DT) for Thymidine-5'-monophosphate\n(MSE) for Selenomethionine\n(SEP) for Phosphoserine\n(TPO) for Phosphothreonine\n(PTR) for Phosphotyrosine\n(PCA) for Pyroglutamic acid\n(UNK) for Unknown amino acid\n(ACE) for Acetylation cap\n(NH2) for Amidation cap",
                         "context": "dictionary"
                      },
                      {
@@ -2015,16 +2066,17 @@
                "file_content": {
                   "type": "string",
                   "enum": [
+                     "QA metrics",
                      "input restraints",
                      "local pairwise QA scores",
                      "multiple sequence alignments",
                      "other",
                      "validation report"
                   ],
-                  "description": "Content of the file.",
+                  "description": "Content of the file.\n Note: The option \"local pairwise QA scores\" is deprecated in favor of \n \"QA metrics\" with dictionary version 1.4.7.",
                   "rcsb_description": [
                      {
-                        "text": "Content of the file.",
+                        "text": "Content of the file.\n Note: The option \"local pairwise QA scores\" is deprecated in favor of \n \"QA metrics\" with dictionary version 1.4.7.",
                         "context": "dictionary"
                      }
                   ]
@@ -2039,6 +2091,8 @@
                      "clustalw",
                      "csv",
                      "fasta",
+                     "gzip",
+                     "jpg",
                      "json",
                      "npy",
                      "npz",
@@ -2046,9 +2100,11 @@
                      "pdf",
                      "pir/nbrf",
                      "pkl",
+                     "png",
                      "pt",
                      "tsv",
-                     "txt"
+                     "txt",
+                     "zip"
                   ],
                   "description": "The format of the file.",
                   "rcsb_enum_annotated": [
@@ -2081,6 +2137,14 @@
                         "detail": "Fasta"
                      },
                      {
+                        "value": "gzip",
+                        "detail": "gzip"
+                     },
+                     {
+                        "value": "jpg",
+                        "detail": "jpg"
+                     },
+                     {
                         "value": "json",
                         "detail": "JSON"
                      },
@@ -2109,6 +2173,10 @@
                         "detail": "Python pickle"
                      },
                      {
+                        "value": "png",
+                        "detail": "png"
+                     },
+                     {
                         "value": "pt",
                         "detail": "PyTorch"
                      },
@@ -2119,6 +2187,10 @@
                      {
                         "value": "txt",
                         "detail": "Text"
+                     },
+                     {
+                        "value": "zip",
+                        "detail": "zip"
                      }
                   ],
                   "rcsb_description": [
@@ -3367,6 +3439,7 @@
                "file_content": {
                   "type": "string",
                   "enum": [
+                     "QA metrics",
                      "archive with multiple files",
                      "input restraints",
                      "local pairwise QA scores",
@@ -3374,10 +3447,10 @@
                      "other",
                      "validation report"
                   ],
-                  "description": "Content of the file.",
+                  "description": "Content of the file.\n Note: The option \"local pairwise QA scores\" is deprecated in favor of \n \"QA metrics\" with dictionary version 1.4.7.",
                   "rcsb_description": [
                      {
-                        "text": "Content of the file.",
+                        "text": "Content of the file.\n Note: The option \"local pairwise QA scores\" is deprecated in favor of \n \"QA metrics\" with dictionary version 1.4.7.",
                         "context": "dictionary"
                      }
                   ]
@@ -3387,20 +3460,113 @@
                   "enum": [
                      "a2m",
                      "a3m",
+                     "bcif",
                      "cif",
                      "clustalw",
                      "csv",
                      "fasta",
                      "gzip",
+                     "jpg",
                      "json",
+                     "npy",
+                     "npz",
                      "other",
                      "pdf",
                      "pir/nbrf",
+                     "pkl",
+                     "png",
+                     "pt",
                      "tsv",
                      "txt",
                      "zip"
                   ],
                   "description": "The format of the file.",
+                  "rcsb_enum_annotated": [
+                     {
+                        "value": "a2m",
+                        "detail": "A2M"
+                     },
+                     {
+                        "value": "a3m",
+                        "detail": "A3M"
+                     },
+                     {
+                        "value": "bcif",
+                        "detail": "Binary cif"
+                     },
+                     {
+                        "value": "cif",
+                        "detail": "CIF"
+                     },
+                     {
+                        "value": "clustalw",
+                        "detail": "Clustalw"
+                     },
+                     {
+                        "value": "csv",
+                        "detail": "CSV"
+                     },
+                     {
+                        "value": "fasta",
+                        "detail": "Fasta"
+                     },
+                     {
+                        "value": "gzip",
+                        "detail": "gzip"
+                     },
+                     {
+                        "value": "jpg",
+                        "detail": "jpg"
+                     },
+                     {
+                        "value": "json",
+                        "detail": "JSON"
+                     },
+                     {
+                        "value": "npy",
+                        "detail": "NumPy array"
+                     },
+                     {
+                        "value": "npz",
+                        "detail": "NumPy arrays"
+                     },
+                     {
+                        "value": "other",
+                        "detail": "Other format"
+                     },
+                     {
+                        "value": "pdf",
+                        "detail": "PDF"
+                     },
+                     {
+                        "value": "pir/nbrf",
+                        "detail": "PIR/NBRF"
+                     },
+                     {
+                        "value": "pkl",
+                        "detail": "Python pickle"
+                     },
+                     {
+                        "value": "png",
+                        "detail": "png"
+                     },
+                     {
+                        "value": "pt",
+                        "detail": "PyTorch"
+                     },
+                     {
+                        "value": "tsv",
+                        "detail": "TSV"
+                     },
+                     {
+                        "value": "txt",
+                        "detail": "Text"
+                     },
+                     {
+                        "value": "zip",
+                        "detail": "zip"
+                     }
+                  ],
                   "rcsb_description": [
                      {
                         "text": "The format of the file.",
@@ -3474,10 +3640,10 @@
                },
                "model_group_id": {
                   "type": "integer",
-                  "description": "An identifier to group structural models into collections or sets.\n A cluster of models and its representative can either be grouped together \n or can be separate groups in the ma_model_list table. The choice between \n the two options should be decided based on how the modeling was carried out \n and how the representative was chosen. If the representative is a member of \n the ensemble (i.e., best scoring model), then it is recommended that the \n representative and the ensemble belong to the same model group. If the \n representative is calculated from the ensemble (i.e., centroid), then it is \n recommended that the representative be separated into a different group. \n If the models do not need to be grouped into collections, then the\n _ma_model_list.model_group_id is the same as _ma_model_list.model_id.",
+                  "description": "An identifier to group structural models into collections or sets.\n This data item has been deprecated with dictionary version 1.4.7. \n See ma_model_group category.",
                   "rcsb_description": [
                      {
-                        "text": "An identifier to group structural models into collections or sets.\n A cluster of models and its representative can either be grouped together \n or can be separate groups in the ma_model_list table. The choice between \n the two options should be decided based on how the modeling was carried out \n and how the representative was chosen. If the representative is a member of \n the ensemble (i.e., best scoring model), then it is recommended that the \n representative and the ensemble belong to the same model group. If the \n representative is calculated from the ensemble (i.e., centroid), then it is \n recommended that the representative be separated into a different group. \n If the models do not need to be grouped into collections, then the\n _ma_model_list.model_group_id is the same as _ma_model_list.model_id.",
+                        "text": "An identifier to group structural models into collections or sets.\n This data item has been deprecated with dictionary version 1.4.7. \n See ma_model_group category.",
                         "context": "dictionary"
                      }
                   ]
@@ -3488,20 +3654,20 @@
                      "cluster1",
                      "cluster2"
                   ],
-                  "description": "A decsriptive name for the model group.",
+                  "description": "A decsriptive name for the model group. \n This data item has been deprecated with dictionary version 1.4.7. \n See ma_model_group category.",
                   "rcsb_description": [
                      {
-                        "text": "A decsriptive name for the model group.",
+                        "text": "A decsriptive name for the model group. \n This data item has been deprecated with dictionary version 1.4.7. \n See ma_model_group category.",
                         "context": "dictionary"
                      }
                   ]
                },
                "model_id": {
                   "type": "integer",
-                  "description": "A unique identifier for the structural model being deposited.",
+                  "description": "A unique identifier for the structural model being deposited.\n This data item was practically a duplicate of _ma_model_list.ordinal_id\n and has been deprecated with dictionary version 1.4.7.",
                   "rcsb_description": [
                      {
-                        "text": "A unique identifier for the structural model being deposited.",
+                        "text": "A unique identifier for the structural model being deposited.\n This data item was practically a duplicate of _ma_model_list.ordinal_id\n and has been deprecated with dictionary version 1.4.7.",
                         "context": "dictionary"
                      }
                   ]
@@ -3562,11 +3728,11 @@
                },
                "ordinal_id": {
                   "type": "integer",
-                  "description": "A unique identifier for the model / model group combination.",
+                  "description": "A unique identifier for the structural model being deposited.",
                   "_primary_key": true,
                   "rcsb_description": [
                      {
-                        "text": "A unique identifier for the model / model group combination.",
+                        "text": "A unique identifier for the structural model being deposited.",
                         "context": "dictionary"
                      }
                   ]
@@ -3576,7 +3742,6 @@
             "required": [
                "structure_id",
                "data_id",
-               "model_id",
                "model_type",
                "ordinal_id"
             ]
@@ -3952,7 +4117,9 @@
                   "enum": [
                      "global",
                      "local",
-                     "local-pairwise"
+                     "local-pairwise",
+                     "per-feature",
+                     "per-feature-pair"
                   ],
                   "description": "The mode of calculation of the QA metric.",
                   "rcsb_enum_annotated": [
@@ -3967,6 +4134,14 @@
                      {
                         "value": "local-pairwise",
                         "detail": "QA metric is calculated per-residue-pair"
+                     },
+                     {
+                        "value": "per-feature",
+                        "detail": "QA metric is calculated per-feature"
+                     },
+                     {
+                        "value": "per-feature-pair",
+                        "detail": "QA metric is calculated per-feature-pair"
                      }
                   ],
                   "rcsb_description": [
@@ -3993,6 +4168,7 @@
                   "type": "string",
                   "enum": [
                      "PAE",
+                     "boolean",
                      "contact probability",
                      "distance",
                      "energy",
@@ -4003,6 +4179,7 @@
                      "pLDDT all-atom",
                      "pLDDT all-atom in [0,1]",
                      "pLDDT in [0,1]",
+                     "pLDDT to polymer",
                      "pTM",
                      "zscore"
                   ],
@@ -4011,6 +4188,10 @@
                      {
                         "value": "PAE",
                         "detail": "predicted aligned error (in Angstroms)"
+                     },
+                     {
+                        "value": "boolean",
+                        "detail": "0 or 1 depending on whether a check passed (1) or not (0)"
                      },
                      {
                         "value": "contact probability",
@@ -4051,6 +4232,10 @@
                      {
                         "value": "pLDDT in [0,1]",
                         "detail": "confidence score predicting accuracy according to the CA-only Local Distance Difference Test (lDDT-CA) in [0,1]"
+                     },
+                     {
+                        "value": "pLDDT to polymer",
+                        "detail": "confidence score predicting accuracy according to lDDT with distances from each atom to CA or C1' of nearby polymer residues in [0,100]"
                      },
                      {
                         "value": "pTM",
@@ -4115,7 +4300,7 @@
                   ]
                },
                "model_id": {
-                  "$ref": "#ma_model_list/model_id"
+                  "$ref": "#ma_model_list/ordinal_id"
                },
                "ordinal_id": {
                   "type": "integer",
@@ -4691,6 +4876,7 @@
                      "B2RHG4"
                   ],
                   "description": "Accession code assigned by the reference database.",
+                  "_primary_key": true,
                   "rcsb_description": [
                      {
                         "text": "Accession code assigned by the reference database.",
@@ -4781,6 +4967,20 @@
                   "rcsb_description": [
                      {
                         "text": "Name of the gene corresponding to the target entity.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "is_primary": {
+                  "type": "string",
+                  "enum": [
+                     "no",
+                     "yes"
+                  ],
+                  "description": "Flag to identify the main input used in the modeling.",
+                  "rcsb_description": [
+                     {
+                        "text": "Flag to identify the main input used in the modeling.",
                         "context": "dictionary"
                      }
                   ]
@@ -5271,6 +5471,7 @@
                "template_entity_type": {
                   "type": "string",
                   "enum": [
+                     "branched",
                      "macrolide",
                      "non-polymer",
                      "polymer",
@@ -6622,6 +6823,20 @@
                "$ref": "#entry/id",
                "_primary_key": true
             },
+            "recvd_initial_deposition_date": {
+               "type": "string",
+               "format": "date",
+               "examples": [
+                  "1983-02-21"
+               ],
+               "description": "The date of initial deposition.  (The first message for\n deposition has been received.)",
+               "rcsb_description": [
+                  {
+                     "text": "The date of initial deposition.  (The first message for\n deposition has been received.)",
+                     "context": "dictionary"
+                  }
+               ]
+            },
             "status_code": {
                "type": "string",
                "enum": [
@@ -7972,6 +8187,10 @@
                         "detail": "data collection"
                      },
                      {
+                        "value": "CSearch",
+                        "detail": "phasing"
+                     },
+                     {
                         "value": "CaspR"
                      },
                      {
@@ -8162,7 +8381,8 @@
                         "detail": "phasing"
                      },
                      {
-                        "value": "MAIN"
+                        "value": "MAIN",
+                        "detail": "refinement,model building"
                      },
                      {
                         "value": "MAR345",
@@ -8315,6 +8535,10 @@
                      },
                      {
                         "value": "RANTAN"
+                     },
+                     {
+                        "value": "RAPD",
+                        "detail": "data processing,data reduction,data scaling"
                      },
                      {
                         "value": "RAVE"
@@ -9418,7 +9642,7 @@
    ],
    "$id": "https://github.com/rcsb/py-rcsb.db/tree/master/rcsb.db/data/json-schema/json-schema-full-ma.json",
    "$schema": "http://json-schema.org/draft-04/schema#",
-   "title": "schema: ma collection: ma version: 0.0.2",
-   "description": "RCSB Exchange Database JSON schema derived from the ma content type schema. This schema supports collection ma version 0.0.2. This schema is hosted in repository https://github.com/rcsb/py-rcsb.db/tree/master/rcsb.db/data/json-schema/json-schema-full-ma.json and follows JSON schema specification version 4",
-   "$comment": "schema_version: 0.0.2"
+   "title": "schema: ma collection: ma version: 0.0.3",
+   "description": "RCSB Exchange Database JSON schema derived from the ma content type schema. This schema supports collection ma version 0.0.3. This schema is hosted in repository https://github.com/rcsb/py-rcsb.db/tree/master/rcsb.db/data/json-schema/json-schema-full-ma.json and follows JSON schema specification version 4",
+   "$comment": "schema_version: 0.0.3"
 }

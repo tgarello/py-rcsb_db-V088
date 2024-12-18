@@ -7,7 +7,7 @@
 #  10-09-2024 initial draft for modelarchive (ma)
 #  31-10-2024 v.0.0.1 schema corrections for ma
 #  01-12-2024 v.0.0.2 remove ma_qa_metric_local, ma_qa_metric_local_pairwise, atom_site, entity_poly_seq
-#
+#  17-12-2024 v.0.0.3 remove categories introduced in dictionary update 1.4.7 and scan-ma-type-map.json computed on database v0.0.2
 # ExDB configuration file example
 ---
 DEFAULT: {}
@@ -89,7 +89,7 @@ database_catalog_configuration:
 content_info_helper_configuration:
     database_names:
         ma:
-            VERSION: 0.0.1
+            VERSION: 0.0.2
             INSTANCE_DATA_TYPE_INFO_FILENAME: scan-ma-type-map.json
 
     #
@@ -231,6 +231,8 @@ content_info_helper_configuration:
             EXCLUDE:
                 - ma_qa_metric_local
                 - ma_qa_metric_local_pairwise
+                - ma_qa_metric_feature
+                - ma_qa_metric_feature_pairwise
                 - atom_site
                 - atom_site_anisotrop
                 - entity_poly_seq
@@ -239,6 +241,17 @@ content_info_helper_configuration:
                 - pdbx_seq_map_depositor_info
                 - pdbx_unobs_or_zero_occ_atoms
                 - pdbx_unobs_or_zero_occ_residues
+                - pdbx_branch_scheme
+                - pdbx_entity_branch_list
+                - pdbx_feature_domain
+                - pdbx_data_usage
+                - pdbx_domain
+                - pdbx_domain_range
+                - struct_conf
+                - struct_conf_type
+                - struct_conn
+                - struct_conn_type
+                - struct_ref_seq_dif
         pdbx:
             INCLUDE: []
             EXCLUDE:
@@ -372,7 +385,7 @@ document_helper_configuration:
     document_collection_names:
         ma:
             - NAME: ma
-              VERSION: 0.0.2
+              VERSION: 0.0.3
     #
     document_collection_content_filters:
         ma:
@@ -380,6 +393,8 @@ document_helper_configuration:
             EXCLUDE:
                 - MA_QA_METRIC_LOCAL
                 - MA_QA_METRIC_LOCAL_PAIRWISE
+                - MA_QA_METRIC_FEATURE
+                - MA_QA_METRIC_FEATURE_PAIRWISE
                 - ATOM_SITE
                 - ATOM_SITE_ANISOTROP
                 - ENTITY_POLY_SEQ
@@ -388,6 +403,17 @@ document_helper_configuration:
                 - PDBX_UNOBS_OR_ZERO_OCC_ATOMS
                 - PDBX_UNOBS_OR_ZERO_OCC_RESIDUES
                 - PDBX_SEQ_MAP_DEPOSITOR_INFO
+                - PDBX_BRANCH_SCHEME
+                - PDBX_ENTITY_BRANCH_LIST
+                - PDBX_FEATURE_DOMAIN
+                - PDBX_DATA_USAGE
+                - PDBX_DOMAIN
+                - PDBX_DOMAIN_RANGE
+                - STRUCT_CONF
+                - STRUCT_CONF_TYPE
+                - STRUCT_CONN
+                - STRUCT_CONN_TYPE
+                - STRUCT_REF_SEQ_DIF
     #
     collection_indices:
         ma:
@@ -403,12 +429,25 @@ document_helper_configuration:
             - PARENT_CATEGORY_NAME: entity_poly_seq
             - PARENT_CATEGORY_NAME: ma_qa_metric_local
             - PARENT_CATEGORY_NAME: ma_qa_metric_local_pairwise
+            - PARENT_CATEGORY_NAME: ma_qa_metric_feature
+            - PARENT_CATEGORY_NAME: ma_qa_metric_feature_pairwise
             - PARENT_CATEGORY_NAME: atom_site_anisotrop
             - PARENT_CATEGORY_NAME: pdbx_poly_seq_scheme
             - PARENT_CATEGORY_NAME: pdbx_nonpoly_scheme
             - PARENT_CATEGORY_NAME: pdbx_unobs_or_zero_occ_atoms
             - PARENT_CATEGORY_NAME: pdbx_unobs_or_zero_occ_residues
             - PARENT_CATEGORY_NAME: pdbx_seq_map_depositor_info
+            - PARENT_CATEGORY_NAME: pdbx_branch_scheme
+            - PARENT_CATEGORY_NAME: pdbx_entity_branch_list
+            - PARENT_CATEGORY_NAME: pdbx_feature_domain
+            - PARENT_CATEGORY_NAME: pdbx_data_usage
+            - PARENT_CATEGORY_NAME: pdbx_domain
+            - PARENT_CATEGORY_NAME: pdbx_domain_range
+            - PARENT_CATEGORY_NAME: struct_conf
+            - PARENT_CATEGORY_NAME: struct_conf_type
+            - PARENT_CATEGORY_NAME: struct_conn
+            - PARENT_CATEGORY_NAME: struct_conn_type
+            - PARENT_CATEGORY_NAME: struct_ref_seq_dif
     ##
     #all bellow where not clean 
     attribute_descriptions:
