@@ -1411,6 +1411,82 @@
          "uniqueItems": true,
          "rcsb_nested_indexing": false
       },
+      "entity_poly_seq": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "entity_id": {
+                  "$ref": "#entity_poly/entity_id",
+                  "_primary_key": true
+               },
+               "hetero": {
+                  "type": "string",
+                  "enum": [
+                     "n",
+                     "no",
+                     "y",
+                     "yes"
+                  ],
+                  "description": "A flag to indicate whether this monomer in the polymer is\n heterogeneous in sequence.",
+                  "rcsb_enum_annotated": [
+                     {
+                        "value": "n",
+                        "detail": "abbreviation for \"no\""
+                     },
+                     {
+                        "value": "no",
+                        "detail": "sequence is not heterogeneous at this monomer"
+                     },
+                     {
+                        "value": "y",
+                        "detail": "abbreviation for \"yes\""
+                     },
+                     {
+                        "value": "yes",
+                        "detail": "sequence is heterogeneous at this monomer"
+                     }
+                  ],
+                  "rcsb_description": [
+                     {
+                        "text": "A flag to indicate whether this monomer in the polymer is\n heterogeneous in sequence.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "mon_id": {
+                  "$ref": "#chem_comp/id",
+                  "_primary_key": true
+               },
+               "num": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "The value of _entity_poly_seq.num must uniquely and sequentially\n identify a record in the ENTITY_POLY_SEQ list.\n\n Note that this item must be a number and that the sequence\n numbers must progress in increasing numerical order.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "The value of _entity_poly_seq.num must uniquely and sequentially\n identify a record in the ENTITY_POLY_SEQ list.\n\n Note that this item must be a number and that the sequence\n numbers must progress in increasing numerical order.",
+                        "context": "dictionary"
+                     }
+                  ]
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "entity_id",
+               "mon_id",
+               "num"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
+      },
       "entity_src_nat": {
          "type": "array",
          "items": {
@@ -1826,64 +1902,22 @@
                   ]
                },
                "comp_id_1": {
-                  "type": "string",
-                  "description": "The component identifier for the first partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the first partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/mon_id"
                },
                "comp_id_2": {
-                  "type": "string",
-                  "description": "The component identifier for the second partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the second partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/mon_id"
                },
                "comp_id_3": {
-                  "type": "string",
-                  "description": "The component identifier for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/mon_id"
                },
                "entity_id_1": {
-                  "type": "string",
-                  "description": "The entity identifier for the first partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The entity identifier for the first partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/entity_id"
                },
                "entity_id_2": {
-                  "type": "string",
-                  "description": "The entity identifier for the second partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The entity identifier for the second partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/entity_id"
                },
                "entity_id_3": {
-                  "type": "string",
-                  "description": "The entity identifier for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The entity identifier for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/entity_id"
                },
                "lower_limit": {
                   "type": "number",
@@ -1959,34 +1993,13 @@
                   ]
                },
                "seq_id_1": {
-                  "type": "integer",
-                  "description": "The sequence index for the first partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence index for the first partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "seq_id_2": {
-                  "type": "integer",
-                  "description": "The sequence index for the second partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence index for the second partner in the angle restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "seq_id_3": {
-                  "type": "integer",
-                  "description": "The sequence index for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence index for the third partner in the angle restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "upper_limit": {
                   "type": "number",
@@ -2923,84 +2936,28 @@
                   ]
                },
                "comp_id_1": {
-                  "type": "string",
-                  "description": "The component identifier for the first partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the first partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/mon_id"
                },
                "comp_id_2": {
-                  "type": "string",
-                  "description": "The component identifier for the second partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the second partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/mon_id"
                },
                "comp_id_3": {
-                  "type": "string",
-                  "description": "The component identifier for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/mon_id"
                },
                "comp_id_4": {
-                  "type": "string",
-                  "description": "The component identifier for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/mon_id"
                },
                "entity_id_1": {
-                  "type": "string",
-                  "description": "The entity identifier for the first partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The entity identifier for the first partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/entity_id"
                },
                "entity_id_2": {
-                  "type": "string",
-                  "description": "The entity identifier for the second partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The entity identifier for the second partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/entity_id"
                },
                "entity_id_3": {
-                  "type": "string",
-                  "description": "The entity identifier for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The entity identifier for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/entity_id"
                },
                "entity_id_4": {
-                  "type": "string",
-                  "description": "The entity identifier for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The entity identifier for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/entity_id"
                },
                "lower_limit": {
                   "type": "number",
@@ -3080,44 +3037,16 @@
                   ]
                },
                "seq_id_1": {
-                  "type": "integer",
-                  "description": "The sequence index for the first partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence index for the first partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "seq_id_2": {
-                  "type": "integer",
-                  "description": "The sequence index for the second partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence index for the second partner in the dihedral restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "seq_id_3": {
-                  "type": "integer",
-                  "description": "The sequence index for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence index for the third partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "seq_id_4": {
-                  "type": "integer",
-                  "description": "The sequence index for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence index for the fourth partner in the dihedral restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "uncertainty": {
                   "type": "number",
@@ -3221,44 +3150,16 @@
                   ]
                },
                "comp_id_1": {
-                  "type": "string",
-                  "description": "The component identifier for the first partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the first partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/mon_id"
                },
                "comp_id_2": {
-                  "type": "string",
-                  "description": "The component identifier for the second partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The component identifier for the second partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.mon_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/mon_id"
                },
                "entity_id_1": {
-                  "type": "string",
-                  "description": "The entity identifier for the first partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The entity identifier for the first partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/entity_id"
                },
                "entity_id_2": {
-                  "type": "string",
-                  "description": "The entity identifier for the second partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The entity identifier for the second partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.entity_id in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/entity_id"
                },
                "granularity": {
                   "type": "string",
@@ -3348,24 +3249,10 @@
                   ]
                },
                "seq_id_1": {
-                  "type": "integer",
-                  "description": "The sequence index for the first partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence index for the first partner in the distance restraint.\n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "seq_id_2": {
-                  "type": "integer",
-                  "description": "The sequence index for the second partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence index for the second partner in the distance restraint. \n This data item is a pointer to _entity_poly_seq.num in the ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "upper_limit": {
                   "type": "number",
@@ -4677,24 +4564,10 @@
                   ]
                },
                "seq_id_begin": {
-                  "type": "integer",
-                  "description": "The starting residue index for the sequence segment of the entity instance \n that is part of the assembly.",
-                  "rcsb_description": [
-                     {
-                        "text": "The starting residue index for the sequence segment of the entity instance \n that is part of the assembly.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "seq_id_end": {
-                  "type": "integer",
-                  "description": "The ending residue index for the sequence segment of the entity instance \n that is part of the assembly.",
-                  "rcsb_description": [
-                     {
-                        "text": "The ending residue index for the sequence segment of the entity instance \n that is part of the assembly.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                }
             },
             "additionalProperties": false,
@@ -6587,6 +6460,151 @@
          "uniqueItems": true,
          "rcsb_nested_indexing": false
       },
+      "pdbx_branch_scheme": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "asym_id": {
+                  "type": "string",
+                  "examples": [
+                     "1",
+                     "A",
+                     "2B3"
+                  ],
+                  "description": "Pointer to _atom_site.label_asym_id.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "Pointer to _atom_site.label_asym_id.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "auth_asym_id": {
+                  "type": "string",
+                  "description": "This data item is a pointer to _atom_site.pdbx_auth_asym_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "This data item is a pointer to _atom_site.pdbx_auth_asym_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "auth_seq_num": {
+                  "type": "string",
+                  "description": "This data item is a pointer to _atom_site.pdbx_auth_seq_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "This data item is a pointer to _atom_site.pdbx_auth_seq_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "entity_id": {
+                  "$ref": "#entity/id",
+                  "_primary_key": true
+               },
+               "hetero": {
+                  "type": "string",
+                  "enum": [
+                     "n",
+                     "no",
+                     "y",
+                     "yes"
+                  ],
+                  "description": "A flag to indicate whether this monomer in the entity is\n heterogeneous in sequence.",
+                  "rcsb_enum_annotated": [
+                     {
+                        "value": "n",
+                        "detail": "abbreviation for \"no\""
+                     },
+                     {
+                        "value": "no",
+                        "detail": "sequence is not heterogeneous at this monomer"
+                     },
+                     {
+                        "value": "y",
+                        "detail": "abbreviation for \"yes\""
+                     },
+                     {
+                        "value": "yes",
+                        "detail": "sequence is heterogeneous at this monomer"
+                     }
+                  ],
+                  "rcsb_description": [
+                     {
+                        "text": "A flag to indicate whether this monomer in the entity is\n heterogeneous in sequence.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "mon_id": {
+                  "type": "string",
+                  "description": "This data item is a pointer to _atom_site.label_comp_id in the\n PDBX_ENTITY_BRANCH_LIST category.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "This data item is a pointer to _atom_site.label_comp_id in the\n PDBX_ENTITY_BRANCH_LIST category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "num": {
+                  "$ref": "#pdbx_entity_branch_list/num",
+                  "_primary_key": true
+               },
+               "pdb_asym_id": {
+                  "type": "string",
+                  "description": "This data item is a pointer to _atom_site.auth_asym_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "This data item is a pointer to _atom_site.auth_asym_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "pdb_mon_id": {
+                  "type": "string",
+                  "description": "This data item is a pointer to _atom_site.auth_comp_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "This data item is a pointer to _atom_site.auth_comp_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "pdb_seq_num": {
+                  "type": "string",
+                  "description": "This data item is a pointer to _atom_site.auth_seq_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "This data item is a pointer to _atom_site.auth_seq_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "asym_id",
+               "entity_id",
+               "mon_id",
+               "num",
+               "pdb_asym_id",
+               "pdb_mon_id",
+               "pdb_seq_num"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
+      },
       "pdbx_contact_author": {
          "type": "array",
          "items": {
@@ -6798,6 +6816,89 @@
          "uniqueItems": true,
          "rcsb_nested_indexing": false
       },
+      "pdbx_data_usage": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "details": {
+                  "type": "string",
+                  "description": "Provides the details of usage for a particular type.",
+                  "rcsb_description": [
+                     {
+                        "text": "Provides the details of usage for a particular type.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "id": {
+                  "type": "string",
+                  "examples": [
+                     "1"
+                  ],
+                  "description": "Uniquely identifies an data_usage",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "Uniquely identifies an data_usage",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "name": {
+                  "type": "string",
+                  "description": "An optional well known name for the _pdbx_usage_data.",
+                  "rcsb_description": [
+                     {
+                        "text": "An optional well known name for the _pdbx_usage_data.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "type": {
+                  "type": "string",
+                  "enum": [
+                     "disclaimer",
+                     "license"
+                  ],
+                  "examples": [
+                     "license"
+                  ],
+                  "description": "Describes the type of data_usage.",
+                  "rcsb_description": [
+                     {
+                        "text": "Describes the type of data_usage.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "url": {
+                  "type": "string",
+                  "description": "Provides the an optional url for more details of the\n particular type.",
+                  "rcsb_description": [
+                     {
+                        "text": "Provides the an optional url for more details of the\n particular type.",
+                        "context": "dictionary"
+                     }
+                  ]
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "details",
+               "id",
+               "type"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
+      },
       "pdbx_database_status": {
          "type": "object",
          "properties": {
@@ -6879,6 +6980,249 @@
             "status_code"
          ]
       },
+      "pdbx_domain": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "details": {
+                  "type": "string",
+                  "examples": [
+                     "The loop between residues 18 and 23."
+                  ],
+                  "description": "A description of special aspects of the structural elements that\n comprise a domain.",
+                  "rcsb_description": [
+                     {
+                        "text": "A description of special aspects of the structural elements that\n comprise a domain.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "id": {
+                  "type": "string",
+                  "description": "The value of _pdbx_domain.id must uniquely identify a\n record in the PDBX_DOMAIN list.\n\n Note that this item need not be a number; it can be any unique\n identifier.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "The value of _pdbx_domain.id must uniquely identify a\n record in the PDBX_DOMAIN list.\n\n Note that this item need not be a number; it can be any unique\n identifier.",
+                        "context": "dictionary"
+                     }
+                  ]
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "id"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
+      },
+      "pdbx_domain_range": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "beg_label_alt_id": {
+                  "type": "string",
+                  "description": "A component of the identifier for the monomer at which this\n segment of the domain begins.\n\n This data item is a pointer to _atom_sites_alt.id in the\n ATOM_SITES_ALT category.",
+                  "rcsb_description": [
+                     {
+                        "text": "A component of the identifier for the monomer at which this\n segment of the domain begins.\n\n This data item is a pointer to _atom_sites_alt.id in the\n ATOM_SITES_ALT category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "beg_label_asym_id": {
+                  "type": "string",
+                  "description": "A component of the identifier for the monomer at which this\n segment of the domain begins.\n\n This data item is a pointer to _atom_site.label_asym_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "A component of the identifier for the monomer at which this\n segment of the domain begins.\n\n This data item is a pointer to _atom_site.label_asym_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "beg_label_comp_id": {
+                  "type": "string",
+                  "description": "A component of the identifier for the monomer at which this\n segment of the domain begins.\n\n This data item is a pointer to _atom_site.label_comp_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "A component of the identifier for the monomer at which this\n segment of the domain begins.\n\n This data item is a pointer to _atom_site.label_comp_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "beg_label_seq_id": {
+                  "type": "integer",
+                  "description": "A component of the identifier for the monomer at which this\n segment of the domain begins.\n\n This data item is a pointer to _atom_site.label_seq_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "A component of the identifier for the monomer at which this\n segment of the domain begins.\n\n This data item is a pointer to _atom_site.label_seq_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "domain_id": {
+                  "$ref": "#pdbx_domain/id"
+               },
+               "end_label_alt_id": {
+                  "type": "string",
+                  "description": "A component of the identifier for the monomer at which this\n segment of the domain ends.\n\n This data item is a pointer to _atom_sites_alt.id in the\n ATOM_SITES_ALT category.",
+                  "rcsb_description": [
+                     {
+                        "text": "A component of the identifier for the monomer at which this\n segment of the domain ends.\n\n This data item is a pointer to _atom_sites_alt.id in the\n ATOM_SITES_ALT category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "end_label_asym_id": {
+                  "type": "string",
+                  "description": "A component of the identifier for the monomer at which this\n segment of the domain ends.\n\n This data item is a pointer to _atom_site.label_asym_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "A component of the identifier for the monomer at which this\n segment of the domain ends.\n\n This data item is a pointer to _atom_site.label_asym_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "end_label_comp_id": {
+                  "type": "string",
+                  "description": "A component of the identifier for the monomer at which this\n segment of the domain ends.\n\n This data item is a pointer to _atom_site.label_comp_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "A component of the identifier for the monomer at which this\n segment of the domain ends.\n\n This data item is a pointer to _atom_site.label_comp_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "end_label_seq_id": {
+                  "type": "integer",
+                  "description": "A component of the identifier for the monomer at which this\n segment of the domain ends.\n\n This data item is a pointer to _atom_site.label_seq_id in the\n ATOM_SITE category.",
+                  "rcsb_description": [
+                     {
+                        "text": "A component of the identifier for the monomer at which this\n segment of the domain ends.\n\n This data item is a pointer to _atom_site.label_seq_id in the\n ATOM_SITE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "id": {
+                  "type": "string",
+                  "description": "The value of _pdbx_domain_range.id uniquely identifies\n a range in the PDBX_DOMAIN_RANGE category.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "The value of _pdbx_domain_range.id uniquely identifies\n a range in the PDBX_DOMAIN_RANGE category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "beg_label_alt_id",
+               "beg_label_asym_id",
+               "beg_label_comp_id",
+               "beg_label_seq_id",
+               "domain_id",
+               "end_label_alt_id",
+               "end_label_asym_id",
+               "end_label_comp_id",
+               "end_label_seq_id",
+               "id"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
+      },
+      "pdbx_entity_branch_list": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "comp_id": {
+                  "$ref": "#chem_comp/id",
+                  "_primary_key": true
+               },
+               "entity_id": {
+                  "$ref": "#entity/id",
+                  "_primary_key": true
+               },
+               "hetero": {
+                  "type": "string",
+                  "enum": [
+                     "n",
+                     "no",
+                     "y",
+                     "yes"
+                  ],
+                  "description": "A flag to indicate whether this monomer in the entity is\n heterogeneous in sequence.",
+                  "rcsb_enum_annotated": [
+                     {
+                        "value": "n",
+                        "detail": "abbreviation for \"no\""
+                     },
+                     {
+                        "value": "no",
+                        "detail": "sequence is not heterogeneous at this monomer"
+                     },
+                     {
+                        "value": "y",
+                        "detail": "abbreviation for \"yes\""
+                     },
+                     {
+                        "value": "yes",
+                        "detail": "sequence is heterogeneous at this monomer"
+                     }
+                  ],
+                  "rcsb_description": [
+                     {
+                        "text": "A flag to indicate whether this monomer in the entity is\n heterogeneous in sequence.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "num": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "description": "The value pair  _pdbx_entity_branch_list.num and _pdbx_entity_branch_list.comp_id\n must uniquely identify a record in the PDBX_ENTITY_BRANCH_LIST list.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "The value pair  _pdbx_entity_branch_list.num and _pdbx_entity_branch_list.comp_id\n must uniquely identify a record in the PDBX_ENTITY_BRANCH_LIST list.",
+                        "context": "dictionary"
+                     }
+                  ]
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "comp_id",
+               "entity_id",
+               "num"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
+      },
       "pdbx_entity_nonpoly": {
          "type": "array",
          "items": {
@@ -6925,6 +7269,197 @@
                "structure_id",
                "entity_id",
                "ma_model_mode"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
+      },
+      "pdbx_feature_domain": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "domain_id": {
+                  "$ref": "#pdbx_domain/id"
+               },
+               "feature": {
+                  "type": "string",
+                  "description": "The value of _pdbx_feature_domain.feature_name.",
+                  "rcsb_description": [
+                     {
+                        "text": "The value of _pdbx_feature_domain.feature_name.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "feature_assigned_by": {
+                  "type": "string",
+                  "description": "_pdbx_feature_domain.feature_assigned_by identifies\n  the individual, organization or program that\n  assigned the feature.",
+                  "rcsb_description": [
+                     {
+                        "text": "_pdbx_feature_domain.feature_assigned_by identifies\n  the individual, organization or program that\n  assigned the feature.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "feature_name": {
+                  "type": "string",
+                  "description": "_pdbx_feature_domain.feature_name identifies a feature\n  by name.",
+                  "rcsb_description": [
+                     {
+                        "text": "_pdbx_feature_domain.feature_name identifies a feature\n  by name.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "feature_type": {
+                  "type": "string",
+                  "enum": [
+                     "uri",
+                     "value"
+                  ],
+                  "description": "_pdbx_feature_domain.feature_type identifies the\n  type of feature.",
+                  "rcsb_description": [
+                     {
+                        "text": "_pdbx_feature_domain.feature_type identifies the\n  type of feature.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "id": {
+                  "type": "string",
+                  "description": "The value of _pdbx_feature_domain.id uniquely identifies\n a feature in the PDBX_FEATURE_DOMAIN category.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "The value of _pdbx_feature_domain.id uniquely identifies\n a feature in the PDBX_FEATURE_DOMAIN category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "domain_id",
+               "feature",
+               "feature_assigned_by",
+               "feature_name",
+               "feature_type",
+               "id"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
+      },
+      "pdbx_nonpoly_scheme": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "asym_id": {
+                  "type": "string",
+                  "examples": [
+                     "1",
+                     "A",
+                     "2B3"
+                  ],
+                  "description": "Pointer to _atom_site.label_asym_id.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "Pointer to _atom_site.label_asym_id.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "auth_mon_id": {
+                  "type": "string",
+                  "description": "Author provided residue identifier.   This value may differ from the PDB residue\n identifier and may not correspond to residue identification within the coordinate records.",
+                  "rcsb_description": [
+                     {
+                        "text": "Author provided residue identifier.   This value may differ from the PDB residue\n identifier and may not correspond to residue identification within the coordinate records.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "auth_seq_num": {
+                  "type": "string",
+                  "description": "Author provided residue numbering.   This value may differ from the PDB residue\n number and may not correspond to residue numbering within the coordinate records.",
+                  "rcsb_description": [
+                     {
+                        "text": "Author provided residue numbering.   This value may differ from the PDB residue\n number and may not correspond to residue numbering within the coordinate records.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "entity_id": {
+                  "type": "string",
+                  "description": "Pointer to _atom_site.label_entity_id.",
+                  "rcsb_description": [
+                     {
+                        "text": "Pointer to _atom_site.label_entity_id.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "mon_id": {
+                  "type": "string",
+                  "description": "Pointer to _atom_site.label_comp_id.",
+                  "rcsb_description": [
+                     {
+                        "text": "Pointer to _atom_site.label_comp_id.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "ndb_seq_num": {
+                  "type": "string",
+                  "description": "NDB/RCSB residue number.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "NDB/RCSB residue number.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "pdb_seq_num": {
+                  "type": "string",
+                  "description": "PDB residue number.",
+                  "rcsb_description": [
+                     {
+                        "text": "PDB residue number.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "pdb_strand_id": {
+                  "type": "string",
+                  "description": "PDB strand/chain id.",
+                  "rcsb_description": [
+                     {
+                        "text": "PDB strand/chain id.",
+                        "context": "dictionary"
+                     }
+                  ]
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "asym_id",
+               "ndb_seq_num"
             ]
          },
          "minItems": 1,
@@ -9598,24 +10133,10 @@
                   "$ref": "#struct_ref/id"
                },
                "seq_align_beg": {
-                  "type": "integer",
-                  "description": "The sequence position in the entity or biological unit described\n  in the data block at which the alignment begins.\n\n This data item is a pointer to _entity_poly_seq.num in the\n ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence position in the entity or biological unit described\n  in the data block at which the alignment begins.\n\n This data item is a pointer to _entity_poly_seq.num in the\n ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                },
                "seq_align_end": {
-                  "type": "integer",
-                  "description": "The sequence position in the entity or biological unit described\n in the data block at which the alignment ends.\n\n This data item is a pointer to _entity_poly_seq.num in the\n ENTITY_POLY_SEQ category.",
-                  "rcsb_description": [
-                     {
-                        "text": "The sequence position in the entity or biological unit described\n in the data block at which the alignment ends.\n\n This data item is a pointer to _entity_poly_seq.num in the\n ENTITY_POLY_SEQ category.",
-                        "context": "dictionary"
-                     }
-                  ]
+                  "$ref": "#entity_poly_seq/num"
                }
             },
             "additionalProperties": false,
@@ -9632,6 +10153,61 @@
          "minItems": 1,
          "uniqueItems": true,
          "rcsb_nested_indexing": false
+      },
+      "struct_ref_seq_dif": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "align_id": {
+                  "$ref": "#struct_ref_seq/align_id"
+               },
+               "db_mon_id": {
+                  "type": "string",
+                  "description": "The monomer type found at this position in the referenced\n database entry.\n\n This data item is a pointer to _chem_comp.id in the CHEM_COMP\n category.",
+                  "rcsb_description": [
+                     {
+                        "text": "The monomer type found at this position in the referenced\n database entry.\n\n This data item is a pointer to _chem_comp.id in the CHEM_COMP\n category.",
+                        "context": "dictionary"
+                     },
+                     {
+                        "text": "The wwPDB chemical component dictionary 3-letter identifier for the discrepant residue in the database sequence reference",
+                        "context": "deposition"
+                     }
+                  ]
+               },
+               "mon_id": {
+                  "$ref": "#entity_poly_seq/mon_id"
+               },
+               "pdbx_ordinal": {
+                  "type": "integer",
+                  "description": "A synthetic integer primary key for this category.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "A synthetic integer primary key for this category.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "seq_num": {
+                  "$ref": "#entity_poly_seq/num"
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "align_id",
+               "pdbx_ordinal"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
       }
    },
    "additionalProperties": false,
@@ -9642,7 +10218,7 @@
    ],
    "$id": "https://github.com/rcsb/py-rcsb.db/tree/master/rcsb.db/data/json-schema/json-schema-full-ma.json",
    "$schema": "http://json-schema.org/draft-04/schema#",
-   "title": "schema: ma collection: ma version: 0.0.3",
-   "description": "RCSB Exchange Database JSON schema derived from the ma content type schema. This schema supports collection ma version 0.0.3. This schema is hosted in repository https://github.com/rcsb/py-rcsb.db/tree/master/rcsb.db/data/json-schema/json-schema-full-ma.json and follows JSON schema specification version 4",
-   "$comment": "schema_version: 0.0.3"
+   "title": "schema: ma collection: ma version: 0.0.4",
+   "description": "RCSB Exchange Database JSON schema derived from the ma content type schema. This schema supports collection ma version 0.0.4. This schema is hosted in repository https://github.com/rcsb/py-rcsb.db/tree/master/rcsb.db/data/json-schema/json-schema-full-ma.json and follows JSON schema specification version 4",
+   "$comment": "schema_version: 0.0.4"
 }
