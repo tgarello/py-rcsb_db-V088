@@ -9,6 +9,7 @@
 #  01-12-2024 v.0.0.2 remove ma_qa_metric_local, ma_qa_metric_local_pairwise, atom_site, entity_poly_seq
 #  17-12-2024 v.0.0.3 remove categories introduced in dictionary update 1.4.7 and scan-ma-type-map.json computed on database v0.0.2
 #  17-01-2025 v.0.0.4 introduce again entity_poly_seq and other categories
+#  17-03-2025 v.0.0.5 introduce _audit_author.identifier_ORCID (but no _audit_author.address), _pdbx_contact_author.role & .identifier_ORCID, _pdbx_audit_support.*
 # ExDB configuration file example
 ---
 DEFAULT: {}
@@ -221,6 +222,9 @@ content_info_helper_configuration:
                 - CATEGORY_NAME: struct_ref
                 - CATEGORY_NAME: struct_ref_seq
                 - CATEGORY_NAME: struct_ref_dif
+                - CATEGORY_NAME: pdbx_audit_support
+                - CATEGORY_NAME: audit_author
+                - CATEGORY_NAME: pdbx_contact_author
         #
     slice_parent_items:
     slice_parent_filters:
@@ -371,13 +375,33 @@ content_info_helper_configuration:
         ma:
             - CATEGORY_NAME: struct_ref
               ATTRIBUTE_NAME: biol_id
+            - CATEGORY_NAME: audit_author
+              ATTRIBUTE_NAME: address
+            - CATEGORY_NAME: pdbx_contact_author
+              ATTRIBUTE_NAME: city
+            - CATEGORY_NAME: pdbx_contact_author
+              ATTRIBUTE_NAME: continent
+            - CATEGORY_NAME: pdbx_contact_author
+              ATTRIBUTE_NAME: country
+            - CATEGORY_NAME: pdbx_contact_author
+              ATTRIBUTE_NAME: fax
+            - CATEGORY_NAME: pdbx_contact_author
+              ATTRIBUTE_NAME: legacy_address
+            - CATEGORY_NAME: pdbx_contact_author
+              ATTRIBUTE_NAME: organization_type
+            - CATEGORY_NAME: pdbx_contact_author
+              ATTRIBUTE_NAME: phone
+            - CATEGORY_NAME: pdbx_contact_author
+              ATTRIBUTE_NAME: postal_code
+            - CATEGORY_NAME: pdbx_contact_author
+              ATTRIBUTE_NAME: state_province
 #
 document_helper_configuration:
     # Document level configuration
     document_collection_names:
         ma:
             - NAME: ma
-              VERSION: 0.0.4
+              VERSION: 0.0.5
     #
     document_collection_content_filters:
         ma:

@@ -246,6 +246,19 @@
                   "$ref": "#entry/id",
                   "_primary_key": true
                },
+               "identifier_ORCID": {
+                  "type": "string",
+                  "examples": [
+                     "0000-0002-6681-547X"
+                  ],
+                  "description": "The Open Researcher and Contributor ID (ORCID).",
+                  "rcsb_description": [
+                     {
+                        "text": "The Open Researcher and Contributor ID (ORCID).",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
                "name": {
                   "type": "string",
                   "examples": [
@@ -6460,6 +6473,2049 @@
          "uniqueItems": true,
          "rcsb_nested_indexing": false
       },
+      "pdbx_audit_support": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "structure_id": {
+                  "$ref": "#entry/id",
+                  "_primary_key": true
+               },
+               "country": {
+                  "type": "string",
+                  "description": "The country/region providing the funding support for the entry.",
+                  "rcsb_description": [
+                     {
+                        "text": "The country/region providing the funding support for the entry.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "details": {
+                  "type": "string",
+                  "description": "Additional details regarding the funding of this entry",
+                  "rcsb_description": [
+                     {
+                        "text": "Additional details regarding the funding of this entry",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "funding_organization": {
+                  "type": "string",
+                  "examples": [
+                     "National Institutes of Health",
+                     "Wellcome Trust",
+                     "National Institutes of Health/National Institute of General Medical Sciences"
+                  ],
+                  "description": "The name of the organization providing funding support for the\n entry.",
+                  "rcsb_enum_annotated": [
+                     {
+                        "value": "ATIP-Avenir",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Aarhus University Research Foundation",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Academia Sinica (Taiwan)",
+                        "detail": "Taiwan"
+                     },
+                     {
+                        "value": "Academy of Finland",
+                        "detail": "Finland"
+                     },
+                     {
+                        "value": "Accelerated Early staGe drug dIScovery (AEGIS)",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "Adaptimmune Ltd",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Agence Nationale de Recherches Sur le Sida et les Hepatites Virales (ANRS)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Agence Nationale de la Recherche (ANR)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Agencia Estatal de Investigacion (AEI)",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Agencia Nacional de Investigacion e Innovacion (ANII)",
+                        "detail": "Uruguay"
+                     },
+                     {
+                        "value": "Agencia Nacional de Promocion Cientifica y Tecnologica (FONCYT)",
+                        "detail": "Argentina"
+                     },
+                     {
+                        "value": "Ake Wiberg Foundation",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "Alexander von Humboldt Foundation",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Alexs Lemonade Stand Foundation for Cancer",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Aligning Science Across Parkinsons (ASAP)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Almirall, LLC",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Alzheimer Forschung Initiative e.V.",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Alzheimers Drug Discovery Foundation (ADDF)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Alzheimers Research UK (ARUK)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "American Cancer Society",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "American Diabetes Association",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "American Epilepsy Society",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "American Heart Association",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Amyloidosis Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Aprea Therapeutics AB",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Australian Research Council (ARC)",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "Australian Science and Industry Endowment Fund (SIEF)",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "Austrian Research Promotion Agency",
+                        "detail": "Austria"
+                     },
+                     {
+                        "value": "Austrian Science Fund",
+                        "detail": "Austria"
+                     },
+                     {
+                        "value": "Autonomous Community of Madrid",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Baden-Wuerttemberg-Stiftung",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Banting Postdoctoral Fellowships",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Bavarian State Ministry for Education, Culture, Science and Arts",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Becton-Dickinson and Company",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Belarusian Republican Foundation for Fundamental Research",
+                        "detail": "Belarus"
+                     },
+                     {
+                        "value": "Belgian Foundation against Cancer",
+                        "detail": "Netherlands"
+                     },
+                     {
+                        "value": "BigC Cancer Charity",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Bill & Melinda Gates Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Biotechnology and Biological Sciences Research Council (BBSRC)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Birkbeck College",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Bloodwise",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Board of Research in Nuclear Sciences (BRNS)",
+                        "detail": "India"
+                     },
+                     {
+                        "value": "Boehringer Ingelheim Fonds (BIF)",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Brain & Behavior Research Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Branco Weiss Fellowship - Society in Science",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Brazilian National Council for Scientific and Technological Development (CNPq)",
+                        "detail": "Brazil"
+                     },
+                     {
+                        "value": "Breast Cancer Now",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "British Heart Foundation",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Brookhaven National Laboratory (BNL)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Bulgarian National Science Fund",
+                        "detail": "Bulgaria"
+                     },
+                     {
+                        "value": "Burroughs Wellcome Fund",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Business Finland",
+                        "detail": "Finland"
+                     },
+                     {
+                        "value": "CAMS Innovation Fund for Medical Sciences (CIFMS)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "CHDI Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "CIFAR Azrieli Global Scholars",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "CRDF Global",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Canada Excellence Research Chair Award",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Canada Foundation for Innovation",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Canada Research Chairs",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Canadian Glycomics Network (GLYCONET)",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Canadian Institute for Advanced Research (CIFAR)",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Canadian Institutes of Health Research (CIHR)",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Cancer Council WA",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "Cancer Prevention and Research Institute of Texas (CPRIT)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Cancer Research UK",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Cancer and Polio Research Fund",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "CancerGenomiCs.nl",
+                        "detail": "Netherlands"
+                     },
+                     {
+                        "value": "Cancerfonden",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Carl Trygger Foundation",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Centre National de la Recherche Scientifique (CNRS)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Chan Zuckerberg Initiative",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Childrens Discovery Institute of Washington University and St. Louis Childrens Hospital",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Chinese Academy of Sciences",
+                        "detail": "China"
+                     },
+                     {
+                        "value": "Chinese Scholarship Council",
+                        "detail": "China"
+                     },
+                     {
+                        "value": "Christian Doppler Forschungsgesellschaft",
+                        "detail": "Austria"
+                     },
+                     {
+                        "value": "Clas Groschinsky Memorial Fund",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Columbia Technology Ventures",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Comision Nacional Cientifica y Technologica (CONICYT)",
+                        "detail": "Chile"
+                     },
+                     {
+                        "value": "Commonwealth Scholarship Commission (United Kingdom)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Commonwealth Scientific and Industrial Research Organisation (CSIRO)",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "Compagnia di San Paolo Foundation",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Comunidad de Madrid",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Consejo Nacional de Ciencia y Tecnologia (CONACYT)",
+                        "detail": "Mexico"
+                     },
+                     {
+                        "value": "Consortia for HIV/AIDS Vaccine Development",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Coordination for the Improvement of Higher Education Personnel",
+                        "detail": "Brazil"
+                     },
+                     {
+                        "value": "Council of Scientific & Industrial Research (CSIR)",
+                        "detail": "India"
+                     },
+                     {
+                        "value": "Croatian Science Foundation",
+                        "detail": "Croatia"
+                     },
+                     {
+                        "value": "Crohns and Colitis Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Cystic Fibrosis Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Cystic Fibrosis Trust",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Czech Academy of Sciences",
+                        "detail": "Czech Republic"
+                     },
+                     {
+                        "value": "Czech Science Foundation",
+                        "detail": "Czech Republic"
+                     },
+                     {
+                        "value": "DOC Fellowship of the Austrian Academy of Sciences",
+                        "detail": "Austria"
+                     },
+                     {
+                        "value": "Damon Runyon Cancer Research Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "DanScatt",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Danish Agency for Science Technology and Innovation",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Danish Council for Independent Research",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Danish National Research Foundation",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "David and Lucile Packard Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Defence Science and Technology Laboratory (DSTL)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Defense Advanced Research Projects Agency (DARPA)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Defense Threat Reduction Agency (DTRA)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Dementia Research Institute (DRI)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Department of Biotechnology (DBT, India)",
+                        "detail": "India"
+                     },
+                     {
+                        "value": "Department of Defense (DOD, United States)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Department of Education of the Basque Government",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Department of Energy (DOE, United States)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Department of Health & Human Services (HHS)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Department of Science & Technology (DST, India)",
+                        "detail": "India"
+                     },
+                     {
+                        "value": "Department of Science and Innovation, South Africa",
+                        "detail": "South Africa"
+                     },
+                     {
+                        "value": "Department of Veterans Affairs (VA, United States)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Diamond Light Source",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Dorothea Schloezer Program from the Georg-August University of Goettingen",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Dutch Kidney Foundation",
+                        "detail": "Netherlands"
+                     },
+                     {
+                        "value": "EIPOD fellowship under Marie Sklodowska-Curie Actions COFUND",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "ETH Zurich",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Ecole polytechnique",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Elite Network of Bavaria",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Emergence program from Universite Grenoble Alpes",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Emerson Collective",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Engineering and Physical Sciences Research Council",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Enterprise Ireland",
+                        "detail": "Ireland"
+                     },
+                     {
+                        "value": "Erik, Karin and Gosta Selander Foundation",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Estonian Research Council",
+                        "detail": "Estonia"
+                     },
+                     {
+                        "value": "European Commission",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "European Communitys Seventh Framework Programme",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "European Cooperation in Science and Technology (COST) action",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "European Foundation for the Study of Diabetes (EFSD)",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "European Institute of Chemistry and Biology (IECB)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "European Molecular Biology Organization (EMBO)",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "European Regional Development Fund",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "European Research Council (ERC)",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "European Union (EU)",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "F. Hoffmann-La Roche LTD",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Finnish Cultural Foundation",
+                        "detail": "Finland"
+                     },
+                     {
+                        "value": "Flanders Innovation & Entrepreneurship (VLAIO)",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "Florence Instruct-ERIC Center",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Fondation ARC",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Fondation pour la Recherche Medicale (FRM)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Fondazione CARIPLO",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Fondazione Ricerca Fibrosi Cistica",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Fonds National de la Recherche Scientifique (FNRS)",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "Fonds de Recherche du Quebec - Nature et Technologies (FRQNT)",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Fonds de Recherche du Quebec - Sante (FRQS)",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Fonds de la Recherche Scientifique (FNRS)",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "Foundation for Barnes-Jewish Hospital",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Foundation for Medical Research (France)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Foundation for Polish Science",
+                        "detail": "Poland"
+                     },
+                     {
+                        "value": "Foundation for Science and Technology (FCT)",
+                        "detail": "Portugal"
+                     },
+                     {
+                        "value": "Foundation for Science and Technology (FST)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Fraunhofer Cluster of Excellence Immune-Mediated Diseases",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "French Alternative Energies and Atomic Energy Commission (CEA)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "French Infrastructure for Integrated Structural Biology (FRISBI)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "French League Against Cancer",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "French Ministry of Armed Forces",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "French Muscular Dystrophy Association",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "French National Institute of Agricultural Research (INRAE)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "French National Research Agency",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Friedreichs Ataxia Research Alliance (FARA)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Fundacao para a Ciencia e a Tecnologia",
+                        "detail": "Portugal"
+                     },
+                     {
+                        "value": "Future Leader Fellowship",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "GHR Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Gatsby Charitable Foundation",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "General Secretariat for Research and Technology (GSRT)",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "Generalitat Valenciana",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Generalitat de Catalunya",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "German Academic Scholarship Foundation",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "German Federal Ministry for Economic Affairs and Energy",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "German Federal Ministry for Education and Research",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "German Research Foundation (DFG)",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "German-Israeli Foundation for Research and Development",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Germanys Excellence Strategy",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Gerty Cori Programme, Medical Faculty, University of Munster",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Ghent University Special Research Fund (BOF)",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "Global Challenges Research Fund",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Global Health Innovative Technology Fund",
+                        "detail": "Japan"
+                     },
+                     {
+                        "value": "Grant Agency of the Czech Republic",
+                        "detail": "Czech Republic"
+                     },
+                     {
+                        "value": "Grenoble Alliance for Integrated Structural Cell Biology (GRAL)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Grenoble Instruct-ERIC Center (ISBG)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "H2020 Marie Curie Actions of the European Commission",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "Health Research Council (HRC)",
+                        "detail": "New Zealand"
+                     },
+                     {
+                        "value": "Health-Holland",
+                        "detail": "Netherlands"
+                     },
+                     {
+                        "value": "Heidelberg ImmunoTherapeutics GmbH",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Helen Hay Whitney Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Hellenic Foundation for Research and Innovation (HFRI)",
+                        "detail": "Greece"
+                     },
+                     {
+                        "value": "Helmholtz Association",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Heritage Medical Research Institute",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Herman Frasch Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Hessian Ministry of Science, Higher Education and Art (HMWK)",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Higher Education Funding Council for England",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Howard Hughes Medical Institute (HHMI)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Human Frontier Science Program (HFSP)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Hungarian Academy of Sciences",
+                        "detail": "Hungary"
+                     },
+                     {
+                        "value": "Hungarian Ministry of Finance",
+                        "detail": "Hungary"
+                     },
+                     {
+                        "value": "Hungarian National Research, Development and Innovation Office",
+                        "detail": "Hungary"
+                     },
+                     {
+                        "value": "IdEx Universite Paris Cite",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Imperial College London",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Independent Research Fund Denmark - Medical Sciences",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Independent Research Fund Denmark - Technology and Production Sciences",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Indian Council of Medical Research",
+                        "detail": "India"
+                     },
+                     {
+                        "value": "Innosuisse",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "Innovate UK",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Innovative Medicines Initiative",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Innoviris",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "Institut Laue-Langevin",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Institut National de la Sante et de la Recherche Medicale (INSERM)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Institut National du Cancer (inCA)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Institute for Integrative Biology of the Cell (I2BC)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Institute of Chemical Physics Russian Academy of Science",
+                        "detail": "Russian Federation"
+                     },
+                     {
+                        "value": "Instruct-ERIC Center (Helsinki)",
+                        "detail": "Finland"
+                     },
+                     {
+                        "value": "Instruct-ERIC Center (Strasbourg Centre)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "International AIDS Vaccine Initiative",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Irish Research Council",
+                        "detail": "Ireland"
+                     },
+                     {
+                        "value": "Isaac Newton Trust",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Israel Ministry of Science and Technology",
+                        "detail": "Israel"
+                     },
+                     {
+                        "value": "Israel Science Foundation",
+                        "detail": "Israel"
+                     },
+                     {
+                        "value": "Italian Association for Cancer Research",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Italian Medicines Agency",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Italian Ministry of Education",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Italian Ministry of Health",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Italian National Research Council (CNR)",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Jack Ma Foundation",
+                        "detail": "China"
+                     },
+                     {
+                        "value": "Jacob and Lena Joels Memorial Foundation, Hebrew University of Jerusalem",
+                        "detail": "Israel"
+                     },
+                     {
+                        "value": "Jane Coffin Childs (JCC) Fund",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Jane and Aatos Erkko Foundation",
+                        "detail": "Finland"
+                     },
+                     {
+                        "value": "Japan Agency for Medical Research and Development (AMED)",
+                        "detail": "Japan"
+                     },
+                     {
+                        "value": "Japan Science and Technology",
+                        "detail": "Japan"
+                     },
+                     {
+                        "value": "Japan Society for the Promotion of Science (JSPS)",
+                        "detail": "Japan"
+                     },
+                     {
+                        "value": "Jardine Foundation",
+                        "detail": "Hong Kong"
+                     },
+                     {
+                        "value": "Joachim Herz Stiftung",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "John Innes Foundation",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Johns Hopkins University",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Joint Supercomputer Center of the Russian Academy of Sciences",
+                        "detail": "Russian Federation"
+                     },
+                     {
+                        "value": "Junta de Castilla y Leon, Consejeria de Educacion y Cultura y Fondo Social Europeo",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "KU Leuven",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "Kay Kendall Leukaemia Fund",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Kempe Foundation",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Kidney Research UK",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Knut and Alice Wallenberg Foundation",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "LOEWE Center DRUID",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "LOreal-UNESCO",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "La Caixa Foundation",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "La Region Occitanie",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "La ligue contre le cancer",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Laboratories of Excellence (LabEx)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Leducq Foundation",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Leibniz Association",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Leukemia & Lymphoma Society",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Leverhulme Trust",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Life Sciences Research Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Louis-Jeantet Foundation",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Ludwig Institute for Cancer Research (LICR)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Lundbeckfonden",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Lustgarten Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Luxembourg Centre for Systems Biomedicine (LCSB), University of Luxembourg",
+                        "detail": "Luxembourg"
+                     },
+                     {
+                        "value": "Maersk Foundation",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Marie Sklodowska-Curie Actions, FragNET ITN",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "Marsden Fund",
+                        "detail": "New Zealand"
+                     },
+                     {
+                        "value": "Maryland Stem Cell Research Fund",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Massachusetts Consortium on Pathogen Readiness (MassCPR)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Max IV Laboratory",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Max Planck Bristol Centre for Minimal Biology - University of Bristol",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Max Planck Society",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "McKnight Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Medical Research Council (MRC, Canada)",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Medical Research Council (MRC, United Kingdom)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Mercatus Center",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Michael J. Fox Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Minas Gerais State Agency for Research and Development (FAPEMIG)",
+                        "detail": "Brazil"
+                     },
+                     {
+                        "value": "Ministerio de Ciencia e Innovacion (MCIN)",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Ministero dell Universita e della Ricerca",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Ministry of Agriculture, Forestry and Fisheries (MAFF)",
+                        "detail": "Japan"
+                     },
+                     {
+                        "value": "Ministry of Business, Innovation and Employment (New Zealand)",
+                        "detail": "New Zealand"
+                     },
+                     {
+                        "value": "Ministry of Economy and Competitiveness (MINECO)",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Ministry of Education (MoE, China)",
+                        "detail": "China"
+                     },
+                     {
+                        "value": "Ministry of Education (MoE, Czech Republic)",
+                        "detail": "Czech Republic"
+                     },
+                     {
+                        "value": "Ministry of Education (MoE, Korea)",
+                        "detail": "Korea, Republic Of"
+                     },
+                     {
+                        "value": "Ministry of Education (MoE, Singapore)",
+                        "detail": "Singapore"
+                     },
+                     {
+                        "value": "Ministry of Education and Science of the Republic of Kazakhstan",
+                        "detail": "Kazakhstan"
+                     },
+                     {
+                        "value": "Ministry of Education and Science of the Russian Federation",
+                        "detail": "Russian Federation"
+                     },
+                     {
+                        "value": "Ministry of Education, Culture, Sports, Science and Technology (Japan)",
+                        "detail": "Japan"
+                     },
+                     {
+                        "value": "Ministry of Education, Youth and Sports of the Czech Republic",
+                        "detail": "Czech Republic"
+                     },
+                     {
+                        "value": "Ministry of Human Capacities",
+                        "detail": "Hungary"
+                     },
+                     {
+                        "value": "Ministry of Science and Higher Education (Poland)",
+                        "detail": "Poland"
+                     },
+                     {
+                        "value": "Ministry of Science and Higher Education of the Russian Federation",
+                        "detail": "Russian Federation"
+                     },
+                     {
+                        "value": "Ministry of Science and Technology (MoST, China)",
+                        "detail": "China"
+                     },
+                     {
+                        "value": "Ministry of Science and Technology (MoST, Taiwan)",
+                        "detail": "Taiwan"
+                     },
+                     {
+                        "value": "Ministry of Science, Education and Sports of the Republic of Croatia",
+                        "detail": "Croatia"
+                     },
+                     {
+                        "value": "Ministry of Science, ICT and Future Planning (MSIP)",
+                        "detail": "Korea, Republic Of"
+                     },
+                     {
+                        "value": "Ministry of Science, Technology and Innovation (MOSTI, Malaysia)",
+                        "detail": "Malaysia"
+                     },
+                     {
+                        "value": "Mizutani Foundation for Glycoscience",
+                        "detail": "Japan"
+                     },
+                     {
+                        "value": "Molecular and Cell Biology and Postgenomic Technologies",
+                        "detail": "Hungary"
+                     },
+                     {
+                        "value": "Monash University/ARC Centre of Excellence in Advanced Molecular Imaging Alliance",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "Monash Warwick Alliance",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "Montpellier University of Excellence (MUSE)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "NATO Science for Peace and Security Program",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "National Aeronautics and Space Administration (NASA, United States)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Authority for Scientific Research in Romania (ANCS)",
+                        "detail": "Romania"
+                     },
+                     {
+                        "value": "National Basic Research Program of China (973 Program)",
+                        "detail": "China"
+                     },
+                     {
+                        "value": "National Center for Genetic Engineering and Biotechnology (Thailand)",
+                        "detail": "Thailand"
+                     },
+                     {
+                        "value": "National Center for Research and Development (Poland)",
+                        "detail": "Poland"
+                     },
+                     {
+                        "value": "National Fund for Scientific Research",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "National Health and Medical Research Council (NHMRC, Australia)",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "National Institute of Food and Agriculture (NIFA, United States)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/Eunice Kennedy Shriver National Institute of Child Health & Human Development (NIH/NICHD)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/John E. Fogarty International Center (NIH/FIC)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Cancer Institute (NIH/NCI)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Center for Advancing Translational Sciences (NIH/NCATS)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Center for Complementary and Integrative Health (NIH/NCCIH)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Center for Research Resources (NIH/NCRR)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Eye Institute (NIH/NEI)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Heart, Lung, and Blood Institute (NIH/NHLBI)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Human Genome Research Institute (NIH/NHGRI)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute Of Allergy and Infectious Diseases (NIH/NIAID)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIH/NIAMS)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute of Biomedical Imaging and Bioengineering (NIH/NIBIB)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute of Dental and Craniofacial Research (NIH/NIDCR)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute of Diabetes and Digestive and Kidney Disease (NIH/NIDDK)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute of Environmental Health Sciences (NIH/NIEHS)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute of General Medical Sciences (NIH/NIGMS)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute of Mental Health (NIH/NIMH)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute of Neurological Disorders and Stroke (NIH/NINDS)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute on Aging (NIH/NIA)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute on Alcohol Abuse and Alcoholism (NIH/NIAAA)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute on Deafness and Other Communication Disorders (NIH/NIDCD)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute on Drug Abuse (NIH/NIDA)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Institute on Minority Health and Health Disparities (NIH/NIMHD)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/National Library of Medicine (NIH/NLM)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Institutes of Health/Office of the Director",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Natural Science Foundation of China (NSFC)",
+                        "detail": "China"
+                     },
+                     {
+                        "value": "National Research Council (NRC, Argentina)",
+                        "detail": "Argentina"
+                     },
+                     {
+                        "value": "National Research Development and Innovation Office (NKFIH)",
+                        "detail": "Hungary"
+                     },
+                     {
+                        "value": "National Research Foundation (NRF, Korea)",
+                        "detail": "Korea, Republic Of"
+                     },
+                     {
+                        "value": "National Research Foundation (NRF, Singapore)",
+                        "detail": "Singapore"
+                     },
+                     {
+                        "value": "National Research Foundation in South Africa",
+                        "detail": "South Africa"
+                     },
+                     {
+                        "value": "National Science Council (NSC, Taiwan)",
+                        "detail": "Taiwan"
+                     },
+                     {
+                        "value": "National Science Foundation (NSF, China)",
+                        "detail": "China"
+                     },
+                     {
+                        "value": "National Science Foundation (NSF, United States)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "National Scientific and Technical Research Council (CONICET)",
+                        "detail": "Argentina"
+                     },
+                     {
+                        "value": "National Virtual Biotechnology Laboratory (NVBL)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Natural Environment Research Council (NERC)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Natural Sciences and Engineering Research Council (NSERC, Canada)",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Netherlands Organisation for Scientific Research (NWO)",
+                        "detail": "Netherlands"
+                     },
+                     {
+                        "value": "New Energy and Industrial Technology Development Organization (NEDO)",
+                        "detail": "Japan"
+                     },
+                     {
+                        "value": "NextGenerationEU-MUR PNRR Extended Partnership initiative on Emerging Infectious Diseases (INF-ACT)",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Norwegian Cancer Society",
+                        "detail": "Norway"
+                     },
+                     {
+                        "value": "Norwegian Research Council",
+                        "detail": "Norway"
+                     },
+                     {
+                        "value": "Not funded"
+                     },
+                     {
+                        "value": "Novartis FreeNovation"
+                     },
+                     {
+                        "value": "Novo Nordisk Foundation",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Obel Family Foundation",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Office of Naval Research (ONR)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Oncode Institute",
+                        "detail": "Netherlands"
+                     },
+                     {
+                        "value": "Ontario Early Researcher Awards",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Ontario Institute for Cancer Research",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Ontario Ministry of Colleges and Universities",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "Ontario Research Fund",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "OpenPlant",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Other government"
+                     },
+                     {
+                        "value": "Other private"
+                     },
+                     {
+                        "value": "Palacky University in Olomouc",
+                        "detail": "Czech Republic"
+                     },
+                     {
+                        "value": "Parker Institute for Cancer Immunotherapy",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Partnership for Structural Biology (PSB)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Pasteur Institute",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Polish National Science Centre",
+                        "detail": "Poland"
+                     },
+                     {
+                        "value": "Programa de Apoyo a Proyectos de Investigacion e Innovacion Tecnologica (PAPIIT)",
+                        "detail": "Mexico"
+                     },
+                     {
+                        "value": "Promedica Siftung",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Qatar Foundation",
+                        "detail": "Qatar"
+                     },
+                     {
+                        "value": "Queen Mary University of London",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "ROME Therapeutics, Inc.",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Region Auvergne Rhone Alpes",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "Regione Lazio (Italy)",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "Research Council of Lithuania",
+                        "detail": "Lithuania"
+                     },
+                     {
+                        "value": "Research Council of Norway",
+                        "detail": "Norway"
+                     },
+                     {
+                        "value": "Research England",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Research Foundation - Flanders (FWO)",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "Richard and Susan Smith Family Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Rita Allen Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Robert A. Welch Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Roechling Stiftung",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Rosetrees Trust",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Royal Society",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Royal Society of New Zealand",
+                        "detail": "New Zealand"
+                     },
+                     {
+                        "value": "Rural Development Administration",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Russian Federation President Grant",
+                        "detail": "Russian Federation"
+                     },
+                     {
+                        "value": "Russian Foundation for Basic Research",
+                        "detail": "Russian Federation"
+                     },
+                     {
+                        "value": "Russian Science Foundation",
+                        "detail": "Russian Federation"
+                     },
+                     {
+                        "value": "Samsung Science and Technology Foundation",
+                        "detail": "Korea, Republic Of"
+                     },
+                     {
+                        "value": "Sao Paulo Research Foundation (FAPESP)",
+                        "detail": "Brazil"
+                     },
+                     {
+                        "value": "Sarcoma UK",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Saudi Ministry of Education",
+                        "detail": "Saudi Arabia"
+                     },
+                     {
+                        "value": "Science Foundation Ireland",
+                        "detail": "Ireland"
+                     },
+                     {
+                        "value": "Science and Engineering Research Board (SERB)",
+                        "detail": "India"
+                     },
+                     {
+                        "value": "Science and Technology Funding Council",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Seneca Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Service public de Wallonie",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "Shapiro-Silverberg Fund for the Advancement of Translational Research",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Shirley Boyde Foundation",
+                        "detail": "Hong Kong"
+                     },
+                     {
+                        "value": "Sigrid Juselius Foundation",
+                        "detail": "Finland"
+                     },
+                     {
+                        "value": "Simons Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Slovenian Research Agency",
+                        "detail": "Slovenia"
+                     },
+                     {
+                        "value": "South African Medical Research Council self-initiated research grant (SAMRC SIR Grant)",
+                        "detail": "South Africa"
+                     },
+                     {
+                        "value": "Spanish Ministry of Economy and Competitiveness",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Spanish Ministry of Science, Innovation, and Universities",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Spanish National Research Council",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "Spar Nord Foundation",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "St. Petersburg State University",
+                        "detail": "Russian Federation"
+                     },
+                     {
+                        "value": "Sven and Dagmar Salens Foundation",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Sven och Lilly Lawskis fond for naturvetenskaplig forskning",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Swedish Energy Agency",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Swedish Research Council",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Swiss Cancer League",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Swiss Nanoscience Institute",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Swiss National Science Foundation",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Swiss State Secretariat for Education, Research and Innovation",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Synchrotron Light Research Institute (SLRI)",
+                        "detail": "Thailand"
+                     },
+                     {
+                        "value": "TESS Research Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Techical University of Denmark (DTU)",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "Technology Agency of the Czech Republic",
+                        "detail": "Czech Republic"
+                     },
+                     {
+                        "value": "The Australian Cancer Research Fund",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "The Brian M. Davis Charitable Foundation Centenary Fellowship",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "The Carlsberg Foundation",
+                        "detail": "Denmark"
+                     },
+                     {
+                        "value": "The Carnegie Trust for the Universities of Scotland",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "The Comammox Research Platform",
+                        "detail": "Austria"
+                     },
+                     {
+                        "value": "The Crafoord Foundation",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "The Ehlers-Danlos Society",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "The Foundation for Barnes-Jewish Hospital",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "The Francis Crick Institute",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "The French Muscular Dystrophy Telethon (AFM-Telethon)",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "The G. Harold and Leila Y. Mathers Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "The Giovanni Armenise-Harvard Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "The Grant Agency of The University of South Bohemia",
+                        "detail": "Czech Republic"
+                     },
+                     {
+                        "value": "The Helen and Milton A. Kimmelman Center for Biomolecular Structure and Assembly",
+                        "detail": "Israel"
+                     },
+                     {
+                        "value": "The Hospital For Sick Children Foundation",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "The Institute of Cancer Research (ICR)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "The Lister Institute of Preventive Medicine",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "The Mark Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "The Pew Charitable Trusts",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "The Robertson Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "The Structural Genomics Consortium (SGC)",
+                        "detail": "Canada"
+                     },
+                     {
+                        "value": "The Swedish Foundation for Strategic Research",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "The Swedish Society of Medicine",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "The Thailand Research Fund (TRF)",
+                        "detail": "Thailand"
+                     },
+                     {
+                        "value": "The University Grants Committee, Research Grants Council (RGC)",
+                        "detail": "Hong Kong"
+                     },
+                     {
+                        "value": "The Vallee Foundation Inc.",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "The Walter and Eliza Hall Institute of Medical Research",
+                        "detail": "Australia"
+                     },
+                     {
+                        "value": "The Yanmar Environmental Sustainability Support Association",
+                        "detail": "Japan"
+                     },
+                     {
+                        "value": "Tobacco-Related Disease Research Program (TRDRP)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Tower Cancer Research Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Translational Therapeutics Accelerator (TRx)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Tuberous Sclerosis Association",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "UK Research and Innovation (UKRI)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "USC Zumberge Award",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "United States - Israel Binational Science Foundation (BSF)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "United States Department of Agriculture (USDA)",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Universite de Toulouse",
+                        "detail": "France"
+                     },
+                     {
+                        "value": "University and Research - University of Milan",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "University of Alicante",
+                        "detail": "Spain"
+                     },
+                     {
+                        "value": "University of Bologna",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "University of Cambridge",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "University of College London",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "University of Helsinki",
+                        "detail": "Finland"
+                     },
+                     {
+                        "value": "University of Helsinki Research Foundation",
+                        "detail": "Finland"
+                     },
+                     {
+                        "value": "University of Naples Federico II",
+                        "detail": "Italy"
+                     },
+                     {
+                        "value": "University of Oxford, Medical Sciences Internal Fund (MSIF)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "University of Patras",
+                        "detail": "Greece"
+                     },
+                     {
+                        "value": "University of Southampton",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "University of Vienna Research Platform Comammox",
+                        "detail": "Austria"
+                     },
+                     {
+                        "value": "University of Warwick",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "University of Zurich",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Uppsala Antibiotic Center",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "V Foundation for Cancer Research",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Velux Stiftung",
+                        "detail": "Switzerland"
+                     },
+                     {
+                        "value": "Vidyasirimedhi Institute of Science and Technology (VISTEC)",
+                        "detail": "Thailand"
+                     },
+                     {
+                        "value": "Vienna Science and Technology Fund (WWTF)",
+                        "detail": "Austria"
+                     },
+                     {
+                        "value": "Vinnova",
+                        "detail": "Sweden"
+                     },
+                     {
+                        "value": "Volkswagen Foundation",
+                        "detail": "Germany"
+                     },
+                     {
+                        "value": "Vrije Universiteit Brussel",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "W. M. Keck Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Walloon Excellence in Lifesciences & BIOtechnology (WELBIO)",
+                        "detail": "Belgium"
+                     },
+                     {
+                        "value": "Welch Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Wellcome Trust",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Wenner-Gren Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Weston Havens Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Willowcroft Foundation",
+                        "detail": "United States"
+                     },
+                     {
+                        "value": "Wolfson Foundation",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "World Health Organization (WHO)",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Worldwide Cancer Research",
+                        "detail": "United Kingdom"
+                     },
+                     {
+                        "value": "Yousef Jameel Scholarship",
+                        "detail": "Egypt"
+                     },
+                     {
+                        "value": "iNEXT",
+                        "detail": "European Union"
+                     },
+                     {
+                        "value": "iNEXT-Discovery",
+                        "detail": "European Union"
+                     }
+                  ],
+                  "rcsb_description": [
+                     {
+                        "text": "The name of the organization providing funding support for the\n entry.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "grant_number": {
+                  "type": "string",
+                  "description": "The grant number associated with this source of support.",
+                  "rcsb_description": [
+                     {
+                        "text": "The grant number associated with this source of support.",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
+               "ordinal": {
+                  "type": "integer",
+                  "examples": [
+                     "1",
+                     "2",
+                     "3"
+                  ],
+                  "description": "A unique sequential integer identifier for each source of support for this entry.",
+                  "_primary_key": true,
+                  "rcsb_description": [
+                     {
+                        "text": "A unique sequential integer identifier for each source of support for this entry.",
+                        "context": "dictionary"
+                     }
+                  ]
+               }
+            },
+            "additionalProperties": false,
+            "required": [
+               "structure_id",
+               "ordinal"
+            ]
+         },
+         "minItems": 1,
+         "uniqueItems": true,
+         "rcsb_nested_indexing": false
+      },
       "pdbx_branch_scheme": {
          "type": "array",
          "items": {
@@ -6720,6 +8776,19 @@
                      }
                   ]
                },
+               "identifier_ORCID": {
+                  "type": "string",
+                  "examples": [
+                     "0000-0002-6681-547X"
+                  ],
+                  "description": "The Open Researcher and Contributor ID (ORCID).",
+                  "rcsb_description": [
+                     {
+                        "text": "The Open Researcher and Contributor ID (ORCID).",
+                        "context": "dictionary"
+                     }
+                  ]
+               },
                "name_first": {
                   "type": "string",
                   "examples": [
@@ -6799,6 +8868,30 @@
                      {
                         "text": "The salutation of the author of the data block to whom correspondence\n should be addressed.",
                         "context": "dictionary"
+                     }
+                  ]
+               },
+               "role": {
+                  "type": "string",
+                  "enum": [
+                     "investigator",
+                     "principal investigator/group leader",
+                     "responsible scientist"
+                  ],
+                  "examples": [
+                     "principal investigator/group leader",
+                     "responsible scientist",
+                     "investigator"
+                  ],
+                  "description": "The role of this author in the project depositing this data.",
+                  "rcsb_description": [
+                     {
+                        "text": "The role of this author in the project depositing this data.",
+                        "context": "dictionary"
+                     },
+                     {
+                        "text": "Enter the role played by this contact person in this research. The Principal Investigator is the person holding the grant to the research project for which the structure is being deposited. The research grant may be held jointly by more than one person. In such cases add the information about the second Principal Investigator.",
+                        "context": "deposition"
                      }
                   ]
                }
@@ -10218,7 +12311,7 @@
    ],
    "$id": "https://github.com/rcsb/py-rcsb.db/tree/master/rcsb.db/data/json-schema/json-schema-full-ma.json",
    "$schema": "http://json-schema.org/draft-04/schema#",
-   "title": "schema: ma collection: ma version: 0.0.4",
-   "description": "RCSB Exchange Database JSON schema derived from the ma content type schema. This schema supports collection ma version 0.0.4. This schema is hosted in repository https://github.com/rcsb/py-rcsb.db/tree/master/rcsb.db/data/json-schema/json-schema-full-ma.json and follows JSON schema specification version 4",
-   "$comment": "schema_version: 0.0.4"
+   "title": "schema: ma collection: ma version: 0.0.5",
+   "description": "RCSB Exchange Database JSON schema derived from the ma content type schema. This schema supports collection ma version 0.0.5. This schema is hosted in repository https://github.com/rcsb/py-rcsb.db/tree/master/rcsb.db/data/json-schema/json-schema-full-ma.json and follows JSON schema specification version 4",
+   "$comment": "schema_version: 0.0.5"
 }
