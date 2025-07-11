@@ -2749,6 +2749,45 @@
 "count": 1
 }
 },
+"ma_model_group": {
+"id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"name": {
+"minWidth": 10,
+"maxWidth": 12,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"details": {
+"minWidth": 29,
+"maxWidth": 31,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
+"ma_model_group_link": {
+"model_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+},
+"group_id": {
+"minWidth": 1,
+"maxWidth": 1,
+"minPrec": 0,
+"maxPrec": 0,
+"count": 1
+}
+},
 "atom_sites": {
 "entry_id": {
 "minWidth": 16,

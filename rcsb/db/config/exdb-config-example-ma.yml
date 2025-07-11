@@ -11,6 +11,8 @@
 #  17-01-2025 v.0.0.4 introduce again entity_poly_seq and other categories
 #  17-03-2025 v.0.0.5 introduce _audit_author.identifier_ORCID (but no _audit_author.address), _pdbx_contact_author.role & .identifier_ORCID, _pdbx_audit_support.*
 # ExDB configuration file example
+#  23-06-2025 v.0.0.6 remove atom_sites, atom_type, entity_poly_seq, pdbx_nonpoly_scheme
+# add ma_model_group_link and ma_model_group
 ---
 DEFAULT: {}
 ##
@@ -91,7 +93,7 @@ database_catalog_configuration:
 content_info_helper_configuration:
     database_names:
         ma:
-            VERSION: 0.0.2
+            VERSION: 0.0.3
             INSTANCE_DATA_TYPE_INFO_FILENAME: scan-ma-type-map.json
 
     #
@@ -225,6 +227,8 @@ content_info_helper_configuration:
                 - CATEGORY_NAME: pdbx_audit_support
                 - CATEGORY_NAME: audit_author
                 - CATEGORY_NAME: pdbx_contact_author
+                - CATEGORY_NAME: ma_model_group_link
+                - CATEGORY_NAME: ma_model_group
         #
     slice_parent_items:
     slice_parent_filters:
@@ -239,6 +243,10 @@ content_info_helper_configuration:
                 - ma_qa_metric_feature
                 - ma_qa_metric_feature_pairwise
                 - atom_site
+                - atom_sites
+                - atom_type
+                - entity_poly_seq
+                - pdbx_nonpoly_scheme
                 - atom_site_anisotrop
                 - pdbx_poly_seq_scheme
                 - pdbx_seq_map_depositor_info
@@ -401,7 +409,7 @@ document_helper_configuration:
     document_collection_names:
         ma:
             - NAME: ma
-              VERSION: 0.0.5
+              VERSION: 0.0.6
     #
     document_collection_content_filters:
         ma:
@@ -412,6 +420,10 @@ document_helper_configuration:
                 - MA_QA_METRIC_FEATURE
                 - MA_QA_METRIC_FEATURE_PAIRWISE
                 - ATOM_SITE
+                - ATOM_SITES
+                - ATOM_TYPE
+                - ENTITY_POLY_SEQ
+                - PDBX_NONPOLY_SCHEME
                 - ATOM_SITE_ANISOTROP
                 - PDBX_POLY_SEQ_SCHEME
                 - PDBX_UNOBS_OR_ZERO_OCC_ATOMS
@@ -433,6 +445,10 @@ document_helper_configuration:
         ma:
             - PARENT_CATEGORY_NAME: chem_comp_atom
             - PARENT_CATEGORY_NAME: atom_site
+            - PARENT_CATEGORY_NAME: atom_sites
+            - PARENT_CATEGORY_NAME: atom_type
+            - PARENT_CATEGORY_NAME: entity_poly_seq
+            - PARENT_CATEGORY_NAME: pdbx_nonpoly_scheme
             - PARENT_CATEGORY_NAME: ma_qa_metric_local
             - PARENT_CATEGORY_NAME: ma_qa_metric_local_pairwise
             - PARENT_CATEGORY_NAME: ma_qa_metric_feature
